@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="DoubleColumnTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxN-TX-YQx" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="73" width="320" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pgu-Fa-rkF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fb-li-V55" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="72" width="152" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bjK-Xh-S0e"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9b-oa-0QD" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="168" y="72" width="152" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="OKn-yX-a6e"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dpB-aa-hzj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Beq-l4-tX2">
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvR-aP-ATt" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYv-mU-M2X" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22.5" width="152" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="skV-RB-DF1">
+                                <rect key="frame" x="168" y="0.0" width="152" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2N-5C-dig" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIF-SF-1SR" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="22.5" width="152" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vxN-TX-YQx" secondAttribute="bottom" id="G6Q-oZ-BME"/>
+                    <constraint firstItem="5Fb-li-V55" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HTx-MP-GfE"/>
+                    <constraint firstItem="vxN-TX-YQx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ih3-HI-1pZ"/>
+                    <constraint firstItem="r9b-oa-0QD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="8" id="JAY-QK-7bc"/>
+                    <constraint firstItem="vxN-TX-YQx" firstAttribute="top" secondItem="dpB-aa-hzj" secondAttribute="bottom" constant="12" id="Nyv-E5-ZaH"/>
+                    <constraint firstItem="vxN-TX-YQx" firstAttribute="top" secondItem="r9b-oa-0QD" secondAttribute="bottom" id="QD3-q2-LCe"/>
+                    <constraint firstAttribute="centerX" secondItem="5Fb-li-V55" secondAttribute="trailing" constant="8" id="aiv-Wf-Fy5"/>
+                    <constraint firstAttribute="trailing" secondItem="vxN-TX-YQx" secondAttribute="trailing" id="gRn-pb-gw2"/>
+                    <constraint firstAttribute="trailing" secondItem="dpB-aa-hzj" secondAttribute="trailing" id="iFs-r4-9o4"/>
+                    <constraint firstItem="dpB-aa-hzj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kjO-4S-I6N"/>
+                    <constraint firstItem="dpB-aa-hzj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="odN-z2-az0"/>
+                    <constraint firstItem="vxN-TX-YQx" firstAttribute="top" secondItem="5Fb-li-V55" secondAttribute="bottom" id="xzV-CA-9ZE"/>
+                    <constraint firstAttribute="trailing" secondItem="r9b-oa-0QD" secondAttribute="trailing" id="zTZ-4e-eCi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="contentSeparator" destination="vxN-TX-YQx" id="XMV-F9-TEM"/>
+                <outlet property="contentStackView" destination="dpB-aa-hzj" id="55T-jX-Ybf"/>
+                <outlet property="leftSeparator" destination="5Fb-li-V55" id="p6f-S0-gFo"/>
+                <outlet property="leftTextLabel" destination="XYv-mU-M2X" id="jyQ-GW-cMw"/>
+                <outlet property="leftTitleLabel" destination="qvR-aP-ATt" id="msf-vW-Ehf"/>
+                <outlet property="rightSeparator" destination="r9b-oa-0QD" id="qIL-bY-M2s"/>
+                <outlet property="rightTextLabel" destination="AIF-SF-1SR" id="J3N-CA-e50"/>
+                <outlet property="rightTitleLabel" destination="m2N-5C-dig" id="kGQ-f3-pmp"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="65.625"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="AIF-SF-1SR">
+            <size key="intrinsicContentSize" width="38" height="16.5"/>
+        </designable>
+        <designable name="XYv-mU-M2X">
+            <size key="intrinsicContentSize" width="38" height="16.5"/>
+        </designable>
+        <designable name="m2N-5C-dig">
+            <size key="intrinsicContentSize" width="32.5" height="14.5"/>
+        </designable>
+        <designable name="qvR-aP-ATt">
+            <size key="intrinsicContentSize" width="32.5" height="14.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

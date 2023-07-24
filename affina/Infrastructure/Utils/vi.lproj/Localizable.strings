@@ -1,0 +1,690 @@
+/*
+  Localizable.strings
+  affina
+
+  Created by Dinh Le Trieu Duong on 12/05/2022.
+  
+*/
+"YOUR_REVIEW"="Đánh giá của bạn";
+"PRE-HOSPITALIZATION_DOCUMENTS" = "Chứng từ y tế trước nhập viện";
+"NOT_AVAILABLE" = "Chưa khả dụng";
+"REGISTRATION_CERTIFICATION"="Carvet Xe (tuỳ chọn)";
+"DO_YOU_WANT_TO_CLOSE_THE_BROWSER?" = "Bạn muốn đóng trình duyệt?";
+"YOU_WANT_TO_SPEND_200_COINS"="Bạn muốn dùng 200 xu";
+"SUCCESSFULLY_GIFT_GIVING" = "Bạn đã tặng thành công";
+"YOU_NEED_TO_LOGIN_TO_USE_AN_OFFER" = "Bạn cần đăng nhập để sử dụng ưu đãi";
+"1_OFFER_SELECTED" = "Áp dụng 1 Ưu đãi";
+"APPLICABLE" = "Áp dụng";
+"I_AGREE_WITH_THE_TERMS_OF" = "Tôi đồng ý với ";
+"I_AGREE_WITH_TERMS_OF_AFFINA'S_INFORMATION_EXPLOITATI"="Tôi đồng ý với điều khoản khai thác thông tin";
+"VEHICLE_REGISTRATION_CERTIFICATE"="Carvet xe";
+"DRIVER'S_LICENSE"="Bằng lái xe";
+ "ANNUAL_MAXIMUM_LIMIT"="Hạn mức/năm";
+"I_HERE_BY_DECLARE_THAT_THE_PERSONAL_INFORMATION_PROVIDED_TO_AFFINA_FOR_SERVICE,_STORAGE,_AND_TO_PROVIDE_THIRD_PARTIES_TO_PROCESS_SERVICE_PROVISION"="Bằng việc khai báo thông tin này, Khách hàng đồng ý cung cấp thông tin cá nhân cho AFFINA để thực hiện cung cấp dịch vụ, lưu trữ và cung cấp cho Bên thứ 3 để thực hiện cung cấp dịch vụ cho Khách hàng";
+"PROGRAM_INFORMATION"="Thông tin chương trình";
+"COPY_SUCCESSFULLY"="Copy thành công";
+"COPY" = "Sao chép";
+"BANK_NAME" = "Tên ngân hàng";
+"NO_INSURANCE_CARD" = "Không có thẻ bảo hiểm!";
+"INCIDENT_HAS_OCCURRED" = "Đã xảy ra sự cố";
+"SORYY" = "Rất tiếc!";
+"EXAMPLE_123_4567_890_123"= "Ví dụ: 123 4567 890 123";
+"PLEASE_FILL_IN_THE_INFORMATION_IN_THIS_BOX" = "Vui lòng điền thông tin vào ô này";
+"PLEASE_CORRECT_THE_BUYER_INFORMATION._BUYER_MUST_BE_OVER_18_YEARS_OLD_RE-ENTER_THE_BUYER_INFORMATION"="Vui lòng điều chỉnh lại thông tin người mua. Người mua phải trên 18 tuổi";
+"PLEASE_UNCHECK_THE_FUNCTION_\"THE_POLICYHOLDER_IS_ALSO_THE_INSURED\"_AND_RE-ENTER_THE_BUYER_INFORMATION" = "Vui lòng bỏ chọn chức năng \"Người mua bảo hiểm đồng thời là người được bảo hiểm\" và nhập lại thông tin người mua";
+"THE_POLICYHOLDER_IS_UNDER_18_YEARS_OLD" = "Người mua bảo hiểm chưa đủ 18 tuổi";
+"RATE" = "Đánh giá";
+"PLEASE_ENTER_ADDRESS"="Vui lòng nhập địa chỉ";
+"LOGIN_TO_BUY" = "Đăng Nhập Để Mua";
+"REDEEM_VOUCHER"="Đổi Voucher";
+"MEMBERSHIP_LEVELS" = "Cấp độ thành viên";
+"POPULAR_PRODUCT" = "Sản phẩm phổ biến";
+"COIN" = "xu";
+"SPECIAL_OFFER"="Ưu đãi đặc biệt";
+"VOUCHER_TO_EXPIRE" = "sắp hết hạn";
+"USED_EXPIRED" = "Đã dùng/Hết hạn";
+"NOT_USED_YET" = "Chưa dùng";
+"MY_VOUCHERS" = "Vouchers của tôi";
+"MY_COMPANY" = "Công ty tôi";
+"EXCHANGED_BENEFITS" = "Phúc lợi đã đổi";
+"AVAILABLE_BENEFITS" = "Số điểm khả dụng";
+"INSURANCE_PROVIDED" = "Chương Trình Bảo Hiểm";
+"DETAIL_BENEFITS" = "CHI TIẾT QUYỀN LỢI";
+"COPYRIGHT" = "Bản quyền © 2022 - IntelIn - Phiên bản 1.0.1.0";
+"LOGIN_TITLE" = "Đăng Nhập";
+"CONTINUE" = "Tiếp tục";
+"SIGNUP" = "Đăng ký";
+"EXPIRY"="Hạn dùng";
+"SEND_OTP_CODE_AGAIN" = "Gửi lại mã OTP?";
+"PLEASE_INPUT_HERE" = "Vui lòng nhập tại đây!";
+
+"HELP_ME_RECOGNIZE_U_NEXT_TIME" = "Hãy giúp chúng tôi nhận ra bạn vào những lần đăng nhập tới";
+
+"RESET_PASSWORD" = "Đặt lại mật khẩu";
+"RESET_PASSWORD_NOTE" = "Lưu ý: Mật khẩu tối thiểu là 06 kí tự, bao gồm các chữ, số và các ký tự đặc biệt.";
+"RESET_PASSWORD_SUCCESSFUL" = "Đặt lại mật khẩu thành công";
+
+"CLOSE" = "Đóng";
+
+"SETUP_PASSWORD" = "Tạo mật khẩu";
+
+"BY_REGISTER_ACCEPT" = "Bằng việc đăng ký, bạn đã đồng ý với";
+"I_AGREE" = "Tôi đồng ý với";
+"TERMS" = "Điều khoản sử dụng";
+"AFFINA'S_INFORMATION_EXPLOITATION."= "điều khoản khai thác thông tin của Affina. ";
+"AND_&" = "&";
+"AND" = "và";
+"PRIVACY" = "Chính sách bảo mật";
+"OUR" = "của Affina";
+
+"PASSWORD" = "Mật Khẩu";
+"REGISTER_SUCCESSFUL" = "Đăng ký thành công";
+"PLEASE_UPDATE_PROFILE" = "Vui lòng vào hồ sơ để cập nhật thông tin.";
+
+"FACEID" = "Khuôn mặt";
+"TOUCHID" = "Vân tay";
+
+
+"CONGRAT_FIRST_INSURANCE_PRODUCT" = "Chúc mừng, bạn đã mua thành công\n.sản phẩm bảo hiểm đầu tiên";
+
+"VIEW_INSURANCE_LIST" = "Xem danh sách bảo hiểm";
+
+"COMPENSATION_HISTORY" = "Lịch sử bồi thường";
+
+"EMAIL" = "Email";
+"EMAIL_ADDRESS" = "Địa chỉ Email";
+"TURN_ON" = "Bật";
+
+"LIST_CONTRACT" = "Danh sách hợp đồng";
+"USE_POINTS" = "Sử dụng điểm";
+"USE_COINS" = "Sử dụng xu";
+"FLEXI_BENEFITS" = "Quyền lợi linh hoạt";
+"POINT" = "Điểm";
+
+"USE" = "Sử dụng";
+
+"PAY_INSURANCE_FEE" = "Thanh toán phí bảo hiểm";
+"USED" = "Đã dùng";
+"RECURRING_FEE" = "Phí định kỳ";
+"PERIODIC_FEE_PAYMENT" = "Định kỳ đóng phí";
+"PAYMENT_DUE_DATE" = "Ngày hết hạn đóng phí";
+"NEXT_PAYMENT_FEE_DATE" = "Ngày đóng phí tiếp theo";
+"PREVIOUS_PERIOD_BALANCE_FEE" = "Phí dư kỳ trước";
+"BASIC_ACCOUNT" = "Tài khoản cơ bản";
+
+"UPDATE_PROFILE_SUCCESS" = "Cập nhật thông tin cá nhân thành công";
+
+"GENERAL_TERMS" = "Điều khoản chung";
+
+"PRODUCT" = "Sản phẩm";
+
+"TRANSACTION_FAILURE" = "Thanh toán thất bại";
+
+"REQUEST_SUCCESSFUL" = "Gửi yêu cầu thành công";
+"RECEIVE_REQUEST_SUCCESS" = "Affina đã tiếp nhận thông tin của bạn. Chúng tôi sẽ liên hệ lại với bạn trong vòng X tiếng.";
+
+"LOG_IN_NOW" = "Đăng nhập ngay";
+
+"SKIP" = "Bỏ qua";
+"BENEFIT" = "Quyền lợi";
+
+"COMPANY" = "Công ty";
+
+// ERROR
+"ERROR" = "Lỗi";
+"ERROR_VALID" = "Không hợp lệ! Vui lòng kiểm tra lại.";
+"ERROR_PIN_NOT_MATCH" = "Mã PIN không khớp!";
+"ERROR_PIN_NOT_CORRECT" = "Mã PIN không đúng!";
+"ERROR_OTP_NOT_MATCH" = "Mã OTP không khớp!";
+"ERROR_OTP_EXPIRED" = "Mã OTP đã hết hạn!";
+"ERROR_INCORRECT_PASSWORD" = "Mật khẩu không đúng! Vui lòng kiểm tra lại.";
+"ERROR_FAILURE_LOGIN" = "Đăng nhập không thành công";
+"ERROR_BIOMETRIC_NOT_MATCH" = "không khớp quá số lần cho phép. Vui lòng thử lại sau";
+"ERROR_COMMON" = "Đã có lỗi xảy ra! Vui lòng thử lại sau.";
+"ERROR_SESSION_EXPIRED" = "Phiên đăng nhập của bạn đã hết hạn. Vui lòng đăng nhập lại tài khoản.";
+"ERROR_TOKEN_EXPIRED" = "Token của bạn đã hết hạn.";
+"ERROR_EMPTY_PASSWORD" = "Vui lòng nhập mật khẩu!";
+"ERROR_EMPTY_PHONE_NUMBER" = "Vui lòng nhập số điện thoại!";
+"ERROR_ACCOUNT_BLOCK" = "Bạn đã yêu cầu OTP quá 5 lần. Vui lòng quay lại vào ngày tiếp theo hoặc liên hệ hotline 0909xxxx để được tư vấn giải quyết."; // "Tài khoản của bạn đã bị khoá. Vui lòng liên hệ quản trị.";
+"ACCOUNT_HAVE_BEEN_BLOCKED" = "Tài khoản đã bị khoá!";
+"BIOMETRIC_HAS_BEEN_BLOCKED" = "Sinh trắc học đã bị khoá!";
+"PLEASE_ENTER_NAME"="Vui lòng nhập tên";
+"ERROR_CREATE_CONTRACT" = "Lỗi {Error 10x29183}, vui lòng thử lại.";
+
+"MINUTES_AGO" = "phút trước";
+"HOURS_AGO" = "giờ trước";
+"DAYS_AGO" = "ngày trước";
+
+"EVENT" = "Sự kiện";
+
+"PLEASE_INPUT_FULL_NAME" = "Vui lòng nhập họ tên!";
+"PLEASE_SELECT_UR_DOB" = "Vui lòng chọn ngày sinh!";
+"PLEASE_INPUT_EMAIL" = "Vui lòng nhập email!";
+"PLEASE_INPUT_VALID_EMAIL" = "Vui lòng nhập đúng định dạng email!";
+"PLEASE_INPUT_PROVINCE_CITY" = "Vui lòng nhập tỉnh/thành!";
+"PLEASE_INPUT_STREET_NAME" = "Vui lòng nhập tên đường!";
+"PLEASE_INPUT_HOUSE_NUMBER" = "Vui lòng nhập số nhà!";
+"PLEASE_INPUT_INFORMATION" = "Vui lòng nhập thông tin!";
+"PLEASE_INPUT_CORRECT_FORMAT" = "Vui lòng nhập đúng định dạng!";
+
+"NUMBER_LIKES" = "favorite";
+
+"NO_COMMENTS_BE_THE_FIRST_ONE" = "Chưa có bình luận! Hãy trở thành người bình luận đầu tiên!";
+
+"JUST_NOW" = "Vừa xong";
+"TO_GIVE_TO_ROBERT_FOX"="để tặng cho Robert Fox";
+"TO_USE_FEATURE_NEED_TO_LOG_IN" = "Để sử dụng tính năng này, bạn cần đăng nhập";
+"LOG_IN" = "Đăng nhập";
+"ERROR_HAPPENED" = "Đã có lỗi xảy ra!";
+
+"CONTENT_NOT_AVAILABLE" = "Nội dung không khả dụng.";
+"NOTIFICATIONS_EMPTY" = "Không có thông báo!";
+
+"CARE" = "Quan tâm";
+"UNCARE" = "Bỏ quan tâm";
+"SHARE" = "Chia sẻ";
+
+"OUTPATIENT_TREATMENT" = "Điều trị ngoại trú";
+
+"DOWNLOADS_SUCCESS" = "Tải xuống thành công";
+
+"PLEASE_INPUT_INSURED_NAME" = "Vui lòng nhập tên người được bảo hiểm!";
+"PLEASE_INPUT_CONTACT_NAME" = "Vui lòng nhập tên người liên lạc!";
+
+"OTHER" = "Khác";
+
+"PLEASE_INPUT_ACCOUNT_NUMBER" = "Vui lòng nhập số tài khoản!";
+"PLEASE_INPUT_ACCOUNT_HOLDER" = "Vui lòng nhập tên chủ tài khoản!";
+"PLEASE_INPUT_BRANCH_NAME" = "Vui lòng nhập chi nhánh ngân hàng!";
+"PLEASE_INPUT_BANK_NAME" = "Vui lòng nhập tên ngân hàng!";
+"PLEASE_INPUT_RELATIONSHIP" = "Vui lòng nhập mối quan hệ!";
+
+"IMAGE_SIZE_TO_BIG" = "Dung lượng của ảnh vượt quá cho phép!";
+
+"PARENTS" = "Bố mẹ";
+"COUPLE" = "Vợ chồng";
+"SIBLINGS" = "Anh chị em ruột";
+"CHILDREN" = "Con cái";
+
+"MONTH" = "Tháng";
+"YEAR" = "Năm";
+"DAY" = "Ngày";
+"LIFETIME" = "Trọn đời";
+
+"PARTIAL_PAYMENT_ONLY" = "Chỉ chi trả một phần";
+"REQUESTED_PAYMENT_AMOUNT" = "Số tiền yêu cầu";
+
+"NOTE_:" = "Ghi chú:";
+"NOTE" = "Ghi chú";
+"PRICE_HIGH_TO_LOW"="Giá giảm dần";
+"UPDATE_SUCCESS" = "Cập nhật thành công";
+"PRICE_LOW_TO_HIGH"="Giá tăng dần";
+"BEFORE_DAY" = "trước ngày";
+
+"CAN_NOT_SAVE_IMAGE_TRY_AGAIN" = "Không thể lưu ảnh! Vui lòng thử lại";
+
+
+
+"PLEASE_INPUT_PLACE" = "Vui lòng nhập địa điểm!";
+"PLEASE_SELECT_DISCHARGE_DAY" = "Vui lòng chọn ngày ra viện!";
+"PLEASE_INPUT_MONEY_VALUE" = "Vui lòng nhập số tiền!";
+"PLEASE_INPUT_DOCTOR_DIAGNOSIS" = "Vui lòng nhập chuẩn đoán của bác sĩ!";
+
+"ADDED_IMAGES" = "Đã thêm @a ảnh";
+"NO_IMAGES" = "Thêm ảnh thất bại";
+
+
+// Localize cua AFF
+
+"100_ONLINE" = "100% Trực tuyến";
+"ONECLICK_ONLINE_REGISTER_IN" = "Một chạm để được bảo hiểm, một phút để hoàn tất yêu cầu bồi thường, một phút hoàn tất bồi thường";
+"SKIP" = "Bỏ qua";
+"NEXT" = "Bằng việc nhấn tiếp tục";
+"SIMPLE_PROCESS" = "Quy trình đơn giản";
+"NO_MEDICAL_DECLARATION_IS" = "Không cần khai báo bệnh lý để tham gia bảo hiểm";
+"INDEPENDENT_PARTICIPATION" = "Tham gia độc lập";
+"CHILDREN_FROM_30DAY_OLD" = "Trẻ em từ 30 ngày tuổi được tham gia độc lập mà không cần bố mẹ tham gia cùng";
+"COMMIT" = "Cam kết đồng hành";
+"ALWAYS_BE_WITH_YOU" = "Luôn bên cạnh bạn và cam kết tái tục bảo hiểm trong những năm tiếp theo";
+
+"DO_NOT_MISS_ATTRACTIVE" = "Để không bỏ lỡ những ưu đãi hấp dẫn dành riêng cho bạn";
+"LATER" = "Để sau";
+
+"INSURANCE_CARD" = "Thẻ Bảo Hiểm";
+"CRITICAL_ILLNESS_COVERAGE" = "BH. Bệnh hiểm nghèo";
+"CLAIM_REQUEST" = "Yêu Cầu Bồi Thường";
+"LIST_OF_GURANTEE_HOSPITAL" = "Bảo lãnh viện phí";
+"BLACK_LIST" = "Black list";
+"HISTORY" = "Lịch sử";
+"SEARCH" = "Tìm kiếm...";
+"HISTORY_OF_REDEEM"="Lịch sử quy đổi";
+"HOSPITAL_EXPENSE_GURANTEE" = "Bệnh viện bảo lãnh viện phí";
+"HOSPITAL_INFORMATION" = "Thông tin bệnh viện";
+"ADDRESS" = "Địa chỉ";
+"PHONE" = "Số điện thoại";
+"WORKING_TIME" = "Thời gian hoạt động";
+"SPECIALITIES" = "Chuyên khoa";
+"HOTLINE" = "Hotline";
+"DIRECTION" = "Chỉ đường";
+"BOOK_AN_APPOINTMENT" = "Đặt lịch";
+"ADDITIONAL_BENEFITS"="Quyền lợi bổ sung";
+"INSURANCE_CONTRACT" = "Hợp đồng bảo hiểm";
+"VALID" = "Đang hiệu lực";
+"EXPRIATION_DAY_:" = "Ngày hết hạn:";
+"EXPRIATION_DAY" = "Ngày hết hạn";
+"MAXIMUM_AMOUNT_OF_PROTECTION"="Số tiền bảo vệ tối đa";
+"CONTRACT_VALUE" = "Giá trị hợp đồng";
+"INSURANCE_MONEY" = "Số tiền bảo hiểm";
+"BENEFITS_OF_INSURANCE" = "Quyền lợi bảo hiểm";
+
+"SEE_DOWNLOAD_CERTIFICATION" = "Xem / Tải giấy chứng nhận";
+
+"BENEFIT" = "Quyền lợi";
+"APPLICALE" = "Đối tượng áp dụng";
+"PAYMENT_METHOD" = "Phương thức đóng phí";
+"INSURANCE_EXCLUSION" = "Điều khoản loại trừ";
+"EXCLUSION_OF_TERMS" = "Điều khoản loại trừ";
+
+"PARTICIPATION_TERMS" = "Điều khoản tham gia";
+
+"APPLICANT" = "Bản thân";
+"GENDER" = "Giới tính";
+"CMND"  = "CMND";
+"CCCD" = "CCCD";
+"IDENTITY_CARD" = "CMND/CCCD";
+"DATE_OF_BIRTH" = "Ngày sinh";
+
+"CONTACT_INFORMATION" = "Thông tin liên hệ";
+
+"DURATION" = "Thời hạn";
+"CHOOSE_INSURANCE_BENEFIT" = "Lựa chọn Quyền lợi bảo hiểm";
+
+"TO_CONTINUE_YOU_NEED" = "Để tiếp tục, bạn cần chuẩn bị các chứng từ cần thiết: @Giấy ra viện, biên lai/ hoá đơn, sổ khám bệnh/ đơn thuốc...@ trước khi bắt đầu điền thông tin để hoàn tất nhanh hơn.";
+"TO_CONTINUE_YOU_NEED_BM" = "Áp dụng với hồ sơ điều trị nội trú /ngoại trú do bệnh, thai sản, nha khoa có số tiền yêu cầu bồi thường <30 triệu. Bạn cần chuẩn bị các chứng từ cần
+thiết: @Giấy ra viện, biên lai/ hoá đơn, sổ khám bệnh/ đơn thuốc…@ trước khi bắt đầu điền thông tin để hoàn tất nhanh hơn.";
+"ACCIDENT" = "Tai nạn";
+"ILLNESS" = "Bệnh";
+"DENTAL" = "Nha Khoa";
+"MARTENITY" = "Thai Sản";
+"SUBSIDY_FOR_HOSPITAL_FEE_INCOME" = "Trợ cấp nằm viện/ hỗ trợ thu nhập";
+"DEATH_BY_ACCIDENT_ILLNESS" = "Tử vong do tai nạn/bệnh";
+
+"SELECT_INSURED_PEOPLE" = "Chọn đối tượng được bảo hiểm";
+
+"DOWNLOAD" = "Tải xuống";
+"INFORMATION_DOCUMENT" = "Thông tin, chứng từ";
+"TRAFFIC_ACCIDENT" = "Tai nạn giao thông";
+"ATTACHED_DOCUMENTS" = "Đính kèm chứng từ";
+"EXAMINATION_DATE_HOSPITAL_DATE" = "Ngày khám/ nhập viên";
+"DISCHARGE_DATE" = "Ngày ra viện";
+"TREATMENT_PLACE" = "Nơi điều trị";
+"DIAGNOSE" = "Chẩn đoán";
+"TOTAL_PAYABLE_VND" = "số tiền yêu cầu chi trả (VND)";
+"I_HEREBY_CERTIFY_THAT" = "Tôi xác nhận mọi thông tin trên là chính xác";
+
+"DDMMYYYY" = "DD/MM/YYYY";
+"ACCIDENT_REPORT" = "Tường trình tai nạn";
+"YOU_CAN_DOWNLOAD_THE_TEMPLATE" = "Bạn có thể tải mẫu";
+"HERE" = "Tại đây";
+"UPLOAD" = "Tải lên";
+"TAKE_PHOTO" = "Chụp ảnh";
+"PUT_DOCUMENT_IN_THE_FRAME" = "Đưa giấy tờ của bạn vào khung hình";
+
+"TAKE_PHOTO_AGAIN" = "Chụp lại";
+"DELETE" = "Xoá";
+"DISCHARGE_PAPER" = "Giấy xuất viện";
+"EXAMPLE_OF_DISCHARGE_PAPER" = "Ví dụ về giấy ra viện";
+"I_AM_NOT_HOSPITALIZED" = "Tôi không nằm viện";
+"SURGERY_CERTIFICATION" = "Giấy chứng nhận phẫu thuật";
+"NO_SURGERY" = "Tôi không trải qua phẫu thuật";
+"ENTHUSIASTICALLY_SUPPORTED" = "Đã hỗ trợ nhiệt tình";
+"PAYMENT_INFOR" = "Thông Tin Nhận Bồi Thường";
+"FINISHED"="Đã kết thúc";
+"BENEFIT" = "Quyền lợi";
+"RELATIONSHIP_WITH_THE_INSURED" = "Mối Quan hệ với người được bảo hiểm";
+"BY_CLICK_CONTINUE_I_READ_ACCEPTED_WITH" = "Bằng việc nhấn tiếp tục, tôi đã đọc và đồng ý với mọi";
+"NEXT_I_HAVE_READ" = "Bằng việc nhấn tiếp tục, tôi đã đọc và đồng ý với mọi điều khoản sử dụng và chính sách bảo mật của Affina.";
+
+"DDMMYYYY" = "Thông tin nhận tiền";
+"NEXT" = "Chọn ảnh từ thiết bị";
+"CANCEL" = "Huỷ";
+"SUBMIT_REQUEST_SUCCESSFULLY" = "Gửi yêu cầu thành công";
+
+"YOUR_REQUEST_HAS_SUBMITTED" = "Yêu cầu của bạn đã được gửi thành công. Hồ sơ của bạn sẽ được kiểm tra và phản hồi kết quả đến bạn sớm.";
+"GOT_IT" = "Đã hiểu";
+"ADD_CLAIM_REQUEST" = "Thêm yêu cầu bồi thường";
+"YOU_CAN_DOWNLOAD_AND" = "Bạn có thể tải và in các mẫu hồ sơ yêu cầu bồi thường tại đây";
+"YOUR_PROFILE_WILL_NOT" = "Hồ sơ của bạn sẽ không được lưu lại";
+"YOUR_INFORMATION_WILL_NOT" = "Phần thông tin bạn đã cung cấp sẽ không được lưu trên hệ thống Affina. Bạn cần cung cấp lại thông tin để yêu cầu bồi thường trong lần tới.";
+"STAY" = "Ở lại";
+"EXIT" = "Thoát";
+"CHANGE_IMAGE" = "Đổi hình";
+"COMPLETE" = "Hoàn tất";
+"PROCESSING" = "Đang xử lý";
+"TREATMENT_INFORMATION" = "Thông tin điều trị";
+"ATTACHED_DOCUMENTS" = "Chứng Từ Đính kèm";
+"USED_MARK"="Đánh dấu đã dùng";
+"PAYMENT_RECEIPT_INFORMATION" = "Thông tin nhận thanh toán";
+"RECEIPT_INFORMATION" = "Thông tin nhận thanh toán";
+"PAYMENT_INFORMATION" = "Thông tin nhận thanh toán";
+"INSURANCE_PAYMENT_INFORMATION" = "Thông tin chi trả bảo hiểm";
+
+"BANK_NAME" = "Tên Ngân hàng";
+"BENEFICAIARY_NAME" = "Tên người thụ hưởng";
+"ACCOUNT_NUMBER" = "Số tài khoản";
+"BRANCH_OF_BANK" = "Chi nhánh ngân hàng";
+
+"ACCOUNT_HOLDER" = "Chủ tài khoản";
+
+"CONTRACT" = "Hợp đồng";
+
+"ADD_DOCUMENT" = "Bổ sung hồ sơ";
+"ATTACH_DOCUMENTS" = "Bạn cần bổ sung các chứng từ Lorem Ipsum trước ngày 08/05/2022";
+"YOU_NEED_TO_UPDATE_DOCS" = "Bạn cần bổ sung các chứng từ ";
+"UPDATE_DOCUMENTS" = "Cập nhật chứng từ";
+"REQUEST_ADDITIONAL_INFORMATION" = "Yêu cầu bổ sung hồ sơ";
+"ADD_HARD_COPY_OF_DOCUMENT" = "Bổ sung bản cứng của hồ sơ";
+"THE_INSURER_REQUIRES_YOU" = "Nhà bảo hiểm yêu cầu bạn cung cấp bản cứng của toàn bộ hồ sơ và gửi lại cho nhà bảo hiểm";
+"ENTER_DISCOUNT_CODE"="Nhập mã khuyến mãi";
+"PHONE_NUMBER" = "Số điện thoại";
+"DOWNLOAD_FORM" = "Tải xuống Mẫu hồ sơ";
+"SENT_INFORMATION" = "Đã gửi thông tin";
+"CLAIM_REQUEST_APPROVED" = "Duyệt yêu cầu chi trả";
+"CONTACT_US_REPLY" = "Liên hệ hỗ trợ/ Phản hồi";
+"DECLINE" = "Từ chối";
+"DECLINE_TO_PAY" = "Từ chối chi trả";
+"ACTUAL_PAYMENT" = "Số tiền chi trả thực tế";
+"PAYMENT_REASON" = "Lý do chi trả";
+"THE_INSURANCE_AMOUNT_WILL" = "Số tiền bảo hiểm sẽ được chuyển sau 7 ngày làm việc, vào tải khoản:";
+
+"MONEY_WILL_BE_TRANSFERED" = "Số tiền bảo hiểm sẽ được chuyển ";
+"WORK_DAYS_TO_ACCOUNT" = ", vào tài khoản:";
+"AFTER_7_DAYS" = "sau 7 ngày làm việc";
+
+
+"FONT_OF_IDENTITY_CARD" = "Mặt trước";
+"BACK_OF_IDENTITY_CARD" = "Mặt Sau";
+
+"YOU_ARE_NOT_LOGGED_IN" = "Bạn chưa đăng nhập";
+"PLEASE_LOGIN_TO_USE" = "Hãy đăng nhập để có thể sử dụng tính năng này.";
+"WELCOME" = "Xin Chào Bạn";
+"PLEASE_ENTER_YOUR_PHONE" = "Vui lòng nhập vào số điện thoại của bạn để tiếp tục";
+"ENTER_OTP_CODE" = "Nhập Mã OTP";
+"YOU_DIDNT_RECEIVE_OTP_CODE" = "Bạn không nhận được mã OTP?";
+"RESEND_OTP_CODE" = "Gửi lại mã OTP";
+"OUTPATIENT" = "Ngoại trú";
+"INPATIENT" = "Nội trú";
+"RECEIPT" = "Biên lai khám bệnh";
+"EXAMPLE_OF_RECEIPT" = "Ví dụ về biên lai khám bệnh";
+"INDICATION_AND_TRACKING_PAPER" = "Chỉ định và phiếu theo dõi tập vật lý trị liệu";
+"EXAMPLES_OF_SURGERY_CERTIFICATION" = "Ví dụ về giấy chứng nhận phẫu thuật";
+"PREHOSPITAL_MEDICAL_DOCUMENTS" = "Chứng từ y tế trước nhập viện";
+"EXAMPLE" = "Ví dụ về chứng từ y tế trước nhập viện";
+"INDICATION_FOR_FOLLOWUP_EXAMINATION" = "Chỉ định tái khám sau xuất viện";
+"INDICATION_OF_FOLLOWUP_EXAMINATION(1)" = "Chỉ định tái khám sau xuất viện";
+"INVALID_BANK_BRANCH."="Chi nhánh ngân hàng không hợp lệ.";
+"EXAMPLE_OF_INDICATION_FOR" = "Ví dụ về chỉ định tái khám sau xuất viện";
+"INDICATION_OF__MEDICAL" = "Chỉ định y tá chăm sóc tại nhà";
+"UPLOAD" = "Tải ảnh";
+"DENTAL_BENEFITS" = "Quyền lợi Nha Khoa";
+"LATEST_PRODUCT"="Sản phẩm mới nhất";
+"PRICE_FROM_…_TO_…"="Sản phẩm trong khoảng";
+"SORTED_BY"="Sắp xếp theo";
+"USED_POINTS"="Số điểm đã dùng";
+"XRAY_FILM" = "Phim X Quang";
+"NEED_MORE_LIGHT" = "Bạn cần đưa phim ra ngoài sáng để chụp";
+"NO_TAKE_AN_XRAY" = "Tôi không chụp X Quang";
+"COURSE_OF_TREATMENT" = "Quá trình điều trị";
+"EXAMPLE_ABOUT_COURSE_OF_TREATMENT" = "Ví dụ về chứng từ về quá trình điều trị";
+"HOSPITALIZATION_ALLOWANCE" = "Trợ cấp nằm viện";
+"INCOME_SUPPORT" = "Hỗ trợ thu nhập";
+"DRIVING_LISENCE_OPTIONAL" = "Bằng lái xe (tuỳ chọn)";
+"AVAILABLE"="Khả dụng:";
+"TIMESHEET" = "Bảng chấm công";
+"OR_LEAVE_APPROVEMENT_OF" = "Hoặc giấy xác nhận nghỉ của công ty";
+"SALARY_DOCUMENT" = "Chứng từ lương";
+"LABOR_CONTEACT_SALARY_ADJUSTMENT" = "Hợp đồng lao động, quyết định điều chỉnh lương, phiếu lương có xác nhận của công ty";
+"OR_THE_REPORT_ON" = "Hoặc biên bản kết luận sự vụ của công an. Bạn có thể tải mẫu";
+"AFFINA_OFFER_OUR_CONDOLENCES" = "Affina chia buồn cùng gia đình bạn";
+"PLEASE_PROVIDE_INFORMATION_TO" = "Bạn vui lòng cung cấp thông tin để nhận được hỗ trợ";
+"INSURED_NAME" = "Tên người được bảo hiểm";
+
+
+"NAME_OF_CONTACT_PERSON" = "Tên người liên hệ";
+"PHONE_OF_CONTACT_PERSON" = "Số điện thoại liên hệ";
+"USERNAMEDOMAINCOM" = "username@domain.com";
+"123456789" = "12-3456-789";
+"AFFINA_HAS_RECEIVED_YOUR" = "Affina has received your information, we will contact you within X hours";
+"MATERNITY_BENEFITS" = "Quyền lợi Thai Sản";
+"NUMBER_OF_DAYS_OFF_TO_REDEEM"="Số ngày phép dùng đổi";
+"INSURANCE_FORM" = "Hình thức tham gia bảo hiểm";
+"INDIVIDUAL" = "Theo cá nhân";
+"GROUP" = "Theo nhóm";
+"INSURANCE_PRODUCT_DEMAND" = "Nhu cầu sản phẩm bảo hiểm";
+
+"PERSONAL" = "Cá nhân";
+"GROUP" = "Nhóm";
+"FILTER"= "Bộ lọc";
+"CAR" = "Ô tô";
+"MOTORBIKE" = "Xe máy";
+"PRODUCT_FOR_YOU" = "Sản phẩm dành cho";
+"MALE" = "Nam";
+"FEMALE" = "Nữ";
+"DATEMONTHYEAR" = "Ngày tháng năm sinh";
+"YOUR_BUDGET_FOR_INSURANCE" = "Ngân sách bạn dành cho bảo hiểm";
+"INSURER" = "Nhà bảo hiểm";
+"BSH_10_PRODUCTS" = "BSH (10 sản phẩm)";
+"PTI_4_PRODUCTS" = "PTI (4 sản phẩm)";
+"GIC_6_PRODUCTS" = "GIC (6 sản phẩm)";
+"REFERRAL_CODE" = "Mã giới thiệu";
+"FILTER_PRODUCT" = "Lọc sản phẩm";
+"0__2000000_VND" = "0 - 2.000.000 vnd";
+"HEALTH_INSURANCE" = "Bảo Hiểm Sức khoẻ";
+"HIGHLIGHT" = "Điểm nổi bật";
+"INSURANCE_FEE" = "Phí bảo hiểm";
+"MORE" = "Xem thêm";
+"MAIN_BENEFIT" = "Quyền lợi chính";
+"BASIC" = "Cơ bản";
+"SAVINGS" = "Tiết kiệm";
+"ADVANCE" = "Nâng cao";
+"COMMON" = "Phổ thông";
+"BUY_NOW" = "Mua ngay";
+"VIETNAMESE"="Tiếng Việt";
+"SEE_MORE_ABOUT" = "Xem thêm về điều khoản, chính sách và thông tin khác của bảo hiểm này";
+"USUALLY_BOUGHT_WITH" = "Thường được mua cùng ";
+"ELIGIBILITY_OF_THE_INSURED" = "Đối tượng áp dụng (là người được sử dụng các quyền lợi và mua gói bảo hiểm)";
+"INSURED_INFORMATION" = "Thông tin người được bảo hiểm";
+"YOU_NEED_TO_PROVIDE" = "Bạn cần cung cấp thông tin cá nhân chính xác để được hưởng quyền lợi sau này";
+"ARE_YOU_AN_INSURED" = "Bạn là người được bảo hiểm?";
+
+"MR" = "Ông";
+"MISS" = "Bà";
+"Mr" = "Ông";
+"Mrs" = "Bà";
+
+"FIRST_AND_LAST_NAME" = "Họ và tên";
+"PROVINCECITY" = "Tỉnh/ Thành phố";
+"DISTRICT" = "Quận/ huyện";
+"WARD" = "Phường/ xã";
+"STREET" = "Đường/ ấp";
+"HOUSE_NUMBER" = "Số nhà";
+"IDENTITY_PAPERS" = "Giấy tờ tuỳ thân";
+"PASSPORT" = "Passport";
+"PERSONAL_IDENTIFIER" = "Mã Số định danh";
+
+"INSUREDD" = "Người được bảo hiểm";
+"INSURED" = "Đối tượng được bảo hiểm";
+//"INSURED" = "Người được bảo hiểm:";
+"INSURED_:" = "Người được bảo hiểm:";
+
+"EDIT_INFORMATION" = "Sửa thông tin";
+"NOT_SUITABLE_FOR_THIS" = "Đối tượng không phù hợp với gói bảo hiểm";
+"YOU_HAVE_JUST_CHANGED" = "Bạn vừa thay đổi thông tin cá nhân người được bảo hiểm. Với thông tin mới, người này sẽ không thể tham gia gói bảo hiểm bạn đã chọn. Bạn sẽ phải chọn lại gói bảo hiểm khác khi nhấn “Xác Nhận” thay đổi thông tin.";
+"CHANGE_INSURANCE_FEE" = "Thay đổi phí bảo hiểm";
+
+"INFORMATION_OFF_APPLICANT" = "Thông tin người yêu cầu bảo hiểm";
+"PAYMENT" = "Thanh toán";
+"PRODUCT_INFORMATION" = "Thông tin sản phẩm";
+"DATE_OF_BIRTH" = "Sinh ngày";
+"INSURED_BENEFITS" = "Quyền lợi được bảo hiểm";
+"INSURANCE_DURATION" = "Thời hạn bảo hiểm";
+"INSURANCE_START_DATE" = "Ngày bắt đầu bảo hiểm";
+"COUPON_CODE" = "Mã giảm giá";
+"YOUR_VOUCHER" = "Voucher của bạn";
+"VAT_INVOICE" = "Xuất hoá đơn đỏ";
+"YOU_NEED_TO_PAY" = "Bạn cần thanh toán";
+"BY_PROCESSING_THE_PAYMENT" = "Bằng việc tiến hành thanh toán, tôi đã đọc và đồng ý với mọi điều khoản sử dụng và chính sách bảo mật của Affina.";
+"TERMS_AND_CONDITIONS" = "điều khoản sử dụng";
+"PRIVACY_POLICY" = "chính sách bảo mật";
+"PAYMENT_TYPE" = "Hình thức thanh toán";
+"ATM_CARD" = "ATM (thẻ nội địa)";
+"CREDIT_CARD" = "Thẻ credit (Visa / Master)";
+"INSTALLMENT_VIA_CREDIT_CARD" = "Trả góp qua thẻ tín dụng";
+"BUY_NOW_PAY_LATER" = "Mua trước trả sau";
+"COMPANY_NAME" = "Tên công ty";
+"ADDRESS_COMPANY" = "Địa chỉ công ty";
+"TAX_CODE" = "Mã số thuế";
+"INSTALLMENT_PAYMENT" = "Thanh toán trả góp";
+"BANK" = "Ngân hàng";
+"PAYMENT_TERM" = "Kỳ hạn thanh toán";
+"3_MONTH" = "3 tháng";
+"6_MONTH" = "6 tháng";
+"9_MONTH" = "9 tháng";
+"MONTHLY_INSTALLMENT" = "Góp mỗi tháng";
+"CONVERSION_FEE" = "Phí chuyển đổi";
+"CONFIRM"= "Xác nhận";
+"TOTAL_PRICE_IN_INSTALLMENT" = "Tổng giá mua trả góp";
+"CONFIRM_AND_PAY" = "Xác nhận và thanh toán";
+"CHOOSE_BANK" = "Chọn ngân hàng";
+"YOUR_REQUEST_HAS_BEEN" = "Yêu cầu của bạn đã được gửi thành công. Hồ sơ của bạn sẽ được kiểm tra và phản hồi kết quả đến bạn sớm. Vì lý do bảo mật thông tin bạn sẽ được yêu cầu tạo một mã pin";
+"YOUR_REQUEST_HAS_BEEN_LOGGED" = "Yêu cầu của bạn đã được gửi thành công. Hồ sơ của bạn sẽ được kiểm tra và phản hồi kết quả đến bạn sớm.";
+"SEE_NOW"="Xem Ngay";
+"PAYMENT_FAILED" = "Thanh toán thất bại";
+
+"ERROR_ERROR_10X29183_PLEASE_SOLUTION" = "Lỗi {Error 10x29183}, vui lòng {solution}";
+"TRY_AGAIN" = "Thử lại";
+"SECURITY" = "Bảo Mật";
+"CREATE_A_PIN_CODE" = "Tạo một mã PIN giúp bảo vệ tài khoản của bạn khỏi bị truy cập trái phép";
+
+"CONFIRM_PIN_CODE" = "Xác nhận mã PIN bạn vừa tạo bằng cách nhập mã lại một lần nữa";
+"USE_FACE_ID" = "Sử dụng Face ID";
+"ALLOW_APP_TO_USE" = "Cho phép ứng dụng sử dụng @ để đăng nhập và tài khoản";
+"GIVE_TO"="Tặng cho";
+"NO" = "Không";
+"AGREE" = "Đồng ý";
+"CUSTOMER" = "Khách";
+"PLEASE_LOGIN_HERE" = "Bạn hãy Đăng Nhập tại đây";
+"SYSTEM" = "Hệ thống";
+"TERMS_OF_SERVICE" = "Điều khoản dịch vụ";
+"PRIVACY_POLICIES" = "Chính sách về quyền riêng tư";
+"REFER_FRIENDS" = "Giới thiệu bạn bè";
+"INTRODUCTION" = "Giới thiệu";
+
+"ENGLISH" = "English";
+
+"HOME" = "Trang chủ";
+"NEWS" = "Tin tức";
+"CHAT" = "Trò chuyện";
+"CART" = "Giỏ hàng";
+"ACCOUNT" = "Tài khoản";
+"MEMBER_POINT" = "Xu thành viên";
+
+"MEMBERSHIP_POINTS" = "Xu thành viên:";
+
+"ACCOUNT_SETTINGS" = "Cài đặt tài khoản";
+"PERSONAL_INFORMATION" = "Thông tin cá nhân";
+"NOTIFICATION" = "Thông báo";
+"PRIVACY_SETTING" = "Cài đặt bảo mật";
+"SERVICE" = "Dịch vụ";
+
+"MEDICAL_HISTORY" = "Lịch sử khám chữa bệnh";
+"ORDER" = "Đơn hàng";
+"SALARY_ADVANCEMENT_HISTORY" = "Lịch sử ứng lương";
+"LOG_OUT" = "Đăng xuất";
+"CHOOSE_PHOTOS_FROM_DEVICE" = "Chọn ảnh từ thiết bị";
+
+"EDIT_PERSONAL_INFORMATION" = "Chỉnh sửa thông tin cá nhân";
+"SAVE" = "Lưu";
+"TURN_ON_EMAIL" = "Bật: Email";
+
+"PROMTION_NEWS_OFFERS" = "Tin khuyến mãi, ưu đãi";
+"NOTIFICATION_FROM_AFFINA" = "Thông báo từ AFFINA";
+"TURN_ON_EMAIL_AND" = "Bật: Email và Thông báo đẩy";
+"NEW_MESSAGE" = "Tin nhắn mới";
+"NOTIFICATION_FROM_COMPANY" = "Thông báo từ công ty";
+"DONE" = "Hoàn thành";
+"PUSH_NOTIFICATION" = "Thông báo đẩy";
+"CHANGE_PIN_CODE" = "Thay đổi mã Pin";
+"ACCOUNT_RECOVERY_METHODS" = "Phương thức phục hồi";
+
+"USING_FINGERPRINT_BIOMETRICS" = "Sử dụng Sinh trắc học";
+"SMS_VIA_PHONE_NUMBER" = "SMS qua số điện thoại";
+"COMPANY" = "Công ty";
+"INSURANCE" = "Bảo hiểm";
+"DISCOUNT" = "Khuyến mãi";
+"YOU_NEED_TO_LOGIN" = "Bạn cần đăng nhập";
+"SEE_INTERNAL_COMMUNICATIONS_FROM" = "Để xem thông tin nội bộ từ công ty của bạn.";
+
+"READ_MORE" = "Đọc thêm";
+"LIKE" = "Yêu thích";
+
+//"COMMENT" = "Comment";
+"COMMENT" = "Bình luận";
+"YOUR_IDEAS" = "Ý kiến của bạn";
+"CREATE_ACCOUNT" = "Tạo Tài Khoản";
+"YOUR_INFORMATION_IN_IDENTITY" = "Vui lòng cung cấp thông tin chính xác để cấp hợp đồng bảo hiểm";
+"EXAMPLE_NGUYEN_VAN_A" = "Ví dụ: Nguyễn Văn A";
+"I_AGREE_WITH_TERMS" = "Tôi đồng ý với điều khoản sử dụng và chính sách bảo mật của Affina";
+"REDEEM"="Quy đổi";
+"ENTER_PIN_CODE" = "Nhập mã pin";
+"FORGOT_PIN_CODE" = "Quên mã pin?";
+"12_345_6789" = "12 345 6789";
+"USE_TOUCH_ID" = "Sử dụng Touch ID";
+"SEARCH_YOUR_COLLEAGUES"="Tìm kiếm tên đồng nghiệp";
+"WELLCOME_TO_AFFINA" = "AFFINA xin chào!";
+"SEARCH_INSURANCE" = "Tìm Kiếm Bảo Hiểm";
+"AND_CHOOSE_RIGHT_PRODUCT" = "và lựa chọn sản phẩm phù hợp với bạn";
+"CONVERT_DAYS_OFF_TO"="Quy đổi ngày phép thành";
+"CHOOSE_INSURANCE" = "Chọn loại hình bảo hiểm";
+"CHOOSE_TYPE_OF_INSURANCE" = "Chọn loại bảo hiểm";
+"REDEEM_BENEFITS"="Quy đổi phúc lợi";
+"INSURANCE_TYPE" = "LOẠI BẢO HIỂM";
+"REDEEMED_SUCCESSFULLY"="Quy đổi thành công";
+"ALL" = "Tất cả";
+"HEALTH" = "Sức khoẻ";
+"LIFE_INSURANCE" = "Nhân thọ";
+"NONLIFE_INSURANCE" = "Phi nhân thọ";
+
+"SALARY_ADVANCE" = "Ứng lương";
+"USING_POINT" = "Sử dụng điểm";
+"OUTSTANDING_PRODUCT" = "Sản phẩm nổi bật";
+
+"USER_GS32JFT5212" = "User #GS32JFT5212";
+"MEMBERSHIP_POINTS" = "xu thành viên: ";
+"DEALS_FOR_YOU" = "Ưu đãi dành cho bạn";
+"SIMILIAR_AS_HOMENO_PRODUCTNO_INFO" = "giống như Home/No Product_No Info";
+"MEDICINE_DOCTOR" = "Thuốc/ Bác Sĩ";
+"YOU_CAN_SEND_CLAIM" = "Bạn có thể yêu cầu bảo hiểm chi trả số tiền theo hợp đồng tại đây.";
+"YOU_CAN_BUY_MORE" = "Bạn có thể mua thêm các sản phẩm bảo hiểm tại đây";
+"BACK" = "Trở lại";
+"SIMILAR_AS_HOMEFIRST_PRODUCT_1" = "giống Home/First Product 1";
+"REMAINING_LIMIT" = "Hạn mức còn lại";
+"REMAINING_LIMIT_:" = "Hạn mức còn lại:";
+"REMAINING_LIMIT_VND" = "Hạn mức còn lại (vnd)";
+"NEWLY_CREATED" = "Mới tạo";
+"APPROVED" = "Đã duyệt";
+
+"OTP_EMAIL_HINT" = "Chúng tôi vừa gửi mã OTP vào địa chỉ email %s, hãy nhập nó vào bên dưới";
+
+"OTP_PHONE_HINT" = "Chúng tôi vừa gửi mã OTP vào số điện thoại %s, hãy nhập nó vào bên dưới.";
+
+"WE_SEND_OTP_TO_UR_CONTACT" = "Chúng tôi vừa gửi mã OTP vào@, hãy nhập nó vào bên dưới.";
+
+"DESC_OTP_REGISTER" = "Chúng tôi vừa gửi mã OTP, hãy nhập nó vào bên dưới.";
+"DESC_OTP_FORGOT" = "Chúng tôi vừa gửi mã OTP vào địa chỉ email us*****@***, hãy nhập nó vào bên dưới.";
+"EXPIRE_DATE" = "Hạn sử dụng: ";
+"CLAIM" = "Lấy";
+"EXPIRED" = "Hết hạn";
+"SERVER_ERROR" = "Unknown error from server";
+"COIN" = "Xu";
+"ERROR_RATING_DES" = "Vui lòng đánh giá và chọn số sao tương ứng trước khi gửi!";

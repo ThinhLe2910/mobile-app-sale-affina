@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeImageViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="oIA-Ou-81A" id="dJa-f9-mrV"/>
+                <outlet property="changeButton" destination="jh1-WE-iYx" id="snJ-B2-VWy"/>
+                <outlet property="deleteButton" destination="xJ4-2J-c7R" id="6kq-IE-Tfy"/>
+                <outlet property="headerLabel" destination="elP-fn-V07" id="a4G-Fs-FQH"/>
+                <outlet property="nextButton" destination="Maa-bo-cLn" id="CSl-Yh-P1N"/>
+                <outlet property="photoCollectionView" destination="uRY-hI-hGO" id="Qex-nm-q4z"/>
+                <outlet property="previewImage" destination="D1U-pF-iiG" id="afQ-NP-8qf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ogn-xN-Mxe">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7D-ah-QA4" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-Ou-81A" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="cjn-Ty-3yt"/>
+                                        <constraint firstAttribute="width" constant="40" id="i8I-vP-GdF"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="ic_back"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tường trình tai nạn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elP-fn-V07" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="72" y="24" width="270" height="24"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="ACCIDENT_REPORT"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ4-2J-c7R" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="358" y="16" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="QXj-jG-lGb"/>
+                                        <constraint firstAttribute="height" constant="40" id="r2I-FB-529"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="ic_delete"/>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="oIA-Ou-81A" firstAttribute="top" secondItem="l7D-ah-QA4" secondAttribute="top" constant="16" id="4vZ-uL-GNi"/>
+                                <constraint firstItem="xJ4-2J-c7R" firstAttribute="leading" secondItem="elP-fn-V07" secondAttribute="trailing" constant="16" id="7n2-Qi-OXd"/>
+                                <constraint firstItem="oIA-Ou-81A" firstAttribute="leading" secondItem="l7D-ah-QA4" secondAttribute="leading" constant="16" id="FVS-9A-fPb"/>
+                                <constraint firstAttribute="trailing" secondItem="xJ4-2J-c7R" secondAttribute="trailing" constant="16" id="KNp-kc-pva"/>
+                                <constraint firstItem="elP-fn-V07" firstAttribute="leading" secondItem="oIA-Ou-81A" secondAttribute="trailing" constant="16" id="PUH-Lw-oh5"/>
+                                <constraint firstItem="xJ4-2J-c7R" firstAttribute="centerY" secondItem="oIA-Ou-81A" secondAttribute="centerY" id="WG5-Bg-436"/>
+                                <constraint firstAttribute="bottom" secondItem="elP-fn-V07" secondAttribute="bottom" constant="24" id="XoB-LW-0dL"/>
+                                <constraint firstAttribute="bottom" secondItem="oIA-Ou-81A" secondAttribute="bottom" constant="16" id="aTe-Ou-NqG"/>
+                                <constraint firstItem="elP-fn-V07" firstAttribute="top" secondItem="l7D-ah-QA4" secondAttribute="top" constant="24" id="lSX-nL-mTB"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D5e-Zn-bxy">
+                            <rect key="frame" x="0.0" y="72" width="414" height="578"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-Cw-c5z" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="522"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D1U-pF-iiG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="522"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="D1U-pF-iiG" firstAttribute="top" secondItem="mNb-Cw-c5z" secondAttribute="top" id="NT3-bx-vsB"/>
+                                        <constraint firstAttribute="trailing" secondItem="D1U-pF-iiG" secondAttribute="trailing" id="UKS-dH-90A"/>
+                                        <constraint firstAttribute="bottom" secondItem="D1U-pF-iiG" secondAttribute="bottom" id="ofb-i5-r5c"/>
+                                        <constraint firstItem="D1U-pF-iiG" firstAttribute="leading" secondItem="mNb-Cw-c5z" secondAttribute="leading" id="rVi-IC-eLu"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uRY-hI-hGO">
+                                    <rect key="frame" x="0.0" y="522" width="414" height="56"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="vE2-Y8-StE"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EAf-fd-oYV">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CY-b0-B66" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="650" width="414" height="164"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="8sl-dk-m1q">
+                                    <rect key="frame" x="24" y="52" width="366" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jh1-WE-iYx" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="170.5" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="bkk-ZZ-XU3"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                            <inset key="contentEdgeInsets" minX="24" minY="12" maxX="24" maxY="12"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="borderColor" value="grayBorder"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="CHANGE_IMAGE"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maa-bo-cLn" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="195.5" y="0.0" width="170.5" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="V4l-wG-W8q"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                            <inset key="contentEdgeInsets" minX="24" minY="12" maxX="24" maxY="12"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueMain"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="whiteMain"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="COMPLETED"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Maa-bo-cLn" firstAttribute="width" secondItem="jh1-WE-iYx" secondAttribute="width" id="DNL-fT-3CH"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="8sl-dk-m1q" secondAttribute="bottom" constant="64" id="Llc-HR-oj0"/>
+                                <constraint firstAttribute="trailing" secondItem="8sl-dk-m1q" secondAttribute="trailing" constant="24" id="QK2-IG-fDA"/>
+                                <constraint firstItem="8sl-dk-m1q" firstAttribute="leading" secondItem="7CY-b0-B66" secondAttribute="leading" constant="24" id="Yn0-pO-Xs7"/>
+                                <constraint firstItem="8sl-dk-m1q" firstAttribute="top" secondItem="7CY-b0-B66" secondAttribute="top" constant="52" id="nbi-Z7-cyJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="D5e-Zn-bxy" firstAttribute="top" secondItem="l7D-ah-QA4" secondAttribute="bottom" id="1hT-wi-CDc"/>
+                        <constraint firstAttribute="trailing" secondItem="D5e-Zn-bxy" secondAttribute="trailing" id="gco-1i-Fhb"/>
+                        <constraint firstItem="D5e-Zn-bxy" firstAttribute="leading" secondItem="ogn-xN-Mxe" secondAttribute="leading" id="ieN-RS-fQw"/>
+                        <constraint firstItem="7CY-b0-B66" firstAttribute="top" secondItem="D5e-Zn-bxy" secondAttribute="bottom" id="jds-5G-RLh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ogn-xN-Mxe" secondAttribute="trailing" id="96H-c9-Bw1"/>
+                <constraint firstItem="ogn-xN-Mxe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9NB-wm-Uc6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ogn-xN-Mxe" secondAttribute="bottom" id="MYu-Rs-men"/>
+                <constraint firstItem="ogn-xN-Mxe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SUj-HI-Z8w"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="71"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Maa-bo-cLn">
+            <size key="intrinsicContentSize" width="48" height="41"/>
+        </designable>
+        <designable name="elP-fn-V07">
+            <size key="intrinsicContentSize" width="144.5" height="19"/>
+        </designable>
+        <designable name="jh1-WE-iYx">
+            <size key="intrinsicContentSize" width="48" height="41"/>
+        </designable>
+        <designable name="oIA-Ou-81A">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="xJ4-2J-c7R">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="ic_delete" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

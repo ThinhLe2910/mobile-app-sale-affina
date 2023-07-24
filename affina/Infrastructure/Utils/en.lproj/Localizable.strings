@@ -1,0 +1,686 @@
+/*
+  Localizable.strings
+  affina
+
+  Created by Dinh Le Trieu Duong on 12/05/2022.
+  
+*/
+"YOUR_REVIEW"="Your review";
+"CCCD" ="Identification card";
+"CMND" ="Identification card";
+"PRE-HOSPITALIZATION_DOCUMENTS" ="Pre-hospitalization documents";
+"DO_YOU_WANT_TO_CLOSE_THE_BROWSER?" = "Do you want to close the browser?";
+"YOU_WANT_TO_SPEND_200_COINS"="You want to spend 200 coins";
+"SUCCESSFULLY_GIFT_GIVING"="Successfully gift giving";
+"YOU_NEED_TO_LOGIN_TO_USE_AN_OFFER" ="You need to login to use an offer";
+"1_OFFER_SELECTED" = "1 Offer Selected";
+"APPLICABLE" = "Applicable";
+"I_AGREE_WITH_THE_TERMS_OF" = "I agree with the terms of ";
+"AFFINA'S_INFORMATION_EXPLOITATION."= "Affina's information exploitation.";
+"I_AGREE_WITH_TERMS_OF_AFFINA'S_INFORMATION_EXPLOITATI"="I agree with terms of Affina's information exploitation";
+"VEHICLE_REGISTRATION_CERTIFICATE"="Vehicle Registration Certificate";
+"DRIVER'S_LICENSE"="Driving license";
+"ANNUAL_MAXIMUM_LIMIT"="Annual Maximum Limit :";
+"I_HERE_BY_DECLARE_THAT_THE_PERSONAL_INFORMATION_PROVIDED_TO_AFFINA_FOR_SERVICE,_STORAGE,_AND_TO_PROVIDE_THIRD_PARTIES_TO_PROCESS_SERVICE_PROVISION"="I hereby declare that the personal information provided to Affina for service, storage, and to provide third parties to process service provision
+.";
+"PROGRAM_INFORMATION"="Program Information";
+"COPY_SUCCESSFULLY"="Copy successfully";
+"COPY" = "Copy";
+"BANK_NAME" = "Bank Name";
+"NO_INSURANCE_CARD" = "No insurance card!";
+"INCIDENT_HAS_OCCURRED" = "Incident has occurred";
+"SORYY" = "Sorry!";
+"EXAMPLE_123_4567_890_123"= "Example: 123 4567 890 123";
+"PLEASE_FILL_IN_THE_INFORMATION_IN_THIS_BOX" = "Please fill in the information in this box";
+"PLEASE_CORRECT_THE_BUYER_INFORMATION._BUYER_MUST_BE_OVER_18_YEARS_OLD_RE-ENTER_THE_BUYER_INFORMATION"="Please adjust the policyholder information. The policyholder must be above 18 years old";
+"PLEASE_UNCHECK_THE_FUNCTION_\"THE_POLICYHOLDER_IS_ALSO_THE_INSURED\"_AND_RE-ENTER_THE_BUYER_INFORMATION" ="PLEASE UNCHECK THE FUNCTION \"THE POLICYHOLDER IS ALSO THE INSURED\" AND RE-ENTER THE BUYER INFORMATION";
+"THE_POLICYHOLDER_IS_UNDER_18_YEARS_OLD" = "Policyholder is not enough 18 years old";
+"RATE" = "Rating";
+"LOGIN_TO_BUY" = "LOGIN TO BUY";
+"REDEEM_VOUCHER"="REDEEM VOUCHER";
+"MEMBERSHIP_LEVELS" = "Membership levels";
+"POPULAR_PRODUCT" = "Popular product";
+"COIN" = "Coin";
+"SPECIAL_OFFER" = "Special offer";
+"VOUCHER_TO_EXPIRE" = "About to expire";
+"USED_EXPIRED" = "Used/Expired";
+"NOT_USED_YET" = "Not used yet";
+"MY_VOUCHERS" = "MY VOUCHERS";
+"MY_COMPANY" = "MY COMPANY";
+"EXCHANGED_BENEFITS" = "Redeemed benefits";
+"AVAILABLE_BENEFITS" = "Available points";
+"INSURANCE_PROVIDED" = "INSURANCE PROVIDED";
+"DETAIL_BENEFITS" = "DETAIL BENEFITS";
+"COPYRIGHT" = "Bản quyền © 2022 - IntelIn - Phiên bản 1.0.1.0";
+"LOGIN_TITLE" = "Login";
+"CONTINUE" = "Next";
+
+"SIGNUP" = "Sign up";
+"EXPIRY"="Expiry";
+"SEND_OTP_CODE_AGAIN" = "Resend OTP code?";
+"PLEASE_INPUT_HERE" = "Please enter here!";
+
+"HELP_ME_RECOGNIZE_U_NEXT_TIME" = "Hãy giúp chúng tôi nhận ra bạn vào những lần đăng nhập tới";
+
+"RESET_PASSWORD" = "Reset Password";
+"RESET_PASSWORD_NOTE" = "Lưu ý: Mật khẩu tối thiểu là 06 kí tự, bao gồm các chữ, số và các ký tự đặc biệt.";
+"RESET_PASSWORD_SUCCESSFUL" = "Reset Password Successfully";
+
+"CLOSE" = "Close";
+
+"I_AGREE" = "I agree with";
+"TERMS" = "terms of use";
+"AND_&" = "&";
+"AND" = "and";
+"PRIVACY" = "privacy policies";
+"OUR" = "of Affina";
+
+"PASSWORD" = "Password";
+"REGISTER_SUCCESSFUL" = "Register Successfully";
+//"PLEASE_UPDATE_PROFILE" = "Vui lòng vào hồ sơ để cập nhật thông tin.";
+"FACEID" = "Face ID";
+"TOUCHID" = "Touch ID";
+"SEARCH_YOUR_COLLEAGUES"="Search your colleagues";
+"CONGRAT_FIRST_INSURANCE_PRODUCT" = "Congratulation, you got the first insurance package successfully";
+
+"SEARCH_INSURANCE" = "Search";
+
+"VIEW_INSURANCE_LIST" = "Xem danh sách bảo hiểm";
+
+"COMPENSATION_HISTORY" = "Compensation History";
+
+"EMAIL" = "Email";
+"EMAIL_ADDRESS" = "Email Address";
+"TURN_ON" = "Turn on";
+
+"MEDICAL_HISTORY" = "Medical History";
+
+"LIST_CONTRACT" = "List of contracts";
+
+"USE_POINTS" = "Use Points";
+"USE_COINS" = "Use Coins";
+"FLEXI_BENEFITS" = "Flexi Benefits";
+
+"POINT" = "Point";
+
+"USE" = "Use";
+"FINISHED"="Finished";
+"ENTHUSIASTICALLY_SUPPORTED" = "Enthusiastically supported";
+"PAY_INSURANCE_FEE" = "Pay Insurance Fee";
+"USED" = "Used";
+"SENT_INFORMATION" = "Sent information";
+"RECURRING_FEE" = "Recurring Fee";
+//"PERIODIC_FEE_PAYMENT" = "Định kỳ đóng phí";
+//"PAYMENT_DUE_DATE" = "Ngày hết hạn đóng phí";
+//"NEXT_PAYMENT_FEE_DATE" = "Ngày đóng phí tiếp theo";
+//"PREVIOUS_PERIOD_BALANCE_FEE" = "Phí dư kỳ trước";
+//"BASIC_ACCOUNT" = "Tài khoản cơ bản";
+
+"UPDATE_PROFILE_SUCCESS" = "Update personal information successfully";
+
+"GENERAL_TERMS" = "General Terms";
+
+"PERSONAL" = "Personal";
+"GROUP" = "Group";
+
+"BY_PERSONAL" = "Individual";
+"BY_GROUP" = "Group";
+
+"INSURANCE_TYPE" = "Insurance Type";
+"HEALTH" = "Health";
+"CAR" = "Car";
+"BIKE" = "Bike";
+
+"MALE" = "Male";
+"FEMALE" = "Female";
+
+"PRODUCT" = "Product";
+
+"TRANSACTION_FAILURE" = "Payment failed";
+"TRY_AGAIN" = "Try Again";
+
+"REQUEST_SUCCESSFUL" = "Request Successfully";
+//"RECEIVE_REQUEST_SUCCESS" = "Affina đã tiếp nhận thông tin của bạn. Chúng tôi sẽ liên hệ lại với bạn trong vòng X tiếng.";
+
+"PLEASE_LOG_IN_TO_USE_FEATURE" = "Please log in to use this function";
+"LOG_IN_NOW" = "Login now";
+
+"SKIP" = "Skip";
+"BENEFIT" = "Benefit";
+
+"COMPANY" = "Company";
+
+// ERROR
+"ERROR" = "Error";
+"ERROR_VALID" = "Invalid! Please check again.";
+"ERROR_PIN_NOT_MATCH" = "Pin Code not match !";
+"ERROR_PIN_NOT_CORRECT" = "PIN code is incorrect!";
+"ERROR_OTP_NOT_MATCH" = "OTP is invalid!";
+"ERROR_OTP_EXPIRED" = "OTP has expired!";
+"ERROR_INCORRECT_PASSWORD" = "Incorrect password! Please check again.";
+"ERROR_FAILURE_LOGIN" = "Login not successfully";
+"ERROR_BIOMETRIC_NOT_MATCH" = "Do not match more than the allowed number of times";
+"ERROR_COMMON" = "An error has occurred! Please try again later.";
+"ERROR_SESSION_EXPIRED" = "Your login session has expired. Please re-login your account.";
+"ERROR_TOKEN_EXPIRED" = "Your token has expired.";
+"ERROR_EMPTY_PASSWORD" = "Please enter a password!";
+"ERROR_EMPTY_PHONE_NUMBER" = "Please enter the phone number!";
+"ERROR_ACCOUNT_BLOCK" = "You have requested OTP more than 5 times. Please come back the next day or contact hotline 0909xxxx for advice and resolution."; // "Tài khoản của bạn đã bị khoá. Vui lòng liên hệ quản trị.";
+"ACCOUNT_HAVE_BEEN_BLOCKED" = "Account has been blocked!";
+"BIOMETRIC_HAS_BEEN_BLOCKED" = "Biometrics has been blocked!";
+
+"ERROR_CREATE_CONTRACT" = "Error {Error 10x29183}, please try again.";
+
+"MINUTES_AGO" = "minute ago";
+"HOURS_AGO" = "hours ago";
+"DAYS_AGO" = "days ago";
+
+"EVENT" = "Event";
+
+"PLEASE_INPUT_FULL_NAME" = "Please enter fullname!";
+"PLEASE_SELECT_UR_DOB" = "Please select date of birth!";
+"PLEASE_INPUT_EMAIL" = "Please enter your email!";
+"PLEASE_INPUT_VALID_EMAIL" = "Please enter the correct email format!";
+"PLEASE_INPUT_PROVINCE_CITY" = "Please enter province/city!";
+"PLEASE_INPUT_STREET_NAME" = "Please enter street name!";
+"PLEASE_INPUT_HOUSE_NUMBER" = "Please enter house number!";
+"PLEASE_INPUT_INFORMATION" = "Please enter information!";
+"PLEASE_INPUT_CORRECT_FORMAT" = "Please enter the correct format!";
+
+"NUMBER_LIKES" = "favorite";
+
+"NO_COMMENTS_BE_THE_FIRST_ONE" = "
+No comments yet! Be the first to comment!";
+
+"JUST_NOW" = "Just finished";
+"TO_GIVE_TO_ROBERT_FOX"="To give to Robert Fox";
+"TO_USE_FEATURE_NEED_TO_LOG_IN" = "To use this function, you need to login";
+"LOG_IN" = "Log in";
+"ERROR_HAPPENED" = "An error has occurred!";
+"REDEEM"="Redeem";
+"CONTENT_NOT_AVAILABLE" = "Content is not available.";
+"NOTIFICATIONS_EMPTY" = "No notification!";
+"CARE" = "Subcribe";
+"UNCARE" = "Unsubscribe";
+"SHARE" = "Share";
+"FILTER" ="Filter";
+"OUTPATIENT_TREATMENT" = "Outpatient treatment";
+"CONVERT_DAYS_OFF_TO"="Convert days off to";
+"DOWNLOADS_SUCCESS" = "Download successfully";
+"REDEEM_BENEFITS"="Redeem benefits";
+"AFF_SHARE_YOUR_SADNESS" = "Affina's condolences to your family";
+"REDEEMED_SUCCESSFULLY"="Redeemed successfully";
+"PLEASE_INPUT_INSURED_NAME" = "Please enter the name of the insured!";
+"PLEASE_INPUT_CONTACT_NAME" = "Please enter contact person name!";
+
+"OTHER" = "Other";
+"NOT_AVAILABLE" = "Not available";
+"PLEASE_INPUT_ACCOUNT_NUMBER" = "Please enter your account number!";
+"PLEASE_INPUT_ACCOUNT_HOLDER" = "Please enter the account holder's name!";
+"PLEASE_INPUT_BRANCH_NAME" = "Please enter your bank branch!";
+"PLEASE_INPUT_BANK_NAME" = "Please enter bank name!";
+"PLEASE_INPUT_RELATIONSHIP" = "Please enter relationship!";
+
+"IMAGE_SIZE_TO_BIG" = "The size of the image exceeds the allowed limit!";
+
+"APPLICANT" = "APPLICANT";
+"PARENTS" = "Parents";
+"COUPLE" = "Your husband/ wife";
+"SIBLINGS" = "Siblings";
+"CHILDREN" = "Child";
+
+"MONTH" = "Month";
+"YEAR" = "Year";
+"DAY" = "Day";
+"LIFETIME" = "Life time";
+
+"PAYMENT_INFOR" = "Payment Information";
+
+"PARTIAL_PAYMENT_ONLY" = "Partial payment only";
+"REQUESTED_PAYMENT_AMOUNT" = "Claim amount (VND)";
+
+"NOTE_:" = "Note:";
+"NOTE" = "Note";
+
+"PARTICIPATION_TERMS" = "Terms of participation";
+
+"UPDATE_SUCCESS" = "Terms of participation";
+
+"BEFORE_DAY" = "before";
+
+"CAN_NOT_SAVE_IMAGE_TRY_AGAIN" = "Unable to save photo! Please try again";
+
+
+"PLEASE_INPUT_PLACE" = "Please enter location!";
+"PLEASE_SELECT_DISCHARGE_DAY" = "Please select discharge date!";
+"PLEASE_INPUT_MONEY_VALUE" = "Please enter amount!";
+"PLEASE_INPUT_DOCTOR_DIAGNOSIS" = "Please enter your doctor's diagnosis!";
+
+"ADDED_IMAGES" = "Added @a images";
+"NO_IMAGES" = "Failed to add images";
+
+// Localize cua AFF
+
+"100_ONLINE" = "100% Online";
+"ONECLICK_ONLINE_REGISTER_IN" = "One-click Online register in 1 minute without health declaration";
+"SKIP" = "Skip";
+"NEXT" = "By pressing \"next\"";
+"SIMPLE_PROCESS" = "Simple process";
+"NO_MEDICAL_DECLARATION_IS" = "No medical declaration is required to join in insurance";
+"INDEPENDENT_PARTICIPATION" = "Independent participation";
+"CHILDREN_FROM_30DAY_OLD" = "Children from 30-day old can join indenpently without parents ";
+"COMMIT" = "Commitment";
+"ALWAYS_BE_WITH_YOU" = "Always be with you and committed to renewIing insurance next years";
+
+"DO_NOT_MISS_ATTRACTIVE" = "Not to miss exclusive offer for you only";
+"LATER" = "Later";
+
+"INSURANCE_CARD" = "Insurance card";
+"CRITICAL_ILLNESS_COVERAGE" = "Critical illness coverage";
+"CLAIM_REQUEST" = "Claim request";
+"BLACK_LIST" = "Black list";
+"HISTORY" = "History";
+"SEARCH" = "Search";
+"USED_MARK"="Used mark";
+"HOSPITAL_EXPENSE_GURANTEE" = "Direct billing service";
+"HOSPITAL_INFORMATION" = "Hospital information";
+"ADDRESS" = "Address";
+"PHONE" = "Phone number";
+"WORKING_TIME" = "Working time";
+"SPECIALITIES" = " Department";
+"HOTLINE" = "Hotline";
+"DIRECTION" = "Direction";
+"BOOK_AN_APPOINTMENT" = "Book an appointment";
+
+"INSURANCE_POLICY" = "Insurance policy";
+"INSURANCE_CONTRACT" = "Insurance contract";
+"VALID" = "Valid";
+"INSURED" = "The insured person";
+"INSUREDD" = "Insured person";
+"INSURED_:" = "Insured person:";
+"PRICE_HIGH_TO_LOW"="Price high to low";
+"PRICE_LOW_TO_HIGH"="Price low to high";
+"EXPRIATION_DAY_:" = "Expiration date:";
+"EXPRIATION_DAY" = "Expiration date";
+"CONTRACT_VALUE" = "Contract value";
+"INSURANCE_MONEY" = "Sum insured";
+"BENEFITS_OF_INSURANCE" = "Insurance benefits";
+"SEE_DOWNLOAD_CERTIFICATION" = "View/ Download Certification";
+
+"APPLICALE" = "Eligibility of insured person";
+"PAYMENT_METHOD" = "Payment method";
+"INSURANCE_EXCLUSION" = "Exclusions";
+"APPLICANT" = "Applicant";
+"GENDER" = "Gender";
+"DATE_OF_BIRTH" = "Date of birth";
+"CONTACT_INFORMATION" = "Contact information";
+
+"RREMAININGLIMIT" = "Remaining limit";
+"INSURANCE_PERIOD" = "Insurance period";
+"CHOOSE_INSURANCE_BENEFIT" = "Select insurance benefits";
+"TO_CONTINUE_YOU_NEED" = "To continue, you need to prepare necessary documents: @Discharge certificate, receipts/invoices, medical record/prescription eg.@ in order to finish quickly ";
+"TO_CONTINUE_YOU_NEED_BM" = "Applicable for inpatient /outpatient due to illness, maternity & dental claim document If claimed amount is below VND 30mil. You need to prepare nescessary documents: @Discharge certificate, receipts/invoices, medical record/prescription eg.@ in order to finish Quickly. ";
+"ACCIDENT" = "Accident";
+"ILLNESS" = "Illness";
+"DENTAL" = "Dental";
+"MARTENITY" = "Maternity";
+"SUBSIDY_FOR_HOSPITAL_FEE_INCOME" = "Hospitalization allowance/ Income Compensation";
+"DEATH_BY_ACCIDENT_ILLNESS" = "Death or Total Permanent Disablement due to Accident/ Illness";
+"SELECT_INSURED_PEOPLE" = "Select the insured person";
+"DOWNLOAD" = "Download";
+"TRAFFIC_ACCIDENT" = "Traffic accident";
+"ATTACHED_DOCUMENTS" = "Attachment";
+"EXAMINATION_DATE_HOSPITAL_DATE" = "Examination date/ Hospital admission date";
+"DISCHARGE_DATE" = "Discharge date";
+"BRANCH_OF_BANK" = "Branch of bank";
+"TREATMENT_PLACE" = "Treatment place";
+"DIAGNOSE" = "Diagnose";
+"TOTAL_PAYABLE_VND" = "Claim amount (VND)";
+"I_HEREBY_CERTIFY_THAT" = "I hereby certify that the information provided above is true and correct in all details";
+"DDMMYYYY" = "DD/MM/YYYY";
+"ACCIDENT_REPORT" = "The minutes of accident";
+"YOU_CAN_DOWNLOAD_THE_TEMPLATE" = "You can download the template";
+"HERE" = "Here";
+"UPLOAD" = "Upload";
+"TAKE_PHOTO" = "Take photo";
+"DOCUMENT" = "Document";
+"PUT_DOCUMENT_IN_THE_FRAME" = "Put document in the frame";
+"TAKE_PHOTO_AGAIN" = "Take photo again";
+"DELETE" = "Delete";
+"DISCHARGE_PAPER" = "Discharge paper";
+"EXAMPLE_OF_DISCHARGE_PAPER" = "Example of discharge paper";
+"I_AM_NOT_HOSPITALIZED" = "I am not hospitalized";
+"SAVE" = "Save";
+"SURGERY_CERTIFICATION" = "Surgery certification";
+"NO_SURGERY" = "No surgery";
+"BENEFIT" = "Benefit";
+"BENEFITS" = "Benefits";
+"DISCHARGE_PAPER" = "Beneficiary name";
+"ACCOUNT_NUMBER" = "Account number";
+"RELATIONSHIP_WITH_THE_INSURED" = "Relationship with the insured person";
+"BY_CLICK_CONTINUE_I_READ_ACCEPTED_WITH" = "By pressing \"next\", I have read and agreed to Affina's terms of use and confidential policy";
+"DDMMYYYY" = "Receipt information";
+"BENEFICAIARY_NAME" = "Beneficiary name";
+"NEXT" = "Select from your device";
+"CANCEL" = "Cancel";
+"SUBMIT_REQUEST_SUCCESSFULLY" = "Submit request successfully";
+"YOUR_REQUEST_HAS_SUBMITTED" = "Your request has been submited successfully. It shall be checked and responsed to you soon.";
+"GOT_IT" = "Got it";
+"ADD_CLAIM_REQUEST" = "Add claim request";
+"YOU_CAN_DOWNLOAD_AND" = "You can download and print claim forms here";
+"YOUR_PROFILE_WILL_NOT" = "Your documents will not be saved";
+"YOUR_INFORMATION_WILL_NOT" = "Your inforamtion will not be saved. You need to provide information again in next time to make claim request";
+"MAXIMUM_AMOUNT_OF_PROTECTION"="Maximum amount of protection";
+"ADDITIONAL_BENEFITS"="Additional Benefits";
+"STAY" = "Stay";
+"EXIT" = "Exit";
+"CHANGE_IMAGE" = "Change image";
+"COMPLETE" = "Complete";
+"PROCESSING" = "Processing";
+"TREATMENT_INFORMATION" = "Treatment information";
+"ACCOUNT_HOLDER" = "Beneficiary name";
+"ADD_DOCUMENT" = "Add documents";
+"REQUEST_ADDITIONAL_INFORMATION" = "Request additional doccument";
+"ATTACH_DOCUMENTS" = "You need to submit documents before xxx";
+"YOU_NEED_TO_UPDATE_DOCS" = "You need to submit documents ";
+"UPDATE_DOCUMENTS" = "Update documents";
+
+"PAYMENT_RECEIPT_INFORMATION" = "Payment information";
+"RECEIPT_INFORMATION" = "Payment information";
+"INSURANCE_PAYMENT_INFORMATION" = "Payment information";
+"PAYMENT_INFORMATION" = "Payment information";
+
+"ADD_HARD_COPY_OF_DOCUMENT" = "Submit hard copies";
+"THE_INSURER_REQUIRES_YOU" = "You have to send hard copy of claim documents to the insurer";
+"DOWNLOAD_FORM" = "Download templates";
+"APPROVED" = "Approved";
+"CLAIM_REQUEST_APPROVED" = "Claim request approved";
+"THE_INSURANCE_AMOUNT_WILL" = "Paid amount shall be transferred after 7 working days, to the account ";
+"ENTER_DISCOUNT_CODE"="Enter discount code";
+"MONEY_WILL_BE_TRANSFERED" = "The claim paid amount will be transferred";
+"WORK_DAYS_TO_ACCOUNT" = ", to the account:";
+"AFTER_7_DAYS" = "after 7 working days";
+
+"BANK_NAME" = "Bank name";
+"CONTACT_US_REPLY" = "Contact us/ Feedback";
+"DECLINE" = "Decline";
+"DECLINE_TO_PAY" = "Decline to pay";
+"ACTUAL_PAYMENT" = "Actual claim paid amount";
+"PAYMENT_REASON" = "Detailed of claim paid amount";
+"DRIVING_LISENCE" = "Driving lisence";
+"REGISTRATION_CERTIFICATION" = "Vehical Registration certification (optional)";
+"FONT_OF_IDENTITY_CARD" = "Font of identification card";
+"BACK_OF_IDENTITY_CARD" = "Back of identification card";
+"YOU_ARE_NOT_LOGGED_IN" = "You have not logged in";
+"PLEASE_LOGIN_TO_USE" = "Please Login to use this function";
+"WELCOME" = "Welcome";
+"PLEASE_ENTER_YOUR_PHONE" = "Please enter your phone number to continute";
+"ENTER_OTP_CODE" = "Enter OTP code";
+"YOU_DIDNT_RECEIVE_OTP_CODE" = "You didn't receive OTP code?";
+"RESEND_OTP_CODE" = "Resend OTP code";
+"OUTPATIENT" = "Outpatient";
+"INPATIENT" = "Inpatient";
+"RECEIPT" = "Receipt";
+"EXAMPLE_OF_RECEIPT" = "Example of receipt";
+"INDICATION_AND_TRACKING_PAPER" = "Indication and follow-up sheet for physiotherapy";
+
+"INFORMATION_DOCUMENT" = "Claim information";
+"INFORMATION_/_DOCUMENT" = "Claim information";
+"EXAMPLES_OF_SURGERY_CERTIFICATION" = " Examples of surgery certification";
+"PREHOSPITAL_MEDICAL_DOCUMENTS" = "Pre-hospitalization medical documents";
+"EXAMPLE" = "Example ";
+"INDICATION_FOR_FOLLOWUP_EXAMINATION" = "Indication for follow-up examination after discharging";
+"INDICATION_OF_FOLLOWUP_EXAMINATION" = "Indication of follow-up examination after discharging";
+"EXAMPLE_OF_INDICATION_FOR" = "Example ";
+"INVALID_BANK_BRANCH."="Invalid bank.";
+"INDICATION_OF__MEDICAL" = "Indication of Home Nursing";
+"DENTAL_BENEFITS" = "Dental Care";
+"XRAY_FILM" = "X-ray film ";
+"SORTED_BY"="Sorted by";
+"USED_POINTS"="Used points";
+"PRICE_FROM_…_TO_…"="Price from … to …";
+"NEED_MORE_LIGHT" = "Need more light to take a photo";
+"NO_TAKE_AN_XRAY" = "No take an X-ray";
+"COURSE_OF_TREATMENT" = "Treatment process";
+"EXAMPLE_ABOUT_COURSE_OF_TREATMENT" = "Example about course of treatment";
+"LATEST_PRODUCT"="Latest product";
+"HOSPITALIZATION_ALLOWANCE" = "Hospitalization allowance";
+"INCOME_SUPPORT" = "Income Compensation";
+"ATTACHMENTS" = "Attachment";
+"TIMESHEET" = "Timesheet";
+"OR_LEAVE_APPROVEMENT_OF" = "Or leave approval letter of the company";
+"SALARY_DOCUMENT" = "Salary document";
+"LABOR_CONTEACT_SALARY_ADJUSTMENT" = "Labor contract, salary adjustment decision, payslip with company's confirmation";
+"AVAILABLE"="Available:";
+"OR_THE_REPORT_ON" = "Or the minutes of accident with police/ state-owned department confirmation. You can download template in here";
+"DRIVING_LISENCE_OPTIONAL" = "Driving lisence (optional)";
+"AFFINA_OFFER_OUR_CONDOLENCES" = "Affina offer our condolences to the family ";
+"PLEASE_PROVIDE_INFORMATION_TO" = "Please provide information to receive support";
+"INSURED_NAME" = "Insured name";
+"NAME_OF_CONTACT_PERSON" = "Name of contact person";
+"PHONE_OF_CONTACT_PERSON" = "Contact phone number";
+"USERNAMEDOMAINCOM" = "username@domain.com";
+"123456789" = "12-3456-789";
+"AFFINA_HAS_RECEIVED_YOUR" = "Affina has received your information, we will contact you soon.";
+"MATERNITY_BENEFITS" = "Maternity benefits ";
+"INSURANCE_FORM" = "Insurance Form";
+"INDIVIDUAL" = "Individual";
+"NUMBER_OF_DAYS_OFF_TO_REDEEM"="Number of days off to redeem";
+"GROUP" = "Group";
+"INSURANCE_PRODUCT_DEMAND" = "Your insurance demand";
+"HEALTHCARE" = "Healthcare";
+"CAR" = "Car";
+"MOTORBIKE" = "Motorbike";
+"PRODUCT_FOR_YOU" = "Product for you";
+"MALE" = "Male";
+"FEMALE" = "Female";
+"DATEMONTHYEAR" = "Date of birth";
+"YOUR_BUDGET_FOR_INSURANCE" = "Your budget for insurance";
+"INSURER" = "Insurer";
+"BSH_10_PRODUCTS" = "BSH (10 products)";
+"PTI_4_PRODUCTS" = "PTI (4 products)";
+"GIC_6_PRODUCTS" = "GIC (6 products)";
+"REFERRAL_CODE" = "Referral code";
+"FILTER_PRODUCT" = " Filter product";
+"0__2000000_VND" = "0 - 2.000.000 vnd";
+"HEALTH_INSURANCE" = "Health insurance";
+"HIGHLIGHT" = "Highlight";
+"INSURANCE_FEE" = "Insurance premium";
+"MORE" = "More";
+"INTRODUCTION" = "Introduction";
+"MAIN_BENEFIT" = "Main benefits";
+"BASIC" = "Basic";
+"SAVINGS" = "Savings";
+"ADVANCE" = "Upgrade";
+"COMMON" = "Common";
+"BUY_NOW" = "Buy now";
+"VIETNAMESE"="Vietnamese";
+"SEE_MORE_ABOUT" = "See more about terms ans conditions of this insurance package";
+"USUALLY_BOUGHT_WITH" = "Usually buy with";
+"ELIGIBILITY_OF_THE_INSURED" = "Eligibility of the insured person";
+"EXCLUSION_OF_TERMS" = "Exclusions";
+"INSURED_INFORMATION" = "Insured information ";
+"YOU_NEED_TO_PROVIDE" = "You need to provide accurate personal information to receive benefits later";
+"ARE_YOU_AN_INSURED" = "Are you an insured?";
+"MR" = "Mr";
+"MISS" = "Ms";
+"Mr" = "Mr";
+"Mrs" = "Mrs";
+"FIRST_AND_LAST_NAME" = "Full name";
+"PROVINCECITY" = "Province/City ";
+"DISTRICT" = "District";
+"WARD" = "Ward";
+"STREET" = "Street";
+"HOUSE_NUMBER" = "Address";
+"IDENTITY_PAPERS" = "Identity documents";
+"IDENTITY_CARD" = "Identification card";
+"PASSPORT" = "Passport";
+"PERSONAL_IDENTIFIER" = "Personal Identification number";
+"EDIT_INFORMATION" = "Edit information";
+"CONFIRM" = "Confirm";
+"NOT_SUITABLE_FOR_THIS" = "Not suitable for this insurance package";
+"YOU_HAVE_JUST_CHANGED" = "You have just changed the personal information of the insured. With the new information, this person will no longer be able to join the plan you selected. You will have to choose another insurance plan again when you click “Confirm” to change your information.";
+"CHANGE_INSURANCE_FEE" = "Change insurance premium";
+
+
+"INFORMATION_OFF_APPLICANT" = "Information of applicant";
+"FONT_OF_IDENTITY_CARD" = "Font of identity card";
+"BACK_OF_IDENTITY_CARD" = "Back of identity card";
+"RELATIONSHIP_WITH_THE_INSURED" = "Relationship with the insured";
+"PAYMENT" = "Payment";
+"PRODUCT_INFORMATION" = "Product information";
+"INSURED_BENEFITS" = "Insurance benefits";
+"INSURANCE_DURATION" = "Insurance period";
+"INSURANCE_FEE" = "Insurance fee";
+"INSURANCE_START_DATE" = "Effective date";
+"COUPON_CODE" = "Coupon code";
+"YOUR_VOUCHER" = "Your voucher";
+"VAT_INVOICE" = "VAT invoice";
+"YOU_NEED_TO_PAY" = "You need to pay ";
+"BY_PROCESSING_THE_PAYMENT" = "By processing the payment, I have read and agree to Affina's terms of use and privacy policy";
+"TERMS_AND_CONDITIONS" = "Terms and conditions";
+"PRIVACY_POLICY" = "Privacy Policy";
+"PAYMENT_TYPE" = "Payment type";
+"ATM_CARD" = "ATM card";
+"CREDIT_CARD" = "Credit card";
+"INSTALLMENT_VIA_CREDIT_CARD" = "Installment via credit card";
+"BUY_NOW_PAY_LATER" = "Buy now, pay later";
+"COMPANY_NAME" = "Company name";
+"ADDRESS_COMPANY" = "Address company";
+"TAX_CODE" = "Tax code";
+"INSTALLMENT_PAYMENT" = "Installment payment";
+"BANK" = "Bank";
+"PAYMENT_TERM" = "Payment term";
+"3_MONTH" = "3 month";
+"6_MONTH" = "6 month";
+"9_MONTH" = "9 month";
+"MONTHLY_INSTALLMENT" = "Monthly installment";
+"CONVERSION_FEE" = "Conversion fee";
+"TOTAL_PRICE_IN_INSTALLMENT" = "Total premium in installment";
+"CONFIRM_AND_PAY" = "Confirm and make payment";
+"CHOOSE_BANK" = "Choose Bank";
+"YOUR_REQUEST_HAS_BEEN" = "Your request has been sent to the insurer. Your application will be reviewd and replied to you soon. You need to create a PIN code due to privacy.";
+"YOUR_REQUEST_HAS_BEEN_LOGGED" = "Your request has been sent to the insurer. Your application will be reviewd and replied to you soon.";
+"SEE_NOW"="See now";
+"PAYMENT_FAILED" = "Payment failed";
+"ERROR_ERROR_10X29183_PLEASE_SOLUTION" = "Error {Error 10x29183}, Please {solution}";
+"TRY_AGAIN" = "Try again";
+"SECURITY" = "Enter PIN code/ Enter Password";
+"CREATE_A_PIN_CODE" = "Create a PIN code to protect your account from unauthorized access";
+"CONFIRM_PIN_CODE" = "Enter your PIN code again to confirm";
+"GIVE_TO"="Give to";
+"USE_FACE_ID" = "Use Face ID";
+"ALLOW_APP_TO_USE" = "Allow app to use @ to log in";
+"NO" = "NO";
+"AGREE" = "Agree";
+"CUSTOMER" = "Customer";
+"PLEASE_LOGIN_HERE" = "Please login here";
+"SYSTEM" = "System";
+"TERMS_OF_SERVICE" = "Terms of Service";
+"PRIVACY_POLICIES" = "Privacy policies";
+"REFER_FRIENDS" = "Refer friends";
+"ENGLISH" = "English";
+
+"HOME" = "Home";
+"NEWS" = "News";
+"CHAT" = "Chat";
+"CART" = "Cart";
+"ACCOUNT" = "Account";
+
+"MEMBER_POINT" = "Member coins";
+
+"MEMBERSHIP_POINTS" = "Membership points";
+
+"ACCOUNT_SETTINGS" = "Account setting";
+"PERSONAL_INFORMATION" = "Personal information";
+"NOTIFICATION" = "Notification";
+"PRIVACY_SETTING" = "Privacy setting";
+"SERVICE" = "Service";
+"MEDICAL_HISTORY" = "Medical history";
+"ORDER" = "Order";
+"SALARY_ADVANCEMENT_HISTORY" = "Salary advancement history";
+"LOG_OUT" = "Log out";
+"CHOOSE_PHOTOS_FROM_DEVICE" = "Select photos from your device";
+"EDIT_PERSONAL_INFORMATION" = "Edit personal information ";
+"PROVINCECITY" = "Province/City";
+"PROMTION_NEWS_OFFERS" = "Promtion news, offers";
+"TURN_ON_EMAIL" = "Turn on: Email";
+"NOTIFICATION_FROM_AFFINA" = "Notification from AFFINA";
+"NEW_MESSAGE" = "New message";
+"TURN_ON_EMAIL_AND" = "Turn on: Email and Push notification ";
+"NOTIFICATION_FROM_COMPANY" = "Notification from company";
+"DONE" = "Done";
+"PUSH_NOTIFICATION" = "Push notification";
+"CHANGE_PIN_CODE" = "Change PIN code";
+"ACCOUNT_RECOVERY_METHODS" = "Account recovery methods";
+"USING_FINGERPRINT_BIOMETRICS" = "Using fingerprint biometrics ";
+"SMS_VIA_PHONE_NUMBER" = "SMS via phone number";
+"COMPANY" = "Company";
+"INSURANCE" = "Insurance";
+"HISTORY_OF_REDEEM"="History of redeem";
+"DISCOUNT" = "Promotion";
+"YOU_NEED_TO_LOGIN" = "You need to login ";
+"SEE_INTERNAL_COMMUNICATIONS_FROM" = "View internal news from your company";
+"READ_MORE" = "Read more";
+"LIKE" = "Favorite";
+"COMMENT" = "Comment";
+"YOUR_IDEAS" = "Your ideas";
+"HELLO" = "Hello";
+"CREATE_ACCOUNT" = "Create account";
+"YOUR_INFORMATION_IN_IDENTITY" = "Please fill in your personal information to process the insurance policy";
+"EXAMPLE_NGUYEN_VAN_A" = "Example: Nguyen Van A";
+"I_AGREE_WITH_TERMS" = "I agree with Terms and privacy policies of AFFINA";
+
+"ENTER_PIN_CODE" = "Enter PIN code";
+"FORGOT_PIN_CODE" = "Forgot PIN code?";
+"WELLCOME" = "Wellcome";
+"12_345_6789" = "12 345 6789";
+"USE_TOUCH_ID" = "Use Touch ID";
+"WELLCOME_TO_AFFINA" = "Wellcome to AFFINA !";
+
+"AND_CHOOSE_RIGHT_PRODUCT" = "and select right product";
+"CHOOSE_INSURANCE" = "Choose insurance";
+"CHOOSE_TYPE_OF_INSURANCE" = "Choose type of insurance";
+
+"INSURANCE_TYPE" = "Insurance type";
+
+"ALL" = "All";
+"HEALTH" = "Health";
+
+"LIFE_INSURANCE" = "Life insurance";
+"NONLIFE_INSURANCE" = "Non-life insurance";
+
+"CONTRACT" = "Contract";
+"SALARY_ADVANCE" = "Salary advance";
+"USING_POINT" = "Using point";
+"OUTSTANDING_PRODUCT" = "Outstanding product";
+
+"USER_GS32JFT5212" = "User #GS32JFT5212";
+"DEALS_FOR_YOU" = "Deals for you";
+"SIMILIAR_AS_HOMENO_PRODUCTNO_INFO" = "Similiar as Home/No Product_No Info";
+"MEDICINE_DOCTOR" = "Medicine/ Doctor";
+"DURATION" = "Insurance period";
+"YOU_CAN_SEND_CLAIM" = "You can send claim request here";
+"YOU_CAN_BUY_MORE" = "You can buy more insurance products here";
+"BACK" = "Back";
+"SIMILAR_AS_HOMEFIRST_PRODUCT_1" = "Similar as Home/First product 1";
+"REMAINING_LIMIT" = "Remaining limit";
+"REMAINING_LIMIT_:" = "Remaining limit:";
+"REMAINING_LIMIT_VND" = "Remaining limit (vnd)";
+"NEWLY_CREATED" = "Newly created";
+"LIST_OF_GURANTEE_HOSPITAL" = "Direct billing service";
+
+"OTP_EMAIL_HINT" = "We just sent OTP to email %s, enter it below";
+
+"OTP_PHONE_HINT" = "We just sent OTP to the phone number %s, enter it below.";
+"PLEASE_ENTER_NAME"="Please enter name";
+"WE_SEND_OTP_TO_UR_CONTACT" = "We just sent OTP to the@, enter it below.";
+"PLEASE_ENTER_ADDRESS"="Please enter address";
+"DESC_OTP_REGISTER" = "We just sent OTP code, please enter it below";
+"DESC_OTP_FORGOT" = "We just sent OTP to the email address us*****@***, enter it below.";
+"EXPIRE_DATE" = "Expires at: ";
+"CLAIM" = "Claim";
+"EXPIRED" = "Expired";
+"SERVER_ERROR" = "Unknown error from server";
+"COIN" = "Coin";
+"ERROR_RATING_DES" = "Please rate and select the number of stars before submitting!";

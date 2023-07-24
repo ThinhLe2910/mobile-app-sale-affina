@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardBlackListView" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="BVf-3O-BwL" id="9MX-d4-EPw"/>
+                <outlet property="searchTextField" destination="HNl-VJ-kwQ" id="fG0-SI-lZq"/>
+                <outlet property="tableView" destination="1Gn-jh-HFQ" id="YKl-iT-e2N"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BVf-3O-BwL" customClass="BaseView" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCP-Do-bPX" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNl-VJ-kwQ" customClass="TextFieldAnimBase" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="atJ-Xi-Way"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizePlaceholder" value="SEARCH"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Gn-jh-HFQ" customClass="ContentSizedTableView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="74" width="414" height="340"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1Gn-jh-HFQ" secondAttribute="trailing" id="4Gx-ZO-0ZE"/>
+                        <constraint firstItem="1Gn-jh-HFQ" firstAttribute="top" secondItem="HNl-VJ-kwQ" secondAttribute="bottom" constant="24" id="7jf-8q-tqd"/>
+                        <constraint firstItem="HNl-VJ-kwQ" firstAttribute="leading" secondItem="vCP-Do-bPX" secondAttribute="leading" id="CCF-OY-Jbs"/>
+                        <constraint firstAttribute="trailing" secondItem="HNl-VJ-kwQ" secondAttribute="trailing" id="K7K-Xk-sQf"/>
+                        <constraint firstItem="1Gn-jh-HFQ" firstAttribute="leading" secondItem="vCP-Do-bPX" secondAttribute="leading" id="K7w-F9-fKA"/>
+                        <constraint firstAttribute="bottom" secondItem="1Gn-jh-HFQ" secondAttribute="bottom" id="T5d-o6-qUj"/>
+                        <constraint firstItem="HNl-VJ-kwQ" firstAttribute="top" secondItem="vCP-Do-bPX" secondAttribute="top" id="tc8-gD-Ki7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="AHk-RZ-bDa"/>
+            <constraints>
+                <constraint firstItem="vCP-Do-bPX" firstAttribute="leading" secondItem="AHk-RZ-bDa" secondAttribute="leading" id="9B4-Mj-Qc8"/>
+                <constraint firstItem="vCP-Do-bPX" firstAttribute="top" secondItem="BVf-3O-BwL" secondAttribute="top" id="Fee-9O-WMk"/>
+                <constraint firstAttribute="bottom" secondItem="vCP-Do-bPX" secondAttribute="bottom" id="KuJ-ou-T0M"/>
+                <constraint firstItem="AHk-RZ-bDa" firstAttribute="trailing" secondItem="vCP-Do-bPX" secondAttribute="trailing" id="YUx-pe-qTl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="173.91304347826087" y="59.598214285714285"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="HNl-VJ-kwQ">
+            <size key="intrinsicContentSize" width="5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

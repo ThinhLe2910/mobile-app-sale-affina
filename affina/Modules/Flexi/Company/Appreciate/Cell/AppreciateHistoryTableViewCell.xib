@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="42" id="KGk-i7-Jjw" customClass="AppreciateHistoryTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3PX-lW-FnB" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="72"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvk-qG-FUD" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="16" width="323" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpG-hS-hn9" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kf9-my-zYl" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                                <rect key="frame" x="2" y="2" width="36" height="36"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="2XD-6c-Fre">
+                                                        <rect key="frame" x="4" y="4" width="28" height="28"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32d-83-b0U">
+                                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="2XD-6c-Fre" secondAttribute="trailing" constant="4" id="1cW-ad-9b6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2XD-6c-Fre" secondAttribute="bottom" constant="4" id="6bG-VA-dDQ"/>
+                                                    <constraint firstItem="2XD-6c-Fre" firstAttribute="top" secondItem="Kf9-my-zYl" secondAttribute="top" constant="4" id="6qw-qY-Yv2"/>
+                                                    <constraint firstItem="2XD-6c-Fre" firstAttribute="leading" secondItem="Kf9-my-zYl" secondAttribute="leading" constant="4" id="ABx-2L-BiX"/>
+                                                    <constraint firstItem="32d-83-b0U" firstAttribute="leading" secondItem="Kf9-my-zYl" secondAttribute="leading" id="RY5-Oj-GWC"/>
+                                                    <constraint firstItem="32d-83-b0U" firstAttribute="top" secondItem="Kf9-my-zYl" secondAttribute="top" id="tRd-lq-18N"/>
+                                                    <constraint firstAttribute="bottom" secondItem="32d-83-b0U" secondAttribute="bottom" id="xXb-xo-vWX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="32d-83-b0U" secondAttribute="trailing" id="y0c-6z-1HV"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6yv-c5-BOw"/>
+                                            <constraint firstAttribute="width" constant="40" id="9TX-Ge-wxe"/>
+                                            <constraint firstAttribute="bottom" secondItem="Kf9-my-zYl" secondAttribute="bottom" constant="2" id="NQX-L7-wxc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Kf9-my-zYl" secondAttribute="trailing" constant="2" id="Op2-aK-IZg"/>
+                                            <constraint firstItem="Kf9-my-zYl" firstAttribute="top" secondItem="RpG-hS-hn9" secondAttribute="top" constant="2" id="RsC-xc-mHQ"/>
+                                            <constraint firstItem="Kf9-my-zYl" firstAttribute="leading" secondItem="RpG-hS-hn9" secondAttribute="leading" constant="2" id="xxL-cR-U1H"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8f-Hs-71I" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="0.0" width="275" height="24"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NnH-Qr-UIt" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="26" width="275" height="14"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d8f-Hs-71I" firstAttribute="leading" secondItem="RpG-hS-hn9" secondAttribute="trailing" constant="8" id="3Hw-s4-2yh"/>
+                                    <constraint firstItem="NnH-Qr-UIt" firstAttribute="top" secondItem="d8f-Hs-71I" secondAttribute="bottom" constant="2" id="7pp-Zx-YNU"/>
+                                    <constraint firstItem="NnH-Qr-UIt" firstAttribute="leading" secondItem="RpG-hS-hn9" secondAttribute="trailing" constant="8" id="CnC-uR-liB"/>
+                                    <constraint firstAttribute="bottom" secondItem="RpG-hS-hn9" secondAttribute="bottom" id="G6u-VJ-R5g"/>
+                                    <constraint firstItem="RpG-hS-hn9" firstAttribute="top" secondItem="Wvk-qG-FUD" secondAttribute="top" id="IvZ-6Y-XyV"/>
+                                    <constraint firstAttribute="bottom" secondItem="NnH-Qr-UIt" secondAttribute="bottom" id="MqF-9e-trD"/>
+                                    <constraint firstItem="d8f-Hs-71I" firstAttribute="top" secondItem="Wvk-qG-FUD" secondAttribute="top" id="Oc4-ax-vGZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="d8f-Hs-71I" secondAttribute="trailing" id="PsC-b3-EoF"/>
+                                    <constraint firstItem="RpG-hS-hn9" firstAttribute="leading" secondItem="Wvk-qG-FUD" secondAttribute="leading" id="i4r-nM-VSb"/>
+                                    <constraint firstAttribute="trailing" secondItem="NnH-Qr-UIt" secondAttribute="trailing" id="t6C-To-BVb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="-0 tim" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9e-7p-mKB" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="339" y="29" width="34" height="14"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="subText"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIy-PB-0qe" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="71" width="373" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MTs-lS-2AA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="B9e-7p-mKB" firstAttribute="centerY" secondItem="3PX-lW-FnB" secondAttribute="centerY" id="3st-XE-Onb"/>
+                            <constraint firstItem="bIy-PB-0qe" firstAttribute="leading" secondItem="3PX-lW-FnB" secondAttribute="leading" id="A9p-0t-oFI"/>
+                            <constraint firstAttribute="trailing" secondItem="B9e-7p-mKB" secondAttribute="trailing" id="FUH-LK-wvt"/>
+                            <constraint firstAttribute="bottom" secondItem="bIy-PB-0qe" secondAttribute="bottom" id="J2d-fE-pH7"/>
+                            <constraint firstAttribute="trailing" secondItem="bIy-PB-0qe" secondAttribute="trailing" id="Qdz-j9-zMK"/>
+                            <constraint firstAttribute="bottom" secondItem="Wvk-qG-FUD" secondAttribute="bottom" constant="16" id="U0D-0D-MiG"/>
+                            <constraint firstItem="Wvk-qG-FUD" firstAttribute="leading" secondItem="3PX-lW-FnB" secondAttribute="leading" id="lgk-ML-IaB"/>
+                            <constraint firstItem="B9e-7p-mKB" firstAttribute="leading" secondItem="Wvk-qG-FUD" secondAttribute="trailing" constant="16" id="nX7-Ee-6Ct"/>
+                            <constraint firstItem="Wvk-qG-FUD" firstAttribute="top" secondItem="3PX-lW-FnB" secondAttribute="top" constant="16" id="u5T-Og-TXJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3PX-lW-FnB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vtq-Fa-9vZ"/>
+                    <constraint firstAttribute="trailing" secondItem="3PX-lW-FnB" secondAttribute="trailing" id="bqV-qg-uAf"/>
+                    <constraint firstItem="3PX-lW-FnB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rhY-AS-hae"/>
+                    <constraint firstAttribute="bottom" secondItem="3PX-lW-FnB" secondAttribute="bottom" id="ziJ-3i-Ohg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatarImageView" destination="32d-83-b0U" id="LS2-dT-SML"/>
+                <outlet property="defaultImageView" destination="2XD-6c-Fre" id="2Fq-iQ-KZx"/>
+                <outlet property="detailLabel" destination="NnH-Qr-UIt" id="o4c-ZH-mFP"/>
+                <outlet property="heartLabel" destination="B9e-7p-mKB" id="BH6-Ct-ifV"/>
+                <outlet property="nameLabel" destination="d8f-Hs-71I" id="rem-b2-HUo"/>
+            </connections>
+            <point key="canvasLocation" x="170.28985507246378" y="56.919642857142854"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="NnH-Qr-UIt">
+            <size key="intrinsicContentSize" width="32" height="14.5"/>
+        </designable>
+        <designable name="d8f-Hs-71I">
+            <size key="intrinsicContentSize" width="38" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_avatar" width="36" height="36"/>
+    </resources>
+</document>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="FlexiFilterTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="qWg-sN-yJo">
+                        <rect key="frame" x="0.0" y="16" width="322" height="41"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WmU-Pa-XNh" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="322" height="24"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="753" translatesAutoresizingMaskIntoConstraints="NO" id="YI3-pC-gg1">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="5Br-fb-GCI"/>
+                                            <constraint firstAttribute="height" constant="24" id="KgG-Mb-pvo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScZ-Pj-Fxh" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="32" y="0.0" width="254" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="376-GK-rZa" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                        <rect key="frame" x="302" y="2" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="7h0-ec-NvC"/>
+                                            <constraint firstAttribute="width" constant="20" id="Ezi-gY-A0O"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="borderColor" value="grayBorder"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6eJ-j5-3iW"/>
+                                    <constraint firstItem="YI3-pC-gg1" firstAttribute="top" secondItem="WmU-Pa-XNh" secondAttribute="top" id="A8c-Dj-DFe"/>
+                                    <constraint firstItem="ScZ-Pj-Fxh" firstAttribute="leading" secondItem="YI3-pC-gg1" secondAttribute="trailing" constant="8" id="HQs-AN-eCC"/>
+                                    <constraint firstItem="ScZ-Pj-Fxh" firstAttribute="top" secondItem="WmU-Pa-XNh" secondAttribute="top" id="OcX-L1-WK0"/>
+                                    <constraint firstAttribute="bottom" secondItem="YI3-pC-gg1" secondAttribute="bottom" id="WLY-96-HDI"/>
+                                    <constraint firstItem="ScZ-Pj-Fxh" firstAttribute="centerY" secondItem="YI3-pC-gg1" secondAttribute="centerY" id="WfW-vT-x1P"/>
+                                    <constraint firstItem="376-GK-rZa" firstAttribute="leading" secondItem="ScZ-Pj-Fxh" secondAttribute="trailing" constant="16" id="bRR-24-z9s"/>
+                                    <constraint firstItem="376-GK-rZa" firstAttribute="centerY" secondItem="YI3-pC-gg1" secondAttribute="centerY" id="f3j-wo-RQt"/>
+                                    <constraint firstAttribute="trailing" secondItem="376-GK-rZa" secondAttribute="trailing" id="n2K-KQ-MGK"/>
+                                    <constraint firstItem="YI3-pC-gg1" firstAttribute="leading" secondItem="WmU-Pa-XNh" secondAttribute="leading" id="nCC-cq-osv"/>
+                                    <constraint firstAttribute="bottom" secondItem="ScZ-Pj-Fxh" secondAttribute="bottom" id="tml-3h-61u"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqM-6r-qiT" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="40" width="322" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="yf3-7U-ZgP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qWg-sN-yJo" secondAttribute="trailing" id="Fsa-jg-gX5"/>
+                    <constraint firstItem="qWg-sN-yJo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dCV-sf-BHl"/>
+                    <constraint firstAttribute="bottom" secondItem="qWg-sN-yJo" secondAttribute="bottom" id="fcL-gQ-Gkz"/>
+                    <constraint firstItem="qWg-sN-yJo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kKG-nc-VZl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkBox" destination="376-GK-rZa" id="Ip2-CP-LhI"/>
+                <outlet property="iconImageView" destination="YI3-pC-gg1" id="ujF-Je-4TL"/>
+                <outlet property="nameLabel" destination="ScZ-Pj-Fxh" id="r1A-jU-RCG"/>
+                <outlet property="separator" destination="MqM-6r-qiT" id="lCt-ou-etL"/>
+            </connections>
+            <point key="canvasLocation" x="133.33333333333334" y="76.674107142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="376-GK-rZa">
+            <size key="intrinsicContentSize" width="30" height="31"/>
+        </designable>
+        <designable name="ScZ-Pj-Fxh">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FlexiCategoriesViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="benefitHeightConstraint" destination="sEe-vN-9ML" id="9G0-lr-O18"/>
+                <outlet property="benefitView" destination="mPI-s4-eRl" id="tao-LU-Ctx"/>
+                <outlet property="categoryView" destination="TpK-CT-ont" id="hSt-LJ-33H"/>
+                <outlet property="dateLabel" destination="Ibp-vo-BC2" id="2iX-5W-L1d"/>
+                <outlet property="moneyLabel" destination="FT1-cd-fcU" id="ch1-Gh-2rM"/>
+                <outlet property="moneyProgressView" destination="I3b-xM-FOb" id="FAn-p6-1Br"/>
+                <outlet property="scrollViewTopConstraint" destination="ecB-4R-iD4" id="9Ej-xw-iKg"/>
+                <outlet property="usedMoneyLabel" destination="Fgi-n3-dOe" id="zvA-XA-55p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voucherView" destination="Zvm-2y-Kf8" id="ilK-cm-9wz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="i3Q-m0-p6T">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HI-4D-YX0" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="908"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-s4-eRl" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Số điểm khả dụng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfv-kn-9aJ" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="16" width="137" height="19"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Hạn dùng: 31/09/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibp-vo-BC2" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="55" width="108.5" height="21"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="EXPIRY"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.000.000 điểm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FT1-cd-fcU" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="169" y="16" width="221" height="19"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đã dùng: 3.000.000 điểm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgi-n3-dOe" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="140.5" y="55" width="249.5" height="21"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-xM-FOb">
+                                            <rect key="frame" x="24" y="43" width="366" height="4"/>
+                                        </progressView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dY0-cX-qA5" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="91" width="414" height="1"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="X8F-7d-cxA"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dY0-cX-qA5" firstAttribute="leading" secondItem="mPI-s4-eRl" secondAttribute="leading" id="2Xc-Ot-2GE"/>
+                                        <constraint firstItem="Fgi-n3-dOe" firstAttribute="top" secondItem="I3b-xM-FOb" secondAttribute="bottom" constant="8" id="37b-m4-NzF"/>
+                                        <constraint firstItem="Ibp-vo-BC2" firstAttribute="leading" secondItem="mPI-s4-eRl" secondAttribute="leading" constant="24" id="5FW-ko-I74"/>
+                                        <constraint firstItem="FT1-cd-fcU" firstAttribute="leading" secondItem="Zfv-kn-9aJ" secondAttribute="trailing" constant="8" id="5XZ-2w-yle"/>
+                                        <constraint firstItem="Fgi-n3-dOe" firstAttribute="leading" secondItem="Ibp-vo-BC2" secondAttribute="trailing" constant="8" id="6OG-9E-7Ec"/>
+                                        <constraint firstItem="I3b-xM-FOb" firstAttribute="leading" secondItem="mPI-s4-eRl" secondAttribute="leading" constant="24" id="IND-Ef-rjJ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Fgi-n3-dOe" secondAttribute="trailing" constant="24" id="JFz-Wq-c0U"/>
+                                        <constraint firstItem="I3b-xM-FOb" firstAttribute="top" secondItem="FT1-cd-fcU" secondAttribute="bottom" constant="8" id="LIK-59-brU"/>
+                                        <constraint firstItem="Ibp-vo-BC2" firstAttribute="top" secondItem="I3b-xM-FOb" secondAttribute="bottom" constant="8" id="Ng3-Pp-3ab"/>
+                                        <constraint firstItem="FT1-cd-fcU" firstAttribute="top" secondItem="mPI-s4-eRl" secondAttribute="top" constant="16" id="PB3-IK-QlA"/>
+                                        <constraint firstAttribute="trailing" secondItem="FT1-cd-fcU" secondAttribute="trailing" constant="24" id="TjF-Mf-RkT"/>
+                                        <constraint firstAttribute="trailing" secondItem="dY0-cX-qA5" secondAttribute="trailing" id="VWF-Zb-ACd"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fgi-n3-dOe" secondAttribute="bottom" constant="16" id="aKw-bO-0OZ"/>
+                                        <constraint firstItem="Zfv-kn-9aJ" firstAttribute="leading" secondItem="mPI-s4-eRl" secondAttribute="leading" constant="24" id="o8G-YC-Afo"/>
+                                        <constraint firstAttribute="trailing" secondItem="I3b-xM-FOb" secondAttribute="trailing" constant="24" id="oki-dm-2Ou"/>
+                                        <constraint firstItem="I3b-xM-FOb" firstAttribute="top" secondItem="Zfv-kn-9aJ" secondAttribute="bottom" constant="8" id="p6G-WW-fUJ"/>
+                                        <constraint firstAttribute="height" constant="92" id="sEe-vN-9ML"/>
+                                        <constraint firstItem="Zfv-kn-9aJ" firstAttribute="top" secondItem="mPI-s4-eRl" secondAttribute="top" constant="16" id="tNi-mb-zaI"/>
+                                        <constraint firstAttribute="bottom" secondItem="dY0-cX-qA5" secondAttribute="bottom" id="uDm-dL-KOJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ibp-vo-BC2" secondAttribute="bottom" constant="16" id="xLh-64-dPt"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpK-CT-ont" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="92" width="414" height="124"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="124" id="JTS-uJ-gFJ"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueUltraLighter"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="692" translatesAutoresizingMaskIntoConstraints="NO" id="Zvm-2y-Kf8" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="216" width="414" height="692"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueUltraLighter"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Zvm-2y-Kf8" secondAttribute="bottom" id="1WU-R7-FH5"/>
+                                <constraint firstAttribute="trailing" secondItem="mPI-s4-eRl" secondAttribute="trailing" id="CoZ-ho-mfM"/>
+                                <constraint firstItem="TpK-CT-ont" firstAttribute="leading" secondItem="2HI-4D-YX0" secondAttribute="leading" id="JGY-69-ge8"/>
+                                <constraint firstItem="Zvm-2y-Kf8" firstAttribute="leading" secondItem="2HI-4D-YX0" secondAttribute="leading" id="JXd-vS-TWt"/>
+                                <constraint firstAttribute="trailing" secondItem="TpK-CT-ont" secondAttribute="trailing" id="KKV-wa-MXv"/>
+                                <constraint firstItem="Zvm-2y-Kf8" firstAttribute="top" secondItem="TpK-CT-ont" secondAttribute="bottom" id="T0A-bj-dJG"/>
+                                <constraint firstItem="mPI-s4-eRl" firstAttribute="leading" secondItem="2HI-4D-YX0" secondAttribute="leading" id="r2G-EC-OnM"/>
+                                <constraint firstItem="TpK-CT-ont" firstAttribute="top" secondItem="mPI-s4-eRl" secondAttribute="bottom" id="sf8-i3-CEC"/>
+                                <constraint firstItem="mPI-s4-eRl" firstAttribute="top" secondItem="2HI-4D-YX0" secondAttribute="top" id="siv-NG-vs6"/>
+                                <constraint firstAttribute="trailing" secondItem="Zvm-2y-Kf8" secondAttribute="trailing" id="zYe-t8-9eI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="2HI-4D-YX0" firstAttribute="width" secondItem="i3Q-m0-p6T" secondAttribute="width" id="0Dp-Rn-0Kn"/>
+                        <constraint firstItem="2HI-4D-YX0" firstAttribute="height" relation="greaterThanOrEqual" secondItem="i3Q-m0-p6T" secondAttribute="height" id="SX3-zq-7im"/>
+                        <constraint firstAttribute="trailing" secondItem="2HI-4D-YX0" secondAttribute="trailing" id="VSN-l6-6gj"/>
+                        <constraint firstItem="2HI-4D-YX0" firstAttribute="top" secondItem="i3Q-m0-p6T" secondAttribute="top" id="bzv-6o-OhN"/>
+                        <constraint firstAttribute="bottom" secondItem="2HI-4D-YX0" secondAttribute="bottom" id="qUC-LU-ZKq"/>
+                        <constraint firstItem="2HI-4D-YX0" firstAttribute="leading" secondItem="i3Q-m0-p6T" secondAttribute="leading" id="xNX-qZ-MJg"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="i3Q-m0-p6T" secondAttribute="bottom" id="6Kn-s1-qRg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i3Q-m0-p6T" secondAttribute="trailing" id="Au0-7m-Hpd"/>
+                <constraint firstItem="i3Q-m0-p6T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="X0G-v5-Wol"/>
+                <constraint firstItem="i3Q-m0-p6T" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ecB-4R-iD4"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="60.9375"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="FT1-cd-fcU">
+            <size key="intrinsicContentSize" width="126" height="19"/>
+        </designable>
+        <designable name="Fgi-n3-dOe">
+            <size key="intrinsicContentSize" width="118" height="12"/>
+        </designable>
+        <designable name="Ibp-vo-BC2">
+            <size key="intrinsicContentSize" width="108.5" height="12"/>
+        </designable>
+        <designable name="Zfv-kn-9aJ">
+            <size key="intrinsicContentSize" width="137" height="19"/>
+        </designable>
+        <designable name="Zvm-2y-Kf8">
+            <size key="intrinsicContentSize" width="414" height="692"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

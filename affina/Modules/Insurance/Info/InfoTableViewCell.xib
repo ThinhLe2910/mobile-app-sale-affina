@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="InfoTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh3-FG-cuy">
+                        <rect key="frame" x="0.0" y="12" width="319" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Điện thoại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93H-8H-EvY" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="14"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PHONE"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="012-345-6789" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxz-Ng-JVA" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="18" width="319" height="32"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEf-pg-aNR" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="62" width="319" height="1"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qqC-1R-b3O"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="grayBorder"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="TEf-pg-aNR" firstAttribute="top" secondItem="Gxz-Ng-JVA" secondAttribute="bottom" constant="12" id="9Me-KR-sY2"/>
+                            <constraint firstItem="93H-8H-EvY" firstAttribute="leading" secondItem="Sh3-FG-cuy" secondAttribute="leading" id="AOc-Ha-jEl"/>
+                            <constraint firstItem="Gxz-Ng-JVA" firstAttribute="leading" secondItem="Sh3-FG-cuy" secondAttribute="leading" id="E84-up-KPD"/>
+                            <constraint firstItem="TEf-pg-aNR" firstAttribute="leading" secondItem="Sh3-FG-cuy" secondAttribute="leading" id="HLT-3i-htL"/>
+                            <constraint firstAttribute="trailing" secondItem="Gxz-Ng-JVA" secondAttribute="trailing" id="JSb-zK-pg1"/>
+                            <constraint firstAttribute="trailing" secondItem="93H-8H-EvY" secondAttribute="trailing" id="O4i-Sg-0Ov"/>
+                            <constraint firstItem="Gxz-Ng-JVA" firstAttribute="top" secondItem="93H-8H-EvY" secondAttribute="bottom" constant="4" id="Thg-Q6-W2j"/>
+                            <constraint firstAttribute="trailing" secondItem="TEf-pg-aNR" secondAttribute="trailing" id="hYR-fc-ztR"/>
+                            <constraint firstAttribute="bottom" secondItem="TEf-pg-aNR" secondAttribute="bottom" id="lEW-GO-CdE"/>
+                            <constraint firstItem="93H-8H-EvY" firstAttribute="top" secondItem="Sh3-FG-cuy" secondAttribute="top" id="yJ5-s6-GVN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Sh3-FG-cuy" secondAttribute="trailing" id="6cj-RM-40o"/>
+                    <constraint firstItem="Sh3-FG-cuy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="CGp-4j-NGC"/>
+                    <constraint firstItem="Sh3-FG-cuy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Kg1-6H-vJ1"/>
+                    <constraint firstAttribute="bottom" secondItem="Sh3-FG-cuy" secondAttribute="bottom" id="alV-Yt-ZAs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="infoLabel" destination="Gxz-Ng-JVA" id="8XP-2Q-Odf"/>
+                <outlet property="separator" destination="TEf-pg-aNR" id="24D-US-d3M"/>
+                <outlet property="titleLabel" destination="93H-8H-EvY" id="2FS-X6-NTc"/>
+            </connections>
+            <point key="canvasLocation" x="94.927536231884062" y="91.40625"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="93H-8H-EvY">
+            <size key="intrinsicContentSize" width="57.5" height="14.5"/>
+        </designable>
+        <designable name="Gxz-Ng-JVA">
+            <size key="intrinsicContentSize" width="104.5" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

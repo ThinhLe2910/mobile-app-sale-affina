@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardHistoryViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarButton" destination="WO0-gS-MRQ" id="6Jd-hF-3jA"/>
+                <outlet property="historyLabel" destination="fOe-hT-F67" id="F3B-s0-61e"/>
+                <outlet property="historyTableView" destination="5RF-eo-0lT" id="ZHy-NH-OTu"/>
+                <outlet property="membershipLevelsLabel" destination="h7e-59-AVg" id="gnM-MN-zlH"/>
+                <outlet property="pointLabel" destination="5cV-h7-m0v" id="uwc-ZC-c12"/>
+                <outlet property="pointView" destination="6aY-Jn-IcI" id="dke-Eu-Lzq"/>
+                <outlet property="scrollViewTopConstraint" destination="vZV-AP-Uic" id="bB6-YU-BcD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="BaseView" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-Yq-0dq">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAL-wi-W0h" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aY-Jn-IcI" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_loyalty" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-uB-sbE">
+                                            <rect key="frame" x="24" y="12" width="48" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="48" id="LOH-ZK-nwQ"/>
+                                                <constraint firstAttribute="height" constant="48" id="WKv-G4-djR"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Cấp độ thành viên" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7e-59-AVg" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="82" y="27.5" width="119.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="subText"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="MEMBERSHIP_LEVELS"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.000 điểm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cV-h7-m0v" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="211.5" y="27.5" width="178.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="5cV-h7-m0v" secondAttribute="trailing" constant="24" id="9fu-0E-olE"/>
+                                        <constraint firstItem="h7e-59-AVg" firstAttribute="centerY" secondItem="Wrw-uB-sbE" secondAttribute="centerY" id="D5V-mQ-M2H"/>
+                                        <constraint firstItem="5cV-h7-m0v" firstAttribute="centerY" secondItem="Wrw-uB-sbE" secondAttribute="centerY" id="Ngp-R5-qtD"/>
+                                        <constraint firstItem="Wrw-uB-sbE" firstAttribute="top" secondItem="6aY-Jn-IcI" secondAttribute="top" constant="12" id="O1X-Pd-k9Q"/>
+                                        <constraint firstAttribute="bottom" secondItem="Wrw-uB-sbE" secondAttribute="bottom" constant="12" id="WSO-NR-FTX"/>
+                                        <constraint firstItem="h7e-59-AVg" firstAttribute="leading" secondItem="Wrw-uB-sbE" secondAttribute="trailing" constant="10" id="b13-Dd-jq2"/>
+                                        <constraint firstItem="Wrw-uB-sbE" firstAttribute="leading" secondItem="6aY-Jn-IcI" secondAttribute="leading" constant="24" id="wGq-3j-DAT"/>
+                                        <constraint firstItem="5cV-h7-m0v" firstAttribute="leading" secondItem="h7e-59-AVg" secondAttribute="trailing" constant="10" id="ztY-S2-piV"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4r-Ca-q5T">
+                                    <rect key="frame" x="0.0" y="72" width="414" height="824"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lịch sử" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOe-hT-F67">
+                                            <rect key="frame" x="24" y="24" width="81" height="28"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_calendar" translatesAutoresizingMaskIntoConstraints="NO" id="WO0-gS-MRQ">
+                                            <rect key="frame" x="366" y="26" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="BhQ-FG-JXs"/>
+                                                <constraint firstAttribute="height" constant="24" id="F9P-0a-3ej"/>
+                                            </constraints>
+                                        </imageView>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="200" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5RF-eo-0lT" customClass="ContentSizedTableView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="60" width="366" height="724"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="WO0-gS-MRQ" secondAttribute="trailing" constant="24" id="1V6-Am-qz4"/>
+                                        <constraint firstItem="fOe-hT-F67" firstAttribute="top" secondItem="Z4r-Ca-q5T" secondAttribute="top" constant="24" id="T5j-qa-mxK"/>
+                                        <constraint firstItem="5RF-eo-0lT" firstAttribute="leading" secondItem="Z4r-Ca-q5T" secondAttribute="leading" constant="24" id="WL3-Ag-YOH"/>
+                                        <constraint firstAttribute="trailing" secondItem="5RF-eo-0lT" secondAttribute="trailing" constant="24" id="YXT-gm-qkS"/>
+                                        <constraint firstItem="fOe-hT-F67" firstAttribute="leading" secondItem="Z4r-Ca-q5T" secondAttribute="leading" constant="24" id="hab-gh-5il"/>
+                                        <constraint firstItem="WO0-gS-MRQ" firstAttribute="centerY" secondItem="fOe-hT-F67" secondAttribute="centerY" id="qGK-Gn-9TO"/>
+                                        <constraint firstAttribute="bottom" secondItem="5RF-eo-0lT" secondAttribute="bottom" constant="40" id="t14-r0-gdu"/>
+                                        <constraint firstItem="5RF-eo-0lT" firstAttribute="top" secondItem="fOe-hT-F67" secondAttribute="bottom" constant="8" id="vSU-4F-mIW"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="6aY-Jn-IcI" secondAttribute="trailing" id="DWg-Ab-gXG"/>
+                                <constraint firstItem="6aY-Jn-IcI" firstAttribute="top" secondItem="dAL-wi-W0h" secondAttribute="top" id="EWX-QE-VIu"/>
+                                <constraint firstAttribute="bottom" secondItem="Z4r-Ca-q5T" secondAttribute="bottom" id="ME6-7l-IT5"/>
+                                <constraint firstItem="Z4r-Ca-q5T" firstAttribute="top" secondItem="6aY-Jn-IcI" secondAttribute="bottom" id="P8h-hk-GMS"/>
+                                <constraint firstItem="6aY-Jn-IcI" firstAttribute="leading" secondItem="dAL-wi-W0h" secondAttribute="leading" id="qRL-V1-pBS"/>
+                                <constraint firstItem="Z4r-Ca-q5T" firstAttribute="leading" secondItem="dAL-wi-W0h" secondAttribute="leading" id="qup-gM-SR1"/>
+                                <constraint firstAttribute="trailing" secondItem="Z4r-Ca-q5T" secondAttribute="trailing" id="wus-yp-Me4"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueUltraLighter"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dAL-wi-W0h" secondAttribute="bottom" id="5Mw-Ex-WRG"/>
+                        <constraint firstItem="dAL-wi-W0h" firstAttribute="top" secondItem="wzm-Yq-0dq" secondAttribute="top" id="DTx-u4-GTX"/>
+                        <constraint firstItem="dAL-wi-W0h" firstAttribute="height" relation="greaterThanOrEqual" secondItem="wzm-Yq-0dq" secondAttribute="height" id="IdY-98-hp8"/>
+                        <constraint firstItem="dAL-wi-W0h" firstAttribute="leading" secondItem="wzm-Yq-0dq" secondAttribute="leading" id="PVX-zY-AzE"/>
+                        <constraint firstAttribute="trailing" secondItem="dAL-wi-W0h" secondAttribute="trailing" id="TeN-Fb-Lbz"/>
+                        <constraint firstItem="dAL-wi-W0h" firstAttribute="width" secondItem="wzm-Yq-0dq" secondAttribute="width" id="jSp-2N-YAf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wzm-Yq-0dq" secondAttribute="trailing" id="Jbe-Yx-hoo"/>
+                <constraint firstItem="wzm-Yq-0dq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fL1-uh-Ohk"/>
+                <constraint firstAttribute="bottom" secondItem="wzm-Yq-0dq" secondAttribute="bottom" id="jw5-tp-jVf"/>
+                <constraint firstItem="wzm-Yq-0dq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vZV-AP-Uic"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="61"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="5cV-h7-m0v">
+            <size key="intrinsicContentSize" width="74" height="16.5"/>
+        </designable>
+        <designable name="h7e-59-AVg">
+            <size key="intrinsicContentSize" width="119.5" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_calendar" width="24" height="24"/>
+        <image name="ic_loyalty" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

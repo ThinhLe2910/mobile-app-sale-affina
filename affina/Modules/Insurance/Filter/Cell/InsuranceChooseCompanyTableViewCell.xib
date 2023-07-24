@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InsuranceChooseCompanyTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="138"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35I-E4-4de" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="23" width="289" height="92"/>
+                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="black"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMf-w3-ffo" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="305" y="59" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="4w0-n8-ahs"/>
+                            <constraint firstAttribute="width" constant="20" id="gUo-nL-EIs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="tintAsset" value="whiteMain"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXL-5V-rad" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="137" width="325" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="5eY-iz-gNh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="grayBorder"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="35I-E4-4de" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3we-DF-Ca7"/>
+                    <constraint firstItem="OMf-w3-ffo" firstAttribute="leading" secondItem="35I-E4-4de" secondAttribute="trailing" constant="16" id="4tG-Fw-HKX"/>
+                    <constraint firstItem="35I-E4-4de" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="8Zh-Ry-jGi"/>
+                    <constraint firstAttribute="trailing" secondItem="VXL-5V-rad" secondAttribute="trailing" id="9j6-aW-eHw"/>
+                    <constraint firstItem="OMf-w3-ffo" firstAttribute="centerY" secondItem="35I-E4-4de" secondAttribute="centerY" id="DO4-qt-CX1"/>
+                    <constraint firstItem="VXL-5V-rad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Eg6-A3-WVs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="35I-E4-4de" secondAttribute="bottom" constant="12" id="NWP-Ec-cGe"/>
+                    <constraint firstAttribute="trailing" secondItem="OMf-w3-ffo" secondAttribute="trailing" id="RKz-gP-OgJ"/>
+                    <constraint firstAttribute="bottom" secondItem="VXL-5V-rad" secondAttribute="bottom" id="nJp-MY-Vqn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBox" destination="OMf-w3-ffo" id="pEE-kL-NGe"/>
+                <outlet property="nameLabel" destination="35I-E4-4de" id="X8j-7m-M5i"/>
+                <outlet property="separator" destination="VXL-5V-rad" id="8Lc-ZW-6ov"/>
+            </connections>
+            <point key="canvasLocation" x="135.50724637681159" y="119.19642857142857"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="35I-E4-4de">
+            <size key="intrinsicContentSize" width="42" height="19"/>
+        </designable>
+        <designable name="OMf-w3-ffo">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

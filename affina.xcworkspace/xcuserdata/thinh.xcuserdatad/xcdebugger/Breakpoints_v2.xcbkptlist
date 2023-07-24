@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "17337CD4-C927-4E5E-8848-8487A144055F"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4A2315E-24CC-4266-A3E0-17518F289227"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "InsuranceDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B4A2315E-24CC-4266-A3E0-17518F289227 - dd902da66f88807"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsuranceDetailViewController.bgImageView.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "B4A2315E-24CC-4266-A3E0-17518F289227 - f2ecad6507b6a433"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsuranceDetailViewController.bgImageView.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "B4A2315E-24CC-4266-A3E0-17518F289227 - 60249ed3dba4ef02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsuranceDetailViewController.bgImageView.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "B4A2315E-24CC-4266-A3E0-17518F289227 - a80414f12099743"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsuranceDetailViewController.bgImageView.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "B4A2315E-24CC-4266-A3E0-17518F289227 - dea38ec8982217d4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsuranceDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; affina.InsuranceDetailViewController"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "B4A2315E-24CC-4266-A3E0-17518F289227 - 8e789e9011da5b93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsuranceDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.InsuranceDetailViewController&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Detail/InsuranceDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20108EAE-DD3F-42D1-AFC4-C474FCECD254"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Insurance/Info/ExtraInfoView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "commonInit()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "20108EAE-DD3F-42D1-AFC4-C474FCECD254 - f1c3ef0628f6542"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.ExtraInfoView.openSection(section: Swift.Int) -&gt; ()"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Info/ExtraInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "20108EAE-DD3F-42D1-AFC4-C474FCECD254 - f1c3ef0628f6542"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.ExtraInfoView.openSection(section: Swift.Int) -&gt; ()"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Info/ExtraInfoView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "VoucherDetailViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - e2e7b07e4bd4aec9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.rateLabel.getter : Swift.Optional&lt;affina.BaseLabel&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 2f706e3b0c4a8edd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.rateLabel.setter : Swift.Optional&lt;affina.BaseLabel&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 4b48081e0fbe36ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.rateLabel.modify : Swift.Optional&lt;affina.BaseLabel&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 4a11e9f7e74bbf9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.rateLabel.modify : Swift.Optional&lt;affina.BaseLabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - b048f42f6c51a036"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; affina.VoucherDetailViewController"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 43380d6447a37177"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.VoucherDetailViewController&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 139886befd2eaf97"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.backButton.getter : Swift.Optional&lt;affina.BaseButton&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - fce868cec2bc8383"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.backButton.setter : Swift.Optional&lt;affina.BaseButton&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 7d6080b705283a92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.backButton.modify : Swift.Optional&lt;affina.BaseButton&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 9b9b18615b2b7fa1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.backButton.modify : Swift.Optional&lt;affina.BaseButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - b048f42f6c51a009"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; affina.VoucherDetailViewController"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "464">
+               </Location>
+               <Location
+                  uuid = "698A8912-52CC-4C2C-8E97-574DD8E6B568 - 43380d6447a37148"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.VoucherDetailViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.VoucherDetailViewController&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Flexi/Voucher/VoucherDetail/VoucherDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "440">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12293EB0-2DAF-4449-BA6D-0A38550C896D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Insurance/Payment/InsurancePaymentViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "12293EB0-2DAF-4449-BA6D-0A38550C896D - 387d9ba584e6c6f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsurancePaymentViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; affina.InsurancePaymentViewController"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Payment/InsurancePaymentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "12293EB0-2DAF-4449-BA6D-0A38550C896D - d2ee3d378756c1e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsurancePaymentViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; affina.InsurancePaymentViewController"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Payment/InsurancePaymentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "12293EB0-2DAF-4449-BA6D-0A38550C896D - 3ffe3ecc07dd458e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsurancePaymentViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.InsurancePaymentViewController&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Payment/InsurancePaymentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "12293EB0-2DAF-4449-BA6D-0A38550C896D - 6bb7e05182eac8ad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsurancePaymentViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.InsurancePaymentViewController&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Payment/InsurancePaymentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "12293EB0-2DAF-4449-BA6D-0A38550C896D - 4a06b1db52a6d065"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.InsurancePaymentViewController.__deallocating_deinit"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Insurance/Payment/InsurancePaymentViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B33AA4D-CC19-43FD-9739-CD19C763A696"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Claim/CardClaimViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "CardInsuranceCollectionViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832 - 6ca9c2567d45bc38"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.CardInsuranceCollectionViewCell.customViews.getter : Swift.Array&lt;__C.UIView&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832 - 419bb8c1717300c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.CardInsuranceCollectionViewCell.customViews.setter : Swift.Array&lt;__C.UIView&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832 - 67fd490795d5713f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.CardInsuranceCollectionViewCell.customViews.modify : Swift.Array&lt;__C.UIView&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832 - 7b620c1d8d7e2260"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.CardInsuranceCollectionViewCell.customViews.modify : Swift.Array&lt;__C.UIView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832 - b12433dadeb92fe5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.CardInsuranceCollectionViewCell.init(frame: __C.CGRect) -&gt; affina.CardInsuranceCollectionViewCell"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "1264">
+               </Location>
+               <Location
+                  uuid = "90C1D5B1-9FD2-4174-9315-B57854C72832 - 75fc247b0a02f88b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.CardInsuranceCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.CardInsuranceCollectionViewCell&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Card/CardInsuranceCarouselView/CardInsurranceCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "189"
+                  endingLineNumber = "189"
+                  offsetFromSymbolStart = "1236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "510D51A4-C934-4EEB-A90E-55766ED84EAA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "affina/Modules/Home/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "HomeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "510D51A4-C934-4EEB-A90E-55766ED84EAA - 4eaaab3f0a595233"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.HomeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; affina.HomeViewController"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "988">
+               </Location>
+               <Location
+                  uuid = "510D51A4-C934-4EEB-A90E-55766ED84EAA - ece85abdb44f6ea0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "affina.HomeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;affina.HomeViewController&gt;"
+                  moduleName = "affina"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/thinh/AFINA/mobile-ios-app-user-UAT/affina/Modules/Home/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "116"
+                  endingLineNumber = "116"
+                  offsetFromSymbolStart = "964">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-ExtraBold.ttf">
+            <string>Raleway-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1Eg-2T-24U" customClass="CardCompensationHistoryHeaderView" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="460" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Năm 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-lL-nC7" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="8" width="96.5" height="34"/>
+                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-N1-NKp" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="428" y="9" width="32" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="KAv-Sc-aTd"/>
+                        <constraint firstAttribute="height" constant="32" id="QXG-ch-Tjg"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ic_calendar"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="tintAsset" value="black"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVL-2l-vT7" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="372.5" y="9" width="87.5" height="32"/>
+                    <subviews>
+                        <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gA2-uX-RAd" customClass="TextFieldAnimBase" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="87.5" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="ic_circle" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-mY-Lv1">
+                            <rect key="frame" x="16" y="12" width="8" height="8"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="ic_dropdown" translatesAutoresizingMaskIntoConstraints="NO" id="DWU-mf-7by">
+                            <rect key="frame" x="59.5" y="10" width="12" height="12"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="dmK-Oa-aGp"/>
+                                <constraint firstAttribute="width" constant="12" id="qxq-L0-7dC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TQ-ks-cCU" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="28" y="8" width="27.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="10"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="ALL"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="subText"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="DWU-mf-7by" firstAttribute="leading" secondItem="7TQ-ks-cCU" secondAttribute="trailing" constant="4" id="4IH-PW-Agn"/>
+                        <constraint firstItem="NZ7-mY-Lv1" firstAttribute="centerY" secondItem="mVL-2l-vT7" secondAttribute="centerY" id="5gE-5I-PrU"/>
+                        <constraint firstItem="NZ7-mY-Lv1" firstAttribute="top" secondItem="mVL-2l-vT7" secondAttribute="top" constant="12" id="7i9-3M-UEt"/>
+                        <constraint firstItem="NZ7-mY-Lv1" firstAttribute="leading" secondItem="mVL-2l-vT7" secondAttribute="leading" constant="16" id="AIQ-h3-7Za"/>
+                        <constraint firstItem="DWU-mf-7by" firstAttribute="centerY" secondItem="mVL-2l-vT7" secondAttribute="centerY" id="Czo-2f-P4n"/>
+                        <constraint firstAttribute="trailing" secondItem="DWU-mf-7by" secondAttribute="trailing" constant="16" id="D3I-dG-d0c"/>
+                        <constraint firstItem="gA2-uX-RAd" firstAttribute="top" secondItem="mVL-2l-vT7" secondAttribute="top" id="Vh7-xo-8ZS"/>
+                        <constraint firstItem="gA2-uX-RAd" firstAttribute="leading" secondItem="mVL-2l-vT7" secondAttribute="leading" id="eFe-ef-diU"/>
+                        <constraint firstAttribute="bottom" secondItem="NZ7-mY-Lv1" secondAttribute="bottom" constant="12" id="ejB-z1-baj"/>
+                        <constraint firstAttribute="height" constant="32" id="hfm-SH-vIa"/>
+                        <constraint firstAttribute="bottom" secondItem="gA2-uX-RAd" secondAttribute="bottom" id="jua-Vp-QxX"/>
+                        <constraint firstItem="7TQ-ks-cCU" firstAttribute="top" secondItem="mVL-2l-vT7" secondAttribute="top" constant="8" id="p07-xL-cjH"/>
+                        <constraint firstAttribute="bottom" secondItem="7TQ-ks-cCU" secondAttribute="bottom" constant="8" id="pbS-yC-xts"/>
+                        <constraint firstAttribute="trailing" secondItem="gA2-uX-RAd" secondAttribute="trailing" id="qQi-f9-mAY"/>
+                        <constraint firstItem="7TQ-ks-cCU" firstAttribute="leading" secondItem="NZ7-mY-Lv1" secondAttribute="trailing" constant="4" id="sPO-Dm-Eq0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="P4y-4y-9wg"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="P4y-4y-9wg" firstAttribute="trailing" secondItem="XMt-N1-NKp" secondAttribute="trailing" id="EPC-w6-umk"/>
+                <constraint firstAttribute="bottom" secondItem="gcS-lL-nC7" secondAttribute="bottom" constant="8" id="S3e-0x-NEv"/>
+                <constraint firstItem="gcS-lL-nC7" firstAttribute="leading" secondItem="1Eg-2T-24U" secondAttribute="leading" id="Zjy-oz-EtA"/>
+                <constraint firstItem="P4y-4y-9wg" firstAttribute="trailing" secondItem="mVL-2l-vT7" secondAttribute="trailing" id="cTS-mn-zza"/>
+                <constraint firstItem="mVL-2l-vT7" firstAttribute="centerY" secondItem="1Eg-2T-24U" secondAttribute="centerY" id="jYd-vl-HKN"/>
+                <constraint firstItem="XMt-N1-NKp" firstAttribute="centerY" secondItem="1Eg-2T-24U" secondAttribute="centerY" id="jlI-O1-zS4"/>
+                <constraint firstItem="XMt-N1-NKp" firstAttribute="leading" secondItem="mVL-2l-vT7" secondAttribute="trailing" priority="500" constant="24" id="orS-FD-m1p"/>
+                <constraint firstItem="gcS-lL-nC7" firstAttribute="top" secondItem="1Eg-2T-24U" secondAttribute="top" constant="8" id="s8p-Pr-dUT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="calendarButton" destination="XMt-N1-NKp" id="6eA-VD-oDj"/>
+                <outlet property="categoryStateIcon" destination="NZ7-mY-Lv1" id="tP5-8F-qmo"/>
+                <outlet property="categoryTextField" destination="gA2-uX-RAd" id="b8Z-LW-Y44"/>
+                <outlet property="categoryTitle" destination="7TQ-ks-cCU" id="QhE-7P-hky"/>
+                <outlet property="categoryView" destination="mVL-2l-vT7" id="ELe-u3-0fj"/>
+                <outlet property="yearLabel" destination="gcS-lL-nC7" id="qhd-xB-vba"/>
+            </connections>
+            <point key="canvasLocation" x="13.043478260869566" y="250.44642857142856"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="7TQ-ks-cCU">
+            <size key="intrinsicContentSize" width="27.5" height="12"/>
+        </designable>
+        <designable name="XMt-N1-NKp">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="gA2-uX-RAd">
+            <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="gcS-lL-nC7">
+            <size key="intrinsicContentSize" width="96.5" height="23.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_calendar" width="24" height="24"/>
+        <image name="ic_circle" width="8" height="8"/>
+        <image name="ic_dropdown" width="12" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

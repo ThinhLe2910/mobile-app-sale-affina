@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="SettingsTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tin khuyến mãi, ưu đãi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb5-VK-7SE" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="169" height="19"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PROMTION_NEWS_OFFERS"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bật: Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1N-BM-fBW" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="16" y="39" width="57" height="14"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="TURN_ON_EMAIL"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FbT-f8-7W6">
+                        <rect key="frame" x="319" y="10" width="51" height="31"/>
+                    </switch>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjB-iA-Lq9" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="16" y="60" width="352" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UMU-i3-muA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="grayBorder"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xx-Iw-Lr3" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="344" y="13.5" width="24" height="24"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="ic_edit"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_next" translatesAutoresizingMaskIntoConstraints="NO" id="KGi-Wx-pxi">
+                        <rect key="frame" x="356" y="19.5" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="Vdm-g9-fDK"/>
+                            <constraint firstAttribute="height" constant="12" id="Whm-Fv-THg"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="KGi-Wx-pxi" firstAttribute="centerY" secondItem="Xb5-VK-7SE" secondAttribute="centerY" id="2QZ-mK-diQ"/>
+                    <constraint firstItem="bjB-iA-Lq9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2Zl-gZ-7yY"/>
+                    <constraint firstItem="Xb5-VK-7SE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="ClF-sl-IeL"/>
+                    <constraint firstAttribute="trailing" secondItem="bjB-iA-Lq9" secondAttribute="trailing" constant="16" id="JuS-fo-ewt"/>
+                    <constraint firstItem="q1N-BM-fBW" firstAttribute="top" secondItem="Xb5-VK-7SE" secondAttribute="bottom" constant="4" id="MUc-Je-gLf"/>
+                    <constraint firstItem="0xx-Iw-Lr3" firstAttribute="centerY" secondItem="Xb5-VK-7SE" secondAttribute="centerY" id="O9a-rn-GXh"/>
+                    <constraint firstAttribute="bottom" secondItem="bjB-iA-Lq9" secondAttribute="bottom" constant="4" id="V1b-Ko-huD"/>
+                    <constraint firstAttribute="trailing" secondItem="KGi-Wx-pxi" secondAttribute="trailing" constant="16" id="XUi-rV-Pom"/>
+                    <constraint firstItem="Xb5-VK-7SE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aJr-IY-d1V"/>
+                    <constraint firstAttribute="trailing" secondItem="FbT-f8-7W6" secondAttribute="trailing" constant="16" id="dbo-QV-qZw"/>
+                    <constraint firstAttribute="trailing" secondItem="0xx-Iw-Lr3" secondAttribute="trailing" constant="16" id="koD-Ug-FHA"/>
+                    <constraint firstItem="q1N-BM-fBW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="pSd-MU-NbZ"/>
+                    <constraint firstItem="FbT-f8-7W6" firstAttribute="centerY" secondItem="Xb5-VK-7SE" secondAttribute="centerY" id="xFj-Ia-BJI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="editButton" destination="0xx-Iw-Lr3" id="Yml-em-82V"/>
+                <outlet property="nextImage" destination="KGi-Wx-pxi" id="U5t-qd-FI4"/>
+                <outlet property="subText" destination="q1N-BM-fBW" id="ThB-rQ-bhE"/>
+                <outlet property="switchButton" destination="FbT-f8-7W6" id="JDL-oZ-BZH"/>
+                <outlet property="titleLabel" destination="Xb5-VK-7SE" id="Zdx-d6-uiP"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="90.066964285714278"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="0xx-Iw-Lr3">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="Xb5-VK-7SE">
+            <size key="intrinsicContentSize" width="169" height="19"/>
+        </designable>
+        <designable name="q1N-BM-fBW">
+            <size key="intrinsicContentSize" width="57" height="14.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_edit" width="24" height="24"/>
+        <image name="ic_next" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

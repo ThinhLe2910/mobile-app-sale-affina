@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardHospitalListView" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="VVb-nC-tYR" id="Ygp-5p-gCn"/>
+                <outlet property="searchTextField" destination="o6N-S9-Ts1" id="aP1-vE-noj"/>
+                <outlet property="tableView" destination="a6A-qb-HOp" id="tou-uO-bGI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VVb-nC-tYR" customClass="BaseView" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="371"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHb-8w-uhD" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="337"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o6N-S9-Ts1" customClass="TextFieldAnimBase" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="jXz-9p-Wwl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizePlaceholder" value="SEARCH"/>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a6A-qb-HOp" customClass="ContentSizedTableView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="74" width="414" height="263"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="o6N-S9-Ts1" firstAttribute="top" secondItem="FHb-8w-uhD" secondAttribute="top" id="Fz0-fI-bOg"/>
+                        <constraint firstItem="a6A-qb-HOp" firstAttribute="top" secondItem="o6N-S9-Ts1" secondAttribute="bottom" constant="24" id="JNd-12-NZM"/>
+                        <constraint firstAttribute="trailing" secondItem="a6A-qb-HOp" secondAttribute="trailing" id="Wvk-35-q9o"/>
+                        <constraint firstAttribute="bottom" secondItem="a6A-qb-HOp" secondAttribute="bottom" id="XMR-cd-sec"/>
+                        <constraint firstItem="o6N-S9-Ts1" firstAttribute="leading" secondItem="FHb-8w-uhD" secondAttribute="leading" id="jbX-aA-3Zq"/>
+                        <constraint firstItem="a6A-qb-HOp" firstAttribute="leading" secondItem="FHb-8w-uhD" secondAttribute="leading" id="mca-7l-yCT"/>
+                        <constraint firstAttribute="trailing" secondItem="o6N-S9-Ts1" secondAttribute="trailing" id="tMo-94-u22"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lar-ue-yxn"/>
+            <constraints>
+                <constraint firstItem="FHb-8w-uhD" firstAttribute="leading" secondItem="lar-ue-yxn" secondAttribute="leading" id="139-sz-ZTr"/>
+                <constraint firstItem="FHb-8w-uhD" firstAttribute="bottom" secondItem="lar-ue-yxn" secondAttribute="bottom" id="FM3-Wo-y0g"/>
+                <constraint firstItem="FHb-8w-uhD" firstAttribute="top" secondItem="VVb-nC-tYR" secondAttribute="top" id="PRl-wa-rQk"/>
+                <constraint firstItem="FHb-8w-uhD" firstAttribute="trailing" secondItem="lar-ue-yxn" secondAttribute="trailing" id="VDC-k9-QhS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="82.608695652173921" y="-122.20982142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="o6N-S9-Ts1">
+            <size key="intrinsicContentSize" width="5" height="20.5"/>
+        </designable>
+    </designables>
+</document>

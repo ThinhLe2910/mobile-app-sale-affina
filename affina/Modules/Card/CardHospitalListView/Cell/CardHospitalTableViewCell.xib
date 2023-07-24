@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="CardHospitalTableViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQy-f3-3WE" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="88"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pin" translatesAutoresizingMaskIntoConstraints="NO" id="8JZ-ey-PwK">
+                                <rect key="frame" x="322" y="32" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Mst-Ee-kkB"/>
+                                    <constraint firstAttribute="height" constant="24" id="p3H-jD-UQ5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1" translatesAutoresizingMaskIntoConstraints="NO" id="pcz-Tt-VgO">
+                                <rect key="frame" x="18" y="14" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hkY-of-wTB"/>
+                                    <constraint firstAttribute="width" constant="60" id="oPF-vT-TPO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="2118 Thornridge Cir. Syracuse, Connecticut 35624" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJl-OI-3ed" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="86" y="42" width="220" height="28.5"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bệnh viện Vestibulum" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9H-8N-fst" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="86" y="16" width="220" height="24"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QJl-OI-3ed" firstAttribute="top" secondItem="pcz-Tt-VgO" secondAttribute="centerY" constant="-2" id="8FG-fx-rXH"/>
+                            <constraint firstItem="j9H-8N-fst" firstAttribute="bottom" secondItem="pcz-Tt-VgO" secondAttribute="centerY" constant="-4" id="EG5-rA-RhR"/>
+                            <constraint firstItem="pcz-Tt-VgO" firstAttribute="leading" secondItem="aQy-f3-3WE" secondAttribute="leading" constant="18" id="KiR-V5-7Jh"/>
+                            <constraint firstItem="8JZ-ey-PwK" firstAttribute="leading" secondItem="QJl-OI-3ed" secondAttribute="trailing" constant="16" id="Ohu-oS-1Cg"/>
+                            <constraint firstItem="QJl-OI-3ed" firstAttribute="leading" secondItem="pcz-Tt-VgO" secondAttribute="trailing" constant="8" id="TMC-Xq-Tdr"/>
+                            <constraint firstItem="j9H-8N-fst" firstAttribute="top" secondItem="aQy-f3-3WE" secondAttribute="top" constant="16" id="Vru-z8-0vq"/>
+                            <constraint firstItem="8JZ-ey-PwK" firstAttribute="centerY" secondItem="pcz-Tt-VgO" secondAttribute="centerY" id="VyL-O2-poo"/>
+                            <constraint firstItem="pcz-Tt-VgO" firstAttribute="top" secondItem="aQy-f3-3WE" secondAttribute="top" constant="14" id="aDN-wQ-Zi6"/>
+                            <constraint firstItem="j9H-8N-fst" firstAttribute="leading" secondItem="pcz-Tt-VgO" secondAttribute="trailing" constant="8" id="eRe-by-ma1"/>
+                            <constraint firstAttribute="bottom" secondItem="pcz-Tt-VgO" secondAttribute="bottom" constant="14" id="hai-8o-rcF"/>
+                            <constraint firstAttribute="trailing" secondItem="8JZ-ey-PwK" secondAttribute="trailing" constant="20" id="qpg-vB-aQL"/>
+                            <constraint firstItem="QJl-OI-3ed" firstAttribute="width" secondItem="j9H-8N-fst" secondAttribute="width" id="usS-ms-Tfe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aQy-f3-3WE" secondAttribute="trailing" id="M0b-vv-715"/>
+                    <constraint firstItem="aQy-f3-3WE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="O4u-e3-W7P"/>
+                    <constraint firstItem="aQy-f3-3WE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="d3O-gJ-9SY"/>
+                    <constraint firstAttribute="bottom" secondItem="aQy-f3-3WE" secondAttribute="bottom" constant="12" id="vhJ-dk-P5x"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="addressLabel" destination="QJl-OI-3ed" id="6a5-CU-wSY"/>
+                <outlet property="logoImageView" destination="pcz-Tt-VgO" id="jQc-wl-O2v"/>
+                <outlet property="nameLabel" destination="j9H-8N-fst" id="hCs-jg-wXc"/>
+                <outlet property="pinImageView" destination="8JZ-ey-PwK" id="8LI-Jm-jR9"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="QJl-OI-3ed">
+            <size key="intrinsicContentSize" width="274" height="14.5"/>
+        </designable>
+        <designable name="j9H-8N-fst">
+            <size key="intrinsicContentSize" width="145.5" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="IMG_1" width="56" height="56"/>
+        <image name="ic_pin" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

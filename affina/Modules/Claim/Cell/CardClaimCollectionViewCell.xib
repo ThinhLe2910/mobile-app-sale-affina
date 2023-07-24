@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-ExtraBold.ttf">
+            <string>Raleway-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardClaimCollectionViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Zs-r9-f0e" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="260"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fcf-IK-dkX">
+                                <rect key="frame" x="28" y="28" width="199" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="cZO-dq-qSb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N5-sp-UPo" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="12" y="80" width="231" height="156"/>
+                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="subText"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jja-xk-OFt">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="260"/>
+                                <color key="backgroundColor" red="0.99814551767676762" green="0.99814551767676762" blue="0.99814551767676762" alpha="0.80304739238410594" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.47828975340136054" alpha="0.71981063741721851" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jja-xk-OFt" secondAttribute="trailing" id="4mP-8H-ltn"/>
+                            <constraint firstItem="Jja-xk-OFt" firstAttribute="top" secondItem="7Zs-r9-f0e" secondAttribute="top" id="74d-Fj-lc2"/>
+                            <constraint firstItem="3N5-sp-UPo" firstAttribute="leading" secondItem="7Zs-r9-f0e" secondAttribute="leading" constant="12" id="7x6-Te-b7z"/>
+                            <constraint firstItem="fcf-IK-dkX" firstAttribute="top" secondItem="7Zs-r9-f0e" secondAttribute="top" constant="28" id="D0c-S0-8Yl"/>
+                            <constraint firstAttribute="bottom" secondItem="Jja-xk-OFt" secondAttribute="bottom" id="JOC-ly-yti"/>
+                            <constraint firstItem="fcf-IK-dkX" firstAttribute="leading" secondItem="7Zs-r9-f0e" secondAttribute="leading" constant="28" id="MIg-o8-cGt"/>
+                            <constraint firstAttribute="trailing" secondItem="3N5-sp-UPo" secondAttribute="trailing" constant="12" id="NOk-TZ-QkS"/>
+                            <constraint firstAttribute="trailing" secondItem="fcf-IK-dkX" secondAttribute="trailing" constant="28" id="Psf-2L-YOc"/>
+                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="3N5-sp-UPo" secondAttribute="bottom" constant="24" id="g45-dm-o3a"/>
+                            <constraint firstItem="Jja-xk-OFt" firstAttribute="leading" secondItem="7Zs-r9-f0e" secondAttribute="leading" id="oU2-bO-gW3"/>
+                            <constraint firstItem="3N5-sp-UPo" firstAttribute="top" secondItem="fcf-IK-dkX" secondAttribute="bottom" constant="4" id="xcr-uA-H7n"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7Zs-r9-f0e" secondAttribute="bottom" id="OdC-f5-kS0"/>
+                <constraint firstAttribute="trailing" secondItem="7Zs-r9-f0e" secondAttribute="trailing" id="qYa-zY-Iot"/>
+                <constraint firstItem="7Zs-r9-f0e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="y4P-mt-HNt"/>
+                <constraint firstItem="7Zs-r9-f0e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ytS-RF-A6w"/>
+            </constraints>
+            <size key="customSize" width="363" height="291"/>
+            <connections>
+                <outlet property="iconImageView" destination="fcf-IK-dkX" id="PAZ-aQ-e1s"/>
+                <outlet property="nameLabel" destination="3N5-sp-UPo" id="4D2-aZ-wqk"/>
+                <outlet property="viewDisable" destination="Jja-xk-OFt" id="Lbs-eS-kT0"/>
+            </connections>
+            <point key="canvasLocation" x="358.69565217391306" y="69.642857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="3N5-sp-UPo">
+            <size key="intrinsicContentSize" width="27.5" height="12"/>
+        </designable>
+    </designables>
+</document>

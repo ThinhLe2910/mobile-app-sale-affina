@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoImageCollectionViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="92" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="92" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgI-x4-VVZ" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="92" height="90"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3i3-96-3AW">
+                                <rect key="frame" x="0.0" y="0.0" width="92" height="90"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_camera" translatesAutoresizingMaskIntoConstraints="NO" id="dH8-Xg-ryB">
+                                <rect key="frame" x="22" y="21" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="DVQ-5M-FkK"/>
+                                    <constraint firstAttribute="height" constant="48" id="bQQ-h3-9Pi"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHz-gL-wd2" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="64" y="58" width="20" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check" translatesAutoresizingMaskIntoConstraints="NO" id="24g-4y-Ke2">
+                                        <rect key="frame" x="4" y="4" width="12" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="6rt-T5-FwZ"/>
+                                            <constraint firstAttribute="height" constant="12" id="IpD-fF-z1n"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="24g-4y-Ke2" secondAttribute="trailing" constant="4" id="8Lp-Or-ycc"/>
+                                    <constraint firstAttribute="width" constant="20" id="R9A-L9-XK4"/>
+                                    <constraint firstItem="24g-4y-Ke2" firstAttribute="top" secondItem="yHz-gL-wd2" secondAttribute="top" constant="4" id="RI4-qK-KMq"/>
+                                    <constraint firstAttribute="height" constant="20" id="Uma-FF-f0j"/>
+                                    <constraint firstAttribute="bottom" secondItem="24g-4y-Ke2" secondAttribute="bottom" constant="4" id="e4l-Ee-GGw"/>
+                                    <constraint firstItem="24g-4y-Ke2" firstAttribute="leading" secondItem="yHz-gL-wd2" secondAttribute="leading" constant="4" id="u2D-gR-dZz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="borderColor" value="whiteMain"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueMain"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dH8-Xg-ryB" firstAttribute="centerY" secondItem="pgI-x4-VVZ" secondAttribute="centerY" id="Mob-z2-dhB"/>
+                            <constraint firstItem="3i3-96-3AW" firstAttribute="leading" secondItem="pgI-x4-VVZ" secondAttribute="leading" id="Tr7-ij-ipX"/>
+                            <constraint firstItem="3i3-96-3AW" firstAttribute="top" secondItem="pgI-x4-VVZ" secondAttribute="top" id="WXn-ls-Dng"/>
+                            <constraint firstAttribute="trailing" secondItem="yHz-gL-wd2" secondAttribute="trailing" constant="8" id="dg9-1K-tKZ"/>
+                            <constraint firstItem="dH8-Xg-ryB" firstAttribute="centerX" secondItem="pgI-x4-VVZ" secondAttribute="centerX" id="ijs-7x-DDQ"/>
+                            <constraint firstAttribute="bottom" secondItem="3i3-96-3AW" secondAttribute="bottom" id="l2g-NB-psi"/>
+                            <constraint firstAttribute="bottom" secondItem="yHz-gL-wd2" secondAttribute="bottom" constant="12" id="ncT-Q5-FOT"/>
+                            <constraint firstAttribute="trailing" secondItem="3i3-96-3AW" secondAttribute="trailing" id="wQS-c0-DG6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueUltraLighter"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pgI-x4-VVZ" secondAttribute="trailing" id="5zN-DL-ixs"/>
+                <constraint firstAttribute="bottom" secondItem="pgI-x4-VVZ" secondAttribute="bottom" id="Lnp-oD-vst"/>
+                <constraint firstItem="pgI-x4-VVZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RhU-kb-wo8"/>
+                <constraint firstItem="pgI-x4-VVZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T5b-Rz-LbC"/>
+            </constraints>
+            <size key="customSize" width="92" height="90"/>
+            <connections>
+                <outlet property="cameraImageView" destination="dH8-Xg-ryB" id="tVi-ta-HEh"/>
+                <outlet property="checkImageView" destination="yHz-gL-wd2" id="N8C-ME-1PS"/>
+                <outlet property="imageView" destination="3i3-96-3AW" id="kJP-ow-b9z"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="44.196428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_camera" width="48" height="48"/>
+        <image name="ic_check" width="12" height="12.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

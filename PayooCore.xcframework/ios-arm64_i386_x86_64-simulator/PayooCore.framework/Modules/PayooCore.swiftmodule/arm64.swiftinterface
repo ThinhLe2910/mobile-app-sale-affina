@@ -1,0 +1,2668 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayooCore
+import CommonCrypto
+import CoreGraphics
+import CoreText
+import Foundation
+import ObjectiveC
+@_exported import PayooCore
+import QuartzCore
+import Swift
+import UIKit.UIFont
+import UIKit
+import _Concurrency
+public struct IDInfo : Swift.Codable, Swift.Equatable {
+  public let idCard: Swift.String?
+  public let idDateOfIssueString: Swift.String?
+  public let idPlaceOfIssue: Swift.String?
+  public let idCardType: PayooCore.IDCardType?
+  public init(idCard: Swift.String?, idDateOfIssueString: Swift.String?, idPlaceOfIssue: Swift.String?, idCardType: PayooCore.IDCardType?)
+  public static func == (a: PayooCore.IDInfo, b: PayooCore.IDInfo) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ValidationRegex : Swift.Decodable, Swift.Equatable {
+  public let phoneNumber: Swift.String
+  public init(phoneNumber: Swift.String)
+  public static func == (a: PayooCore.ValidationRegex, b: PayooCore.ValidationRegex) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct NoteSetting : Swift.Decodable, Swift.Equatable {
+  public let deepLink: PayooCore.DeepLink?
+  public let screenIDs: [Swift.String]
+  public let viContent: Swift.String
+  public let enContent: Swift.String
+  public init(deepLink: PayooCore.DeepLink?, screenIDs: [Swift.String], viContent: Swift.String, enContent: Swift.String)
+  public static func == (a: PayooCore.NoteSetting, b: PayooCore.NoteSetting) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DeepLink : Swift.Decodable, Swift.Equatable {
+  public let viContent: Swift.String
+  public let enContent: Swift.String
+  public let url: Swift.String
+  public let color: Swift.String?
+  public init(viContent: Swift.String, enContent: Swift.String, url: Swift.String, color: Swift.String?)
+  public static func == (a: PayooCore.DeepLink, b: PayooCore.DeepLink) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class AnimationSubview : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public typealias HTTPResult = Swift.Result<PayooCore.HTTPResponse, PayooCore.HTTPError>
+extension Swift.Result where Success == PayooCore.HTTPResponse, Failure == PayooCore.HTTPError {
+  public var request: PayooCore.HTTPRequest {
+    get
+  }
+  public var response: PayooCore.HTTPResponse? {
+    get
+  }
+}
+final public class ColorValueProvider : PayooCore.AnyValueProvider {
+  public typealias ColorValueBlock = (CoreGraphics.CGFloat) -> PayooCore.Color
+  final public var color: PayooCore.Color {
+    get
+    set
+  }
+  public init(block: @escaping PayooCore.ColorValueProvider.ColorValueBlock)
+  public init(_ color: PayooCore.Color)
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame: CoreGraphics.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreGraphics.CGFloat) -> Any
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class RequestLogLoader : PayooCore.HTTPLoader {
+  override public func load(task: PayooCore.HTTPTask)
+  override public init()
+  @objc deinit
+}
+extension PayooCore.DropDown {
+  @_Concurrency.MainActor(unsafe) final public class func setupDefaultAppearance()
+}
+public protocol AnimationTextProvider : AnyObject {
+  func textFor(keypathName: Swift.String, sourceText: Swift.String) -> Swift.String
+}
+final public class DictionaryTextProvider : PayooCore.AnimationTextProvider {
+  public init(_ values: [Swift.String : Swift.String])
+  final public func textFor(keypathName: Swift.String, sourceText: Swift.String) -> Swift.String
+  @objc deinit
+}
+final public class DefaultTextProvider : PayooCore.AnimationTextProvider {
+  final public func textFor(keypathName: Swift.String, sourceText: Swift.String) -> Swift.String
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class AnyServiceFactory {
+  final public func supports<ServiceType>(_ type: ServiceType.Type) -> Swift.Bool
+  @objc deinit
+}
+@objc final public class OAuthCredentials : ObjectiveC.NSObject, Swift.Codable {
+  final public let accessToken: Swift.String
+  final public let refreshToken: Swift.String
+  public init(accessToken: Swift.String, refreshToken: Swift.String)
+  public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+public enum ReturnCode {
+  public static let success: Swift.Int
+  public static let failure: Swift.Int
+  public static let notSupportPaymentGateway: Swift.Int
+}
+extension Swift.Double {
+  public var currencyString: Swift.String {
+    get
+  }
+  public var decimalPointString: Swift.String {
+    get
+  }
+}
+public struct DepositSetting : Swift.Codable, Swift.Equatable {
+  public let paymentConfig: PayooCore.PaymentConfig
+  public static func == (a: PayooCore.DepositSetting, b: PayooCore.DepositSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum AccountType : Swift.Int, Swift.Equatable, Swift.Codable {
+  case account = 1
+  case card = 2
+  case linkedAccount = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol OAuthDelegate : AnyObject {
+  func oAuth(_ oAuth: PayooCore.OAuth, wantsPersistedCredentials: @escaping (PayooCore.OAuthCredentials?) -> Swift.Void)
+  func oAuth(_ oAuth: PayooCore.OAuth, persistCredentials: PayooCore.OAuthCredentials?)
+  func oAuthNeedsLogIn(_ oAuth: PayooCore.OAuth)
+}
+@_hasMissingDesignatedInitializers public class OAuth : PayooCore.HTTPLoader {
+  weak public var delegate: PayooCore.OAuthDelegate?
+  override public func load(task: PayooCore.HTTPTask)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class LottieView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var contentMode: UIKit.UIView.ContentMode {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct AccountManagementSetting : Swift.Decodable, Swift.Equatable {
+  public let bannedBankCodes: [Swift.String]
+  public init(from decoder: Swift.Decoder) throws
+  public init(bannedBankCodes: [Swift.String])
+  public static func == (a: PayooCore.AccountManagementSetting, b: PayooCore.AccountManagementSetting) -> Swift.Bool
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class ToolTipView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func showUntil(_ second: Swift.Double, with message: Swift.String? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ResultLogLoader : PayooCore.HTTPLoader {
+  override public func load(task: PayooCore.HTTPTask)
+  override public init()
+  @objc deinit
+}
+final public class PointValueProvider : PayooCore.AnyValueProvider {
+  public typealias PointValueBlock = (CoreGraphics.CGFloat) -> CoreGraphics.CGPoint
+  final public var point: CoreGraphics.CGPoint {
+    get
+    set
+  }
+  public init(block: @escaping PayooCore.PointValueProvider.PointValueBlock)
+  public init(_ point: CoreGraphics.CGPoint)
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame: CoreGraphics.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreGraphics.CGFloat) -> Any
+  @objc deinit
+}
+extension UIKit.UISearchBar {
+  @_Concurrency.MainActor(unsafe) public var searchField: UIKit.UITextField? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func setSearchFieldHeight(_ height: CoreGraphics.CGFloat)
+}
+@objc final public class CompatibleAnimationKeypath : ObjectiveC.NSObject {
+  @objc public init(keypath: Swift.String)
+  @objc public init(keys: [Swift.String])
+  final public let animationKeypath: PayooCore.AnimationKeypath
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public class ImageService {
+  public static let shared: PayooCore.ImageService
+  public init()
+  public func pauseDownload()
+  public func resumeDownload()
+  public func cancelAllDownloads()
+  public func loadImage(url: Swift.String, completion: @escaping (Foundation.Data?) -> Swift.Void)
+  @objc deinit
+}
+public enum URLHandler {
+  public static func open(url: Foundation.URL)
+}
+public struct Response : Swift.Decodable {
+  public let timestamp: Foundation.TimeInterval
+  public let code: Swift.Int
+  public let message: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ResponseData<T> : Swift.Decodable where T : Swift.Decodable {
+  public let data: T
+  public let timestamp: Foundation.TimeInterval
+  public let code: Swift.Int
+  public let message: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ResponseError : Swift.Decodable {
+  public let code: Swift.Int
+  public let message: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+public typealias AnimationFrameTime = CoreGraphics.CGFloat
+public typealias AnimationProgressTime = CoreGraphics.CGFloat
+public enum LottieBackgroundBehavior {
+  case stop
+  case pause
+  case pauseAndRestore
+  case forceFinish
+  public static func == (a: PayooCore.LottieBackgroundBehavior, b: PayooCore.LottieBackgroundBehavior) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum LottieLoopMode {
+  case playOnce
+  case loop
+  case autoReverse
+  case `repeat`(Swift.Float)
+  case repeatBackwards(Swift.Float)
+}
+extension PayooCore.LottieLoopMode : Swift.Equatable {
+  public static func == (lhs: PayooCore.LottieLoopMode, rhs: PayooCore.LottieLoopMode) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) final public class AnimationView : PayooCore.LottieView {
+  @_Concurrency.MainActor(unsafe) final public var animation: PayooCore.Animation? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var backgroundBehavior: PayooCore.LottieBackgroundBehavior
+  @_Concurrency.MainActor(unsafe) final public var imageProvider: PayooCore.AnimationImageProvider {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var textProvider: PayooCore.AnimationTextProvider {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var isAnimationPlaying: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var loopMode: PayooCore.LottieLoopMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var shouldRasterizeWhenIdle: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var currentProgress: PayooCore.AnimationProgressTime {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var currentTime: Foundation.TimeInterval {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var currentFrame: PayooCore.AnimationFrameTime {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var realtimeAnimationFrame: PayooCore.AnimationFrameTime {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var realtimeAnimationProgress: PayooCore.AnimationProgressTime {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var animationSpeed: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var respectAnimationFrameRate: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var viewportFrame: CoreGraphics.CGRect? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public func play(completion: PayooCore.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func play(fromProgress: PayooCore.AnimationProgressTime? = nil, toProgress: PayooCore.AnimationProgressTime, loopMode: PayooCore.LottieLoopMode? = nil, completion: PayooCore.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func play(fromFrame: PayooCore.AnimationFrameTime? = nil, toFrame: PayooCore.AnimationFrameTime, loopMode: PayooCore.LottieLoopMode? = nil, completion: PayooCore.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func play(fromMarker: Swift.String? = nil, toMarker: Swift.String, loopMode: PayooCore.LottieLoopMode? = nil, completion: PayooCore.LottieCompletionBlock? = nil)
+  @_Concurrency.MainActor(unsafe) final public func stop()
+  @_Concurrency.MainActor(unsafe) final public func pause()
+  @_Concurrency.MainActor(unsafe) final public func reloadImages()
+  @_Concurrency.MainActor(unsafe) final public func forceDisplayUpdate()
+  @_Concurrency.MainActor(unsafe) final public func setValueProvider(_ valueProvider: PayooCore.AnyValueProvider, keypath: PayooCore.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func getValue(for keypath: PayooCore.AnimationKeypath, atFrame: PayooCore.AnimationFrameTime?) -> Any?
+  @_Concurrency.MainActor(unsafe) final public func logHierarchyKeypaths()
+  @_Concurrency.MainActor(unsafe) final public func addSubview(_ subview: PayooCore.AnimationSubview, forLayerAt keypath: PayooCore.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func convert(_ rect: CoreGraphics.CGRect, toLayerAt keypath: PayooCore.AnimationKeypath?) -> CoreGraphics.CGRect?
+  @_Concurrency.MainActor(unsafe) final public func convert(_ point: CoreGraphics.CGPoint, toLayerAt keypath: PayooCore.AnimationKeypath?) -> CoreGraphics.CGPoint?
+  @_Concurrency.MainActor(unsafe) final public func setNodeIsEnabled(isEnabled: Swift.Bool, keypath: PayooCore.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) final public func progressTime(forMarker named: Swift.String) -> PayooCore.AnimationProgressTime?
+  @_Concurrency.MainActor(unsafe) final public func frameTime(forMarker named: Swift.String) -> PayooCore.AnimationFrameTime?
+  @_Concurrency.MainActor(unsafe) public init(animation: PayooCore.Animation?, imageProvider: PayooCore.AnimationImageProvider? = nil, textProvider: PayooCore.AnimationTextProvider = DefaultTextProvider())
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @objc deinit
+}
+public struct AccountSetting : Swift.Decodable, Swift.Equatable {
+  public let basicAccount: PayooCore.AccountSetting.BasicAccount
+  public let isKYCSupport: Swift.Bool
+  public init(basicAccount: PayooCore.AccountSetting.BasicAccount, isKYCSupport: Swift.Bool)
+  public static func == (a: PayooCore.AccountSetting, b: PayooCore.AccountSetting) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PayooCore.AccountSetting {
+  public struct BasicAccount : Swift.Decodable, Swift.Equatable {
+    public let settings: Swift.Int
+    public init(settings: Swift.Int)
+    public static func == (a: PayooCore.AccountSetting.BasicAccount, b: PayooCore.AccountSetting.BasicAccount) -> Swift.Bool
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+public class URLSessionLoader : PayooCore.HTTPLoader {
+  public init(timeoutIntervalForRequest: Foundation.TimeInterval = 120, disableServerTrustPolicy: Swift.Bool = true)
+  override public func load(task: PayooCore.HTTPTask)
+  @objc deinit
+}
+public struct BankMessage : Swift.Decodable, Swift.Equatable {
+  public let registerEBanking: Swift.String?
+  public let notRegisterEBanking: Swift.String?
+  public init(registerEBanking: Swift.String?, notRegisterEBanking: Swift.String?)
+  public static func == (a: PayooCore.BankMessage, b: PayooCore.BankMessage) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_Concurrency.MainActor(unsafe) public class InformingView : UIKit.UIView {
+  public enum InformingType {
+    case general
+    case success
+    case warning
+    case error
+    public static func == (a: PayooCore.InformingView.InformingType, b: PayooCore.InformingView.InformingType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public let informingType: PayooCore.InformingView.InformingType
+  @_Concurrency.MainActor(unsafe) public init(message: Swift.String, type: PayooCore.InformingView.InformingType = .general)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct ActionItem {
+  public init(title: Swift.String, style: PayooCore.ActionStyle, actionHandler: (() -> Swift.Void)? = nil)
+}
+public protocol DialogPresentable {
+  func show(error: Swift.String)
+  func show(message: Swift.String, actions: [PayooCore.ActionItem])
+  func showMessage(_ message: Swift.String, btnTitle: Swift.String, completion: (() -> Swift.Void)?)
+  func showInputDialog(title: Swift.String, message: Swift.String, okHandler: @escaping (Swift.String) -> Swift.Void, cancelHandler: (() -> Swift.Void)?)
+}
+extension PayooCore.DialogPresentable where Self : UIKit.UIViewController {
+  public func show(error: Swift.String)
+  public func show(message: Swift.String, actions: [PayooCore.ActionItem])
+  public func showMessage(_ message: Swift.String, btnTitle: Swift.String, completion: (() -> Swift.Void)?)
+  public func showInputDialog(title: Swift.String, message: Swift.String, okHandler: @escaping (Swift.String) -> Swift.Void, cancelHandler: (() -> Swift.Void)?)
+}
+extension QuartzCore.CALayer {
+  public func logLayerTree(withIndent: Swift.Int = 0)
+}
+@_inheritsConvenienceInitializers @objc(PayooConfiguration) final public class Configuration : ObjectiveC.NSObject {
+  @objc public static func set(language: PayooCore.Language)
+  public static func getLanguage() -> PayooCore.Language
+  @objc public static func set(environment: PayooCore.Environment)
+  public static func getEnvironment() -> PayooCore.Environment
+  @objc public static func set(merchantId: Swift.String, secretKey: Swift.String)
+  public static func getMerchantId() -> Swift.String
+  public static func getSecretKey() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension PayooCore.Color : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class AnimatedSwitch : PayooCore.AnimatedControl {
+  public enum CancelBehavior {
+    case reverse
+    case none
+    public static func == (a: PayooCore.AnimatedSwitch.CancelBehavior, b: PayooCore.AnimatedSwitch.CancelBehavior) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public var isOn: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var cancelBehavior: PayooCore.AnimatedSwitch.CancelBehavior
+  @_Concurrency.MainActor(unsafe) final public func setIsOn(_ isOn: Swift.Bool, animated: Swift.Bool, shouldFireHaptics: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) final public func setProgressForState(fromProgress: PayooCore.AnimationProgressTime, toProgress: PayooCore.AnimationProgressTime, forOnState: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override public init(animation: PayooCore.Animation)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) override final public func animationDidSet()
+  @objc deinit
+}
+public enum ActionStyle {
+  case plain
+  case error
+  case destructive
+  case cancel
+  case success
+  public static func == (a: PayooCore.ActionStyle, b: PayooCore.ActionStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct LinkManagementSetting : Swift.Decodable, Swift.Equatable {
+  public let bannedBankCodes: [Swift.String]
+  public init(from decoder: Swift.Decoder) throws
+  public init(bannedBankCodes: [Swift.String])
+  public static func == (a: PayooCore.LinkManagementSetting, b: PayooCore.LinkManagementSetting) -> Swift.Bool
+}
+public struct WithdrawalSetting : Swift.Codable, Swift.Equatable {
+  public let paymentConfig: PayooCore.PaymentConfig
+  public static func == (a: PayooCore.WithdrawalSetting, b: PayooCore.WithdrawalSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct HTTPMethod : Swift.RawRepresentable, Swift.Equatable, Swift.Hashable {
+  public static let get: PayooCore.HTTPMethod
+  public static let post: PayooCore.HTTPMethod
+  public static let put: PayooCore.HTTPMethod
+  public static let delete: PayooCore.HTTPMethod
+  public let rawValue: Swift.String
+  public init(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class LottieImageAsset : PayooCore.LottieAsset {
+  final public let name: Swift.String
+  final public let directory: Swift.String
+  final public let width: Swift.Double
+  final public let height: Swift.Double
+  override final public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+public struct Vector1D {
+  public init(_ value: Swift.Double)
+}
+public struct Vector3D {
+  public init(x: Swift.Double, y: Swift.Double, z: Swift.Double)
+}
+public protocol AnimationCacheProvider {
+  func animation(forKey: Swift.String) -> PayooCore.Animation?
+  func setAnimation(_ animation: PayooCore.Animation, forKey: Swift.String)
+  func clearCache()
+}
+public protocol AlertPresentable {
+  func show(message: Swift.String)
+  func show(message: Swift.String, actionHandler: (() -> Swift.Void)?)
+  func showError(message: Swift.String, retryHandler: @escaping () -> Swift.Void, cancelHandler: (() -> Swift.Void)?)
+}
+extension PayooCore.AlertPresentable where Self : UIKit.UIViewController {
+  public func show(message: Swift.String)
+  public func show(message: Swift.String, actionHandler: (() -> Swift.Void)?)
+  public func showError(message: Swift.String, retryHandler: @escaping () -> Swift.Void, cancelHandler: (() -> Swift.Void)?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FormatTextField : UIKit.UITextField {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var maxLength: Swift.Int
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var groupingSeparator: Swift.String
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var groupingSize: Swift.Int
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var shouldReverseGrouping: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) open func formatText()
+  @objc deinit
+}
+public struct Container : PayooCore.Resolver {
+  public let factories: [PayooCore.AnyServiceFactory]
+  public init()
+  public func register<T>(_ interface: T.Type, instance: T) -> PayooCore.Container
+  public func register<ServiceType>(_ type: ServiceType.Type, _ factory: @escaping (PayooCore.Resolver) -> ServiceType) -> PayooCore.Container
+  public func resolve<ServiceType>(_ type: ServiceType.Type) -> ServiceType
+}
+@_hasMissingDesignatedInitializers final public class DIContainer {
+  final public class func shared() -> PayooCore.DIContainer
+  final public class func reset()
+  @discardableResult
+  final public func register<T>(_ interface: T.Type, instance: T) -> PayooCore.Container
+  @discardableResult
+  final public func register<ServiceType>(_ type: ServiceType.Type, _ factory: @escaping (PayooCore.Resolver) -> ServiceType) -> PayooCore.Container
+  final public func provide<T>(_ type: T.Type) -> T
+  @objc deinit
+}
+public struct CardManagementSetting : Swift.Decodable, Swift.Equatable {
+  public let bannedBankCodes: [Swift.String]
+  public init(from decoder: Swift.Decoder) throws
+  public init(bannedBankCodes: [Swift.String])
+  public static func == (a: PayooCore.CardManagementSetting, b: PayooCore.CardManagementSetting) -> Swift.Bool
+}
+public class PayooClientV3 {
+  public init(environment: PayooCore.ServerEnvironment, appId: Swift.String, apiKey: Swift.String, appVersion: Swift.Int, language: PayooCore.RequestLanguageV3, loader: PayooCore.HTTPLoader? = nil)
+  @discardableResult
+  public func load(request: PayooCore.HTTPRequest, completion: @escaping (PayooCore.HTTPResult) -> Swift.Void) -> PayooCore.HTTPTask
+  @objc deinit
+}
+extension PayooCore.PayooClientV3 {
+  public func execute(request: PayooCore.HTTPRequest, completion: @escaping (Swift.Result<PayooCore.ResponseV3, PayooCore.BaseError>) -> Swift.Void)
+  public func fetch<T>(request: PayooCore.HTTPRequest, completion: @escaping (Swift.Result<PayooCore.ResponseDataV3<T>, PayooCore.BaseError>) -> Swift.Void) where T : Swift.Decodable, T : Swift.Equatable
+}
+public struct UserProfile : Swift.Decodable, Swift.Equatable {
+  public let email: Swift.String
+  public let fullName: Swift.String
+  public let phone: Swift.String
+  public let isEmailVerified: Swift.Bool
+  public let isPhoneVerified: Swift.Bool
+  public let kycInfo: PayooCore.KYCInfo?
+  public let username: Swift.String
+  public let avatarUrl: Swift.String?
+  public let birthDay: Swift.String?
+  public let balance: Swift.Double
+  public init(email: Swift.String, fullName: Swift.String, phone: Swift.String, isEmailVerified: Swift.Bool, isPhoneVerified: Swift.Bool, kycInfo: PayooCore.KYCInfo?, username: Swift.String, birthDay: Swift.String?, gender: Swift.Bool, avatarUrl: Swift.String?, balance: Swift.Double = 0)
+  public static func == (a: PayooCore.UserProfile, b: PayooCore.UserProfile) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PayooCore.UserProfile {
+  public var gender: PayooCore.UserProfile.Gender {
+    get
+  }
+  public enum Gender : Swift.Int, Swift.CaseIterable {
+    case male
+    case female
+    public var boolValue: Swift.Bool {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [PayooCore.UserProfile.Gender]
+    public typealias RawValue = Swift.Int
+    public static var allCases: [PayooCore.UserProfile.Gender] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension Swift.String {
+  public static var messageErrorDefault: Swift.String {
+    get
+  }
+  public static func messagePleaseEnter(_ arg: Swift.String) -> Swift.String
+  public static func messagePleaseSelect(_ arg: Swift.String) -> Swift.String
+  public static var buttonTitleOk: Swift.String {
+    get
+  }
+  public static var buttonTitleCancel: Swift.String {
+    get
+  }
+  public static var buttonTitleClose: Swift.String {
+    get
+  }
+  public static var buttonTitleRetry: Swift.String {
+    get
+  }
+  public static var buttonTitleContinue: Swift.String {
+    get
+  }
+  public static var buttonTitlePay: Swift.String {
+    get
+  }
+  public static var buttonTitleLeave: Swift.String {
+    get
+  }
+  public static var buttonTitleDone: Swift.String {
+    get
+  }
+  public static var buttonTitleNext: Swift.String {
+    get
+  }
+  public static var buttonTitleSettings: Swift.String {
+    get
+  }
+}
+extension UIKit.NSLayoutDimension {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func constraintTo(constant: CoreGraphics.CGFloat) -> UIKit.NSLayoutConstraint
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func constraintTo(_ anchor: UIKit.NSLayoutDimension, multiplier: CoreGraphics.CGFloat = 1) -> UIKit.NSLayoutConstraint
+}
+extension Swift.String {
+  public func toDate(format: Swift.String, locale: Foundation.Locale? = nil) -> Foundation.Date?
+}
+extension Foundation.Date {
+  public func toString(format: Swift.String, locale: Foundation.Locale? = nil) -> Swift.String?
+}
+public enum IDCardVerificationStatus : Swift.Int, Swift.Decodable {
+  case unavailable
+  case notVerifiedYet
+  case verified
+  case cancelled
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DomesticField : Swift.Int, Swift.CaseIterable, Swift.Decodable {
+  case cardNumber
+  case accountNo
+  case issuanceDate
+  case expiryDate
+  case holderName
+  case idCard
+  case phone
+  case email
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayooCore.DomesticField]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayooCore.DomesticField] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) public class SingleLineDetailTableViewDataSource : ObjectiveC.NSObject, UIKit.UITableViewDataSource {
+  @_Concurrency.MainActor(unsafe) public init(items: [PayooCore.DetailTableViewItem])
+  @_Concurrency.MainActor(unsafe) public func registerCells(_ tableView: UIKit.UITableView)
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public var lottieColorValue: PayooCore.Color {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CheckboxView : PayooCore.SelectionItemView {
+  public enum CheckboxStyle {
+    case rounded
+    case squared
+    public static func == (a: PayooCore.CheckboxView.CheckboxStyle, b: PayooCore.CheckboxView.CheckboxStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public init(title: Swift.String, style: PayooCore.CheckboxView.CheckboxStyle, isEnabled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc override public func didSelectItem()
+  @objc deinit
+}
+public enum CoordinateSpace : Swift.Int, Swift.Codable {
+  case type2d
+  case type3d
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+final public class Animation : Swift.Codable {
+  final public let startFrame: PayooCore.AnimationFrameTime
+  final public let endFrame: PayooCore.AnimationFrameTime
+  final public let framerate: Swift.Double
+  final public var markerNames: [Swift.String] {
+    get
+  }
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+}
+public class LocalizationUtil {
+  public init(bundle: Foundation.Bundle)
+  public func localizedString(for string: Swift.String, language: PayooCore.Language) -> Swift.String
+  @objc deinit
+}
+extension UIKit.NSLayoutXAxisAnchor {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func constraintTo(_ anchor: UIKit.NSLayoutXAxisAnchor, constant: CoreGraphics.CGFloat = 0) -> UIKit.NSLayoutConstraint
+}
+extension UIKit.NSLayoutYAxisAnchor {
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func constraintTo(_ anchor: UIKit.NSLayoutYAxisAnchor, constant: CoreGraphics.CGFloat = 0) -> UIKit.NSLayoutConstraint
+}
+extension Foundation.Date {
+  public init(year: Swift.Int, month: Swift.Int, day: Swift.Int, hour: Swift.Int = 0, minute: Swift.Int = 0, second: Swift.Int = 0)
+  public var day: Swift.Int {
+    get
+  }
+  public var month: Swift.Int {
+    get
+  }
+  public var year: Swift.Int {
+    get
+  }
+}
+final public class FloatValueProvider : PayooCore.AnyValueProvider {
+  public typealias CGFloatValueBlock = (CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  final public var float: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  public init(block: @escaping PayooCore.FloatValueProvider.CGFloatValueBlock)
+  public init(_ float: CoreGraphics.CGFloat)
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame: CoreGraphics.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreGraphics.CGFloat) -> Any
+  @objc deinit
+}
+public struct CommonExtension<Base> {
+  public let base: Base
+  public init(_ base: Base)
+}
+public protocol CommonExtensionCompatible {
+  associatedtype Base
+  static var pyCommon: PayooCore.CommonExtension<Self.Base>.Type { get }
+  var pyCommon: PayooCore.CommonExtension<Self.Base> { get }
+}
+extension PayooCore.CommonExtensionCompatible {
+  public static var pyCommon: PayooCore.CommonExtension<Self>.Type {
+    get
+  }
+  public var pyCommon: PayooCore.CommonExtension<Self> {
+    get
+  }
+}
+public enum Spacing {
+  public static let spacing4: CoreGraphics.CGFloat
+  public static let spacing8: CoreGraphics.CGFloat
+  public static let spacing12: CoreGraphics.CGFloat
+  public static let spacing16: CoreGraphics.CGFloat
+  public static let spacing24: CoreGraphics.CGFloat
+  public static let spacing32: CoreGraphics.CGFloat
+  public static let spacing48: CoreGraphics.CGFloat
+  public static let spacing64: CoreGraphics.CGFloat
+  public static let spacing96: CoreGraphics.CGFloat
+  public static let spacing160: CoreGraphics.CGFloat
+}
+extension CoreGraphics.CGFloat {
+  public static var spacing4: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing8: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing12: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing16: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing24: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing32: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing48: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing64: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing96: CoreGraphics.CGFloat {
+    get
+  }
+  public static var spacing160: CoreGraphics.CGFloat {
+    get
+  }
+}
+@objc public enum NavigationBarStyle : Swift.Int {
+  case blue
+  case white
+  case custom
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NavigationController : UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @available(iOS 5.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(navigationBarClass: Swift.AnyClass?, toolbarClass: Swift.AnyClass?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(rootViewController: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarStyle: UIKit.UIViewController? {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarHidden: UIKit.UIViewController? {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func setNavigationBarTitle(_ title: Swift.String, subtitle: Swift.String? = nil)
+}
+public protocol HTTPBody {
+  var isEmpty: Swift.Bool { get }
+  var additionalHeaders: [Swift.String : Swift.String] { get }
+  func encode() throws -> Foundation.Data
+}
+extension PayooCore.HTTPBody {
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var additionalHeaders: [Swift.String : Swift.String] {
+    get
+  }
+}
+public struct EmptyBody : PayooCore.HTTPBody {
+  public let isEmpty: Swift.Bool
+  public init()
+  public func encode() throws -> Foundation.Data
+}
+public struct DataBody : PayooCore.HTTPBody {
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public var additionalHeaders: [Swift.String : Swift.String]
+  public init(_ data: Foundation.Data, additionalHeaders: [Swift.String : Swift.String] = [:])
+  public func encode() throws -> Foundation.Data
+}
+public struct JSONBody : PayooCore.HTTPBody {
+  public let isEmpty: Swift.Bool
+  public var additionalHeaders: [Swift.String : Swift.String]
+  public init<T>(_ value: T, encoder: Foundation.JSONEncoder = JSONEncoder()) where T : Swift.Encodable
+  public func encode() throws -> Foundation.Data
+}
+public struct FormBody : PayooCore.HTTPBody {
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public let additionalHeaders: [Swift.String : Swift.String]
+  public init(_ values: [Foundation.URLQueryItem])
+  public init(_ values: [Swift.String : Swift.String])
+  public func encode() throws -> Foundation.Data
+}
+public struct MultipartFormDataBody : PayooCore.HTTPBody {
+  public let isEmpty: Swift.Bool
+  public var additionalHeaders: [Swift.String : Swift.String] {
+    get
+  }
+  public enum MultipartFormData {
+    case formField(name: Swift.String, value: Swift.String)
+    case fileData(data: Foundation.Data, name: Swift.String, fileName: Swift.String, mimeType: Swift.String)
+  }
+  public init(_ formData: PayooCore.MultipartFormDataBody.MultipartFormData...)
+  public func encode() throws -> Foundation.Data
+}
+extension Dispatch.DispatchQueue {
+  public class func once(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, block: () -> Swift.Void)
+  public class func once(token: Swift.String, block: () -> Swift.Void)
+}
+extension Swift.String {
+  public func removeDiacriticMarks() -> Swift.String
+  public func trim() -> Swift.String
+  public func toArray(_ lengthOfPart: Swift.Int) -> [Swift.String]
+  public func formatCardNumber() -> Swift.String
+  public func removeWhiteSpaces() -> Swift.String
+  public func height(withConstrainedWidth width: CoreGraphics.CGFloat, font: UIKit.UIFont) -> CoreGraphics.CGFloat
+  public func substring(startIndex: Swift.Int, length: Swift.Int) -> Swift.String
+  public func capitalizingFirstLetter() -> Swift.String
+  public func trimmingWhiteSpaces() -> Swift.String
+  public func split(chunkLength: Swift.Int) -> [Swift.String]
+  public func removingDiacriticMarks() -> Swift.String
+  public func normalized() -> Swift.String
+  public func normalizedPhone() -> Swift.String
+  public func encodedURLString() -> Swift.String?
+}
+extension Swift.StringProtocol where Self : Swift.RangeReplaceableCollection {
+  public var digits: Self {
+    get
+  }
+}
+extension Swift.String {
+  public func toDate(format: Swift.String) -> Foundation.Date?
+  public func convertDateString(from originFormat: Swift.String, to expectedFormat: Swift.String) -> Swift.String
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public static var defaultReusableId: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func setBounds(cornerRadius: CoreGraphics.CGFloat, borderWidth: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public static var reuseIdentifier: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func setBorder(width: CoreGraphics.CGFloat = 0, color: UIKit.UIColor = .clear, cornerRadius: CoreGraphics.CGFloat = 6)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func drawDashLine(in rect: CoreGraphics.CGRect, cornerRadius: CoreGraphics.CGFloat, color: UIKit.UIColor) -> QuartzCore.CAShapeLayer
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func drawDottedLine(startPoint: CoreGraphics.CGPoint, endPoint: CoreGraphics.CGPoint, lineDashPattern: [Foundation.NSNumber]? = [4, 5], color: UIKit.UIColor = .gray4) -> QuartzCore.CAShapeLayer
+  @_Concurrency.MainActor(unsafe) public func setRoundedShadowView(point: CoreGraphics.CGPoint, alpha: Swift.Float, blur: CoreGraphics.CGFloat, spread: CoreGraphics.CGFloat, shadowColor: UIKit.UIColor, cornerRadius: CoreGraphics.CGFloat = 0, borderWidth: CoreGraphics.CGFloat = 0, borderColor: UIKit.UIColor = .clear)
+  @_Concurrency.MainActor(unsafe) public func shakeView()
+  @_Concurrency.MainActor(unsafe) public func addBlurView(style: UIKit.UIBlurEffect.Style)
+}
+public class LRUAnimationCache : PayooCore.AnimationCacheProvider {
+  public init()
+  public func clearCache()
+  public static let sharedCache: PayooCore.LRUAnimationCache
+  public var cacheSize: Swift.Int
+  public func animation(forKey: Swift.String) -> PayooCore.Animation?
+  public func setAnimation(_ animation: PayooCore.Animation, forKey: Swift.String)
+  @objc deinit
+}
+public struct HTTPError : Swift.Error {
+  public let code: PayooCore.HTTPError.Code
+  public let request: PayooCore.HTTPRequest
+  public let response: PayooCore.HTTPResponse?
+  public let underlyingError: Swift.Error?
+  public enum Code {
+    case invalidRequest
+    case timedOut
+    case networkConnectionLost
+    case cannotConnect
+    case cancelled
+    case invalidResponse
+    case cannotAuthenticate
+    case invalidSecretKey
+    case unknown
+    public static func == (a: PayooCore.HTTPError.Code, b: PayooCore.HTTPError.Code) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension UIKit.UITextField {
+  @available(iOS 11, *)
+  @_Concurrency.MainActor(unsafe) public func scaled()
+}
+public struct ServerEnvironment {
+  public let host: Swift.String
+  public let disableServerTrustPolicy: Swift.Bool
+  public init(host: Swift.String, disableServerTrustPolicy: Swift.Bool = true)
+}
+public struct PaymentConfig : Swift.Codable, Swift.Equatable {
+  public let methodSupport: Swift.Int
+  public let maxPayment: Swift.Double?
+  public let minPayment: Swift.Double?
+  public let banSupportedCard: Swift.String?
+  public let banSupportedAccount: Swift.String?
+  public let banSupportLink: Swift.String?
+  public static func == (a: PayooCore.PaymentConfig, b: PayooCore.PaymentConfig) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PayooCore.PaymentConfig {
+  public var methodSupports: [PayooCore.MethodSupportType] {
+    get
+  }
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func pinEdgesToSuperView(with inset: UIKit.UIEdgeInsets = .zero)
+  @_Concurrency.MainActor(unsafe) public func setDimension(width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func centerInSuperView()
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func constraint(attribute: UIKit.NSLayoutConstraint.Attribute, to item: Any?, with itemAttribute: UIKit.NSLayoutConstraint.Attribute, constant: CoreGraphics.CGFloat = 0, multiplier: CoreGraphics.CGFloat = 1) -> UIKit.NSLayoutConstraint
+  @_Concurrency.MainActor(unsafe) public func addSubviews(_ views: UIKit.UIView...)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func constraintTo(topAnchor: UIKit.NSLayoutYAxisAnchor?, bottomAnchor: UIKit.NSLayoutYAxisAnchor?, leadingAnchor: UIKit.NSLayoutXAxisAnchor?, trailingAnchor: UIKit.NSLayoutXAxisAnchor?, topConstant: CoreGraphics.CGFloat = 0, bottomConstant: CoreGraphics.CGFloat = 0, leadingConstant: CoreGraphics.CGFloat = 0, trailingConstant: CoreGraphics.CGFloat = 0) -> [UIKit.NSLayoutConstraint]
+}
+precedencegroup LoaderChainingPrecedence {
+  associativity: right
+  higherThan: NilCoalescingPrecedence
+}
+infix operator --> : LoaderChainingPrecedence
+@discardableResult
+public func --> (lhs: PayooCore.HTTPLoader, rhs: PayooCore.HTTPLoader) -> PayooCore.HTTPLoader
+infix operator +| : DefaultPrecedence
+infix operator +- : DefaultPrecedence
+public enum RequestLanguageV3 : Swift.Int, Swift.Encodable {
+  case vietnamese
+  case english
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIImage {
+  public func withSize(_ size: CoreGraphics.CGSize) -> UIKit.UIImage
+  public func maskWithColor(_ color: UIKit.UIColor) -> UIKit.UIImage?
+  public func blend(with color: UIKit.UIColor) -> UIKit.UIImage?
+  public func alpha(_ value: CoreGraphics.CGFloat) -> UIKit.UIImage?
+  public static func getImage(with color: UIKit.UIColor, size: CoreGraphics.CGSize) -> UIKit.UIImage
+}
+public enum AlertUtil {
+  public static func showInputDialog(viewController: UIKit.UIViewController, title: Swift.String, message: Swift.String, textFieldConfiguration: ((UIKit.UITextField) -> Swift.Void)?, okHandler: @escaping (Swift.String) -> Swift.Void, cancelHandler: (() -> Swift.Void)?)
+  public static func showAlertDialog(viewController: UIKit.UIViewController, title: Swift.String, message: Swift.String, positiveButtonTitle: Swift.String, negativeButtonTitle: Swift.String, positiveHandler: @escaping () -> Swift.Void, negativeHandler: (() -> Swift.Void)?)
+  public static func showAlertDialog(viewController: UIKit.UIViewController, title: Swift.String, message: Swift.String, buttonTitle: Swift.String, actionHandler: (() -> Swift.Void)?)
+  public static func showErrorDialog(viewController: UIKit.UIViewController, message: Swift.String, retryHandler: (() -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DropDownCell : UIKit.UITableViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var optionLabel: UIKit.UILabel!
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension PayooCore.DropDownCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func setHighlighted(_ highlighted: Swift.Bool, animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func setSelected(_ selected: Swift.Bool, animated: Swift.Bool)
+}
+public enum OAuthError : Swift.Error, Swift.CustomStringConvertible {
+  case refreshTokenExpired
+  case failToRefresh(PayooCore.HTTPError)
+  case failToObtainCredentials
+  public var description: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers public class MockLoader : PayooCore.HTTPLoader {
+  public typealias HTTPHandler = (PayooCore.HTTPResult) -> Swift.Void
+  public typealias MockHandler = (PayooCore.HTTPRequest, (PayooCore.HTTPResult) -> Swift.Void) -> Swift.Void
+  override public func load(task: PayooCore.HTTPTask)
+  @discardableResult
+  public func then(_ handler: @escaping PayooCore.MockLoader.MockHandler) -> PayooCore.MockLoader
+  override public init()
+  @objc deinit
+}
+public protocol PriceViewDelegate : AnyObject {
+  func priceView(_ priceView: PayooCore.PriceView, didTapButton button: PayooCore.Button)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PriceView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var amountDescriptionFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var amountFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var buttonTitleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var isEnabledButton: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var isShowFullTopSeparator: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak public var delegate: PayooCore.PriceViewDelegate?
+  @_Concurrency.MainActor(unsafe) public init(amountDescription: Swift.String, amount: Swift.Double, buttonTitle: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public func updateAmount(_ amount: Swift.Double)
+  @objc deinit
+}
+public struct HTTPResponse {
+  public let request: PayooCore.HTTPRequest
+  public let body: Foundation.Data?
+}
+extension PayooCore.HTTPResponse {
+  public var status: PayooCore.HTTPStatus {
+    get
+  }
+  public var message: Swift.String {
+    get
+  }
+  public var headers: [Swift.AnyHashable : Any] {
+    get
+  }
+  public func map<T>(_ type: T.Type, decoder: Foundation.JSONDecoder = JSONDecoder()) throws -> T? where T : Swift.Decodable
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DashBorderView : UIKit.UIView {
+  public enum BorderEdge : Swift.Int {
+    case top
+    case bottom
+    case topAndBottom
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var borderLeftInset: CoreGraphics.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var borderRightInset: CoreGraphics.CGFloat
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var _borderEdge: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var borderEdge: PayooCore.DashBorderView.BorderEdge {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func withColor(_ color: UIKit.UIColor)
+  @_Concurrency.MainActor(unsafe) public func setImage(url: Swift.String, placeHolderImage: UIKit.UIImage? = nil)
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static func current(window: UIKit.UIWindow? = nil) -> UIKit.UIViewController?
+}
+extension PayooCore.AnimationView {
+  @_Concurrency.MainActor(unsafe) convenience public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main, imageProvider: PayooCore.AnimationImageProvider? = nil, animationCache: PayooCore.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
+  @_Concurrency.MainActor(unsafe) convenience public init(filePath: Swift.String, imageProvider: PayooCore.AnimationImageProvider? = nil, animationCache: PayooCore.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
+  @_Concurrency.MainActor(unsafe) convenience public init(url: Foundation.URL, imageProvider: PayooCore.AnimationImageProvider? = nil, closure: @escaping PayooCore.AnimationView.DownloadClosure, animationCache: PayooCore.AnimationCacheProvider? = LRUAnimationCache.sharedCache)
+  public typealias DownloadClosure = (Swift.Error?) -> Swift.Void
+}
+public struct KYCInfo : Swift.Decodable, Swift.Equatable {
+  public let hasBankAccount: Swift.Bool
+  public let idCardVerificationStatus: PayooCore.IDCardVerificationStatus?
+  public let idInfo: PayooCore.IDInfo?
+  public let isBankAccountVerified: Swift.Bool
+  public let isIdCardVerified: Swift.Bool
+  public let isVerified: Swift.Bool
+  public let idCardVerificationError: Swift.String?
+  public init(hasBankAccount: Swift.Bool, idCardVerificationStatus: PayooCore.IDCardVerificationStatus?, idInfo: PayooCore.IDInfo?, isBankAccountVerified: Swift.Bool, isIdCardVerified: Swift.Bool, isVerified: Swift.Bool, idCardVerificationError: Swift.String?)
+  public static func == (a: PayooCore.KYCInfo, b: PayooCore.KYCInfo) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PYInputTextView : UIKit.UIView {
+  public enum TextFieldState {
+    case normal
+    case focused
+    case disabled
+    case error(message: Swift.String?)
+  }
+  @_Concurrency.MainActor(unsafe) public var title: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var placeholder: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var text: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var helpText: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var titleFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var helpTextFont: UIKit.UIFont? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var shakeViewWhenError: Swift.Bool
+  @_Concurrency.MainActor(unsafe) weak public var delegate: UIKit.UITextFieldDelegate? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textFieldState: PayooCore.PYInputTextView.TextFieldState {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public let textField: PayooCore.TextField
+  @objc dynamic public init()
+  @objc deinit
+}
+@objc(PayooEnvironment) public enum Environment : Swift.Int {
+  case development
+  case production
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class FilepathImageProvider : PayooCore.AnimationImageProvider {
+  public init(filepath: Swift.String)
+  public init(filepath: Foundation.URL)
+  public func imageForAsset(asset: PayooCore.LottieImageAsset) -> CoreGraphics.CGImage?
+  @objc deinit
+}
+public struct CardSetting : Swift.Decodable, Swift.Equatable {
+  public let identificationNumber: Swift.String
+  public let authMethods: [Swift.String]
+  public let layoutSetting: Swift.Int
+  public let requiredFieldSetting: Swift.Int?
+  public let cardNumberLength: Swift.String
+  public let cardType: PayooCore.CardType
+  public let isKYCSupport: Swift.Bool
+  public init(identificationNumber: Swift.String, authMethods: [Swift.String], layoutSetting: Swift.Int, requiredFieldSetting: Swift.Int, cardNumberLength: Swift.String, cardType: PayooCore.CardType, isKYCSupport: Swift.Bool)
+  public static func == (a: PayooCore.CardSetting, b: PayooCore.CardSetting) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+public class EnvironmentApplier : PayooCore.HTTPLoader {
+  public init(environment: PayooCore.ServerEnvironment)
+  override public func load(task: PayooCore.HTTPTask)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class AnimatedButton : PayooCore.AnimatedControl {
+  @_Concurrency.MainActor(unsafe) final public func setPlayRange(fromProgress: PayooCore.AnimationProgressTime, toProgress: PayooCore.AnimationProgressTime, event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor(unsafe) final public func setPlayRange(fromMarker fromName: Swift.String, toMarker toName: Swift.String, event: UIKit.UIControl.Event)
+  @_Concurrency.MainActor(unsafe) override public init(animation: PayooCore.Animation)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override final public func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @objc deinit
+}
+@objc public enum GroupType : Swift.Int {
+  case success
+  case failure
+  case unknown
+  case cancel
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension PayooCore.GroupType : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct TransferSetting : Swift.Codable, Swift.Equatable {
+  public let paymentConfig: PayooCore.PaymentConfig?
+  public static func == (a: PayooCore.TransferSetting, b: PayooCore.TransferSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(PayooAppearance) final public class Appearance : ObjectiveC.NSObject {
+  @objc public static var navigationBarBackgroundColor: UIKit.UIColor
+  @objc public static var navigationBarTitleColor: UIKit.UIColor
+  @objc public static var navigationBarSubtitleColor: UIKit.UIColor
+  @objc public static var navigationBarTintColor: UIKit.UIColor
+  @objc public static var backgroundColor: UIKit.UIColor
+  @objc public static var preferredStatusBarStyle: UIKit.UIStatusBarStyle
+  @objc public static var customFont: PayooCore.CustomFont
+  @objc public static var modalPresentationStyle: UIKit.UIModalPresentationStyle
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Swift.Numeric {
+  public var formattedWithSeparator: Swift.String {
+    get
+  }
+}
+public enum IDCardType : Swift.Int, Swift.Codable {
+  case identification
+  case passport
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TextField : PayooCore.FormatTextField {
+  @_Concurrency.MainActor(unsafe) open var textOnChanged: ((Swift.String) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override open func formatText()
+  @_Concurrency.MainActor(unsafe) open var padding: UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func textRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func editingRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func clearButtonRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Foundation.Bundle {
+  public func setLanguage(bundleCode: Swift.String?)
+}
+extension UIKit.UIFont {
+  public static func register(from url: Foundation.URL)
+  public func attributedString(string: Swift.String, size: CoreGraphics.CGFloat? = nil, color: UIKit.UIColor = .black, textAlignment: UIKit.NSTextAlignment = .left, lineBreakMode: UIKit.NSLineBreakMode = .byWordWrapping) -> Foundation.NSAttributedString
+}
+extension UIKit.UIFont {
+  @available(iOS 11.0, *)
+  public func scale() -> UIKit.UIFont
+}
+extension PayooCore.Animation {
+  public static func named(_ name: Swift.String, bundle: Foundation.Bundle = Bundle.main, subdirectory: Swift.String? = nil, animationCache: PayooCore.AnimationCacheProvider? = nil) -> PayooCore.Animation?
+  public static func filepath(_ filepath: Swift.String, animationCache: PayooCore.AnimationCacheProvider? = nil) -> PayooCore.Animation?
+  public typealias DownloadClosure = (PayooCore.Animation?) -> Swift.Void
+  public static func loadedFrom(url: Foundation.URL, closure: @escaping PayooCore.Animation.DownloadClosure, animationCache: PayooCore.AnimationCacheProvider?)
+  final public func progressTime(forMarker named: Swift.String) -> PayooCore.AnimationProgressTime?
+  final public func frameTime(forMarker named: Swift.String) -> PayooCore.AnimationFrameTime?
+  final public func progressTime(forFrame frameTime: PayooCore.AnimationFrameTime) -> PayooCore.AnimationProgressTime
+  final public func frameTime(forProgress progressTime: PayooCore.AnimationProgressTime) -> PayooCore.AnimationFrameTime
+  final public func time(forFrame frameTime: PayooCore.AnimationFrameTime) -> Foundation.TimeInterval
+  final public func frameTime(forTime time: Foundation.TimeInterval) -> PayooCore.AnimationFrameTime
+  final public var duration: Foundation.TimeInterval {
+    get
+  }
+  final public var bounds: CoreGraphics.CGRect {
+    get
+  }
+  final public var size: CoreGraphics.CGSize {
+    get
+  }
+}
+public struct DetailTableViewSection {
+  public let title: Swift.String
+  public let items: [PayooCore.DetailTableViewItem]
+  public init(title: Swift.String, items: [PayooCore.DetailTableViewItem])
+}
+public struct DetailTableViewItem {
+  public let name: Swift.String
+  public let detail: Swift.String
+  public init(name: Swift.String, detail: Swift.String)
+}
+@objc @_Concurrency.MainActor(unsafe) public class DetailTableViewDataSource : ObjectiveC.NSObject, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) public init(models: [PayooCore.DetailTableViewSection])
+  @_Concurrency.MainActor(unsafe) public func registerCells(_ tableView: UIKit.UITableView)
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @objc deinit
+}
+extension UIKit.UIBarButtonItem {
+  @_Concurrency.MainActor(unsafe) public static func closeButton(target: Any, action: ObjectiveC.Selector) -> UIKit.UIBarButtonItem
+  @_Concurrency.MainActor(unsafe) public static func backButton(target: Any, action: ObjectiveC.Selector) -> UIKit.UIBarButtonItem
+}
+public protocol AnimationImageProvider {
+  func imageForAsset(asset: PayooCore.LottieImageAsset) -> CoreGraphics.CGImage?
+}
+extension Swift.Optional where Wrapped : Swift.Collection {
+  public var isEmptyOrNil: Swift.Bool {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class CustomFont : ObjectiveC.NSObject {
+  @objc final public let regular: UIKit.UIFont
+  @objc final public let medium: UIKit.UIFont
+  @objc final public let italic: UIKit.UIFont
+  @objc final public let bold: UIKit.UIFont
+  @objc final public let mediumItalic: UIKit.UIFont
+  @objc public init(regular: UIKit.UIFont, medium: UIKit.UIFont, italic: UIKit.UIFont, bold: UIKit.UIFont, mediumItalic: UIKit.UIFont)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension PayooCore.Vector1D : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension PayooCore.Vector3D : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension PayooCore.Vector3D {
+  public var pointValue: CoreGraphics.CGPoint {
+    get
+  }
+  public var sizeValue: CoreGraphics.CGSize {
+    get
+  }
+}
+extension UIKit.UILabel {
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor(unsafe) public func scaled()
+}
+public protocol AnyValueProvider {
+  var valueType: Any.Type { get }
+  func hasUpdate(frame: PayooCore.AnimationFrameTime) -> Swift.Bool
+  func value(frame: PayooCore.AnimationFrameTime) -> Any
+}
+open class HTTPLoader : PayooCore.HTTPLoading {
+  public var nextLoader: PayooCore.HTTPLoader? {
+    get
+    set
+  }
+  public init()
+  open func load(task: PayooCore.HTTPTask)
+  @discardableResult
+  public func load(request: PayooCore.HTTPRequest, completion: @escaping (PayooCore.HTTPResult) -> Swift.Void) -> PayooCore.HTTPTask
+  @objc deinit
+}
+public enum BaseError : Swift.Error {
+  case network
+  case authentication(code: Swift.Int)
+  case parseJson(Swift.Error)
+  case unknown(code: Swift.Int?, message: Swift.String?)
+  case missingData
+  case customMessage(Swift.String)
+  public var failureReason: Swift.String? {
+    get
+  }
+}
+extension PayooCore.BaseError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SelectionGroupView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var axis: UIKit.NSLayoutConstraint.Axis {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var spacing: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public func disableItemAtIndex(_ index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func enableItemAtIndex(_ index: Swift.Int)
+  @objc deinit
+}
+extension PayooCore.SelectionGroupView : PayooCore.SelectionItemViewDelegate {
+  @_Concurrency.MainActor(unsafe) public func selectionItemView(_ view: PayooCore.SelectionItemView, didChangeSelectedState isSelected: Swift.Bool)
+}
+public enum AuthMethod {
+  case oauth
+  public static func == (a: PayooCore.AuthMethod, b: PayooCore.AuthMethod) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct HTTPRequest {
+  public let id: Foundation.UUID
+  public let method: PayooCore.HTTPMethod
+  public var headers: [Swift.String : Swift.String]
+  public var params: [Swift.String : Swift.String] {
+    get
+    set
+  }
+  public var body: PayooCore.HTTPBody
+  public var authMethod: PayooCore.AuthMethod?
+  public var version: Swift.String?
+  public init(method: PayooCore.HTTPMethod, path: Swift.String, version: Swift.String? = nil, headers: [Swift.String : Swift.String] = [:], params: [Swift.String : Swift.String] = [:], body: PayooCore.HTTPBody = EmptyBody(), authMethod: PayooCore.AuthMethod? = nil)
+}
+extension PayooCore.HTTPRequest {
+  public var url: Foundation.URL? {
+    get
+  }
+  public var host: Swift.String? {
+    get
+    set
+  }
+  public var path: Swift.String {
+    get
+    set
+  }
+  public var query: Swift.String? {
+    get
+  }
+}
+public struct BankAccountSetting : Swift.Decodable, Swift.Equatable {
+  public let accountSetting: PayooCore.AccountManagementSetting?
+  public let cardSetting: PayooCore.CardManagementSetting?
+  public let linkedAccountSetting: PayooCore.LinkManagementSetting?
+  public let notes: [PayooCore.NoteSetting]?
+  public init(accountSetting: PayooCore.AccountManagementSetting?, cardSetting: PayooCore.CardManagementSetting?, linkedAccountSetting: PayooCore.LinkManagementSetting?, notes: [PayooCore.NoteSetting]?)
+  public static func == (a: PayooCore.BankAccountSetting, b: PayooCore.BankAccountSetting) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CurrencyTextField : UIKit.UITextField {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var minValue: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var maxValue: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var unitOfValueWhenSuggest: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var suggestDefaultValue: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var text: Swift.String? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @objc deinit
+}
+public protocol CheckboxGroupViewDelegate : AnyObject {
+  func checkboxGroupView(_ view: PayooCore.CheckboxGroupView, didSelectItemAt index: Swift.Int, withSelectedState isSelected: Swift.Bool)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CheckboxGroupView : PayooCore.SelectionGroupView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: PayooCore.CheckboxGroupViewDelegate?
+  @_Concurrency.MainActor(unsafe) public var selectedIndices: [Swift.Int] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(checkboxStyle: PayooCore.CheckboxView.CheckboxStyle = .squared)
+  @_Concurrency.MainActor(unsafe) convenience public init(items: [Swift.String], checkboxStyle: PayooCore.CheckboxView.CheckboxStyle = .squared)
+  @_Concurrency.MainActor(unsafe) public func add(_ item: Swift.String, isEnabled: Swift.Bool = true, isSelected: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public func toggleSelectionAtIndex(_ index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func deselectAll()
+  @objc deinit
+}
+public enum TimeFormatter {
+  public static func format(hours: Swift.Int) -> Swift.String
+}
+public struct Bank : Swift.Decodable, Swift.Equatable {
+  public let bankId: Swift.String
+  public let code: Swift.String
+  public let name: Swift.String
+  public var logoUrl: Swift.String
+  public let cardSetting: PayooCore.CardSetting?
+  public let accountSetting: PayooCore.AccountSetting?
+  public let linkSetting: PayooCore.LinkSetting?
+  public let message: PayooCore.BankMessage?
+  public var accountTypes: [PayooCore.AccountType]
+  public init(bankId: Swift.String, code: Swift.String, name: Swift.String, logoUrl: Swift.String, cardSetting: PayooCore.CardSetting?, accountSetting: PayooCore.AccountSetting?, linkSetting: PayooCore.LinkSetting?, message: PayooCore.BankMessage?, accountTypes: [PayooCore.AccountType] = [])
+  public mutating func updateLogoUrl(with baseUrl: Swift.String)
+  public mutating func updateAccountTypes(with setting: PayooCore.BankAccountSetting)
+  public static func == (a: PayooCore.Bank, b: PayooCore.Bank) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public func hideFooter()
+  @_Concurrency.MainActor(unsafe) public func hideHeader()
+  @_Concurrency.MainActor(unsafe) public func hideHeaderFooterView()
+  @_Concurrency.MainActor(unsafe) public func hideTableHeaderViewInGrouppedStype()
+}
+@objc @_Concurrency.MainActor(unsafe) open class AnimatedControl : UIKit.UIControl {
+  @_Concurrency.MainActor(unsafe) public var animation: PayooCore.Animation? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var animationSpeed: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public func setLayer(named: Swift.String, forState: UIKit.UIControl.State)
+  @_Concurrency.MainActor(unsafe) public func setValueProvider(_ valueProvider: PayooCore.AnyValueProvider, keypath: PayooCore.AnimationKeypath)
+  @_Concurrency.MainActor(unsafe) public init(animation: PayooCore.Animation)
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func beginTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func continueTracking(_ touch: UIKit.UITouch, with event: UIKit.UIEvent?) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func endTracking(_ touch: UIKit.UITouch?, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func cancelTracking(with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) open func animationDidSet()
+  @objc deinit
+}
+public class BundleImageProvider : PayooCore.AnimationImageProvider {
+  public init(bundle: Foundation.Bundle, searchPath: Swift.String?)
+  public func imageForAsset(asset: PayooCore.LottieImageAsset) -> CoreGraphics.CGImage?
+  @objc deinit
+}
+public enum Logger {
+  public static func log(_ item: Any)
+}
+final public class GradientValueProvider : PayooCore.AnyValueProvider {
+  public typealias ColorsValueBlock = (CoreGraphics.CGFloat) -> [PayooCore.Color]
+  public typealias ColorLocationsBlock = (CoreGraphics.CGFloat) -> [Swift.Double]
+  final public var colors: [PayooCore.Color] {
+    get
+    set
+  }
+  final public var locations: [Swift.Double] {
+    get
+    set
+  }
+  public init(block: @escaping PayooCore.GradientValueProvider.ColorsValueBlock, locations: PayooCore.GradientValueProvider.ColorLocationsBlock? = nil)
+  public init(_ colors: [PayooCore.Color], locations: [Swift.Double] = [])
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame: CoreGraphics.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreGraphics.CGFloat) -> Any
+  @objc deinit
+}
+public struct LinkSetting : Swift.Decodable, Swift.Equatable {
+  public let account: PayooCore.LinkSetting.Setting?
+  public let card: PayooCore.LinkSetting.Setting?
+  public let wallet: PayooCore.LinkSetting.Setting?
+  public let phone: PayooCore.LinkSetting.Setting?
+  public let linkType: PayooCore.LinkSetting.LinkTypes
+  public let isKYCSupport: Swift.Bool
+  public init(account: PayooCore.LinkSetting.Setting?, card: PayooCore.LinkSetting.Setting?, wallet: PayooCore.LinkSetting.Setting?, phone: PayooCore.LinkSetting.Setting?, linkType: PayooCore.LinkSetting.LinkTypes, isKYCSupport: Swift.Bool)
+  public static func == (a: PayooCore.LinkSetting, b: PayooCore.LinkSetting) -> Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}
+extension PayooCore.LinkSetting {
+  public struct LinkTypes : Swift.OptionSet, Swift.Decodable {
+    public let rawValue: Swift.Int
+    public init(rawValue: Swift.Int)
+    public static let account: PayooCore.LinkSetting.LinkTypes
+    public static let card: PayooCore.LinkSetting.LinkTypes
+    public static let phone: PayooCore.LinkSetting.LinkTypes
+    public static let wallet: PayooCore.LinkSetting.LinkTypes
+    public static let all: [PayooCore.LinkSetting.LinkTypes]
+    public typealias ArrayLiteralElement = PayooCore.LinkSetting.LinkTypes
+    public typealias Element = PayooCore.LinkSetting.LinkTypes
+    public typealias RawValue = Swift.Int
+  }
+}
+extension PayooCore.LinkSetting {
+  public struct Setting : Swift.Decodable, Swift.Equatable {
+    public let settings: Swift.Int
+    public let url: Swift.String
+    public let linkType: PayooCore.LinkSetting.Setting.LinkType?
+    public let tutorial: PayooCore.LinkSetting.Setting.Tutorial?
+    public init(settings: Swift.Int, url: Swift.String, linkType: PayooCore.LinkSetting.Setting.LinkType?, tutorial: PayooCore.LinkSetting.Setting.Tutorial?)
+    public static func == (a: PayooCore.LinkSetting.Setting, b: PayooCore.LinkSetting.Setting) -> Swift.Bool
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension PayooCore.LinkSetting.Setting {
+  public enum LinkType : Swift.Int, Swift.Decodable, Swift.Equatable {
+    case `internal`
+    case external
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public struct Tutorial : Swift.Decodable, Swift.Equatable {
+    public let link: Swift.String?
+    public let unlink: Swift.String?
+    public init(link: Swift.String?, unlink: Swift.String?)
+    public static func == (a: PayooCore.LinkSetting.Setting.Tutorial, b: PayooCore.LinkSetting.Setting.Tutorial) -> Swift.Bool
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+public struct HTTPStatus : Swift.RawRepresentable, Swift.Hashable, Swift.Equatable {
+  public static let ok: PayooCore.HTTPStatus
+  public static let badRequest: PayooCore.HTTPStatus
+  public static let unauthorized: PayooCore.HTTPStatus
+  public static let forbidden: PayooCore.HTTPStatus
+  public static let internalError: PayooCore.HTTPStatus
+  public var rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+}
+@objc @_Concurrency.MainActor(unsafe) open class Button : UIKit.UIButton {
+  public enum ButtonType {
+    case primary
+    case secondary
+    public static func == (a: PayooCore.Button.ButtonType, b: PayooCore.Button.ButtonType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum SizeType {
+    case normal
+    case small
+    case compact
+    public static func == (a: PayooCore.Button.SizeType, b: PayooCore.Button.SizeType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) final public let type: PayooCore.Button.ButtonType
+  @_Concurrency.MainActor(unsafe) public var sizeType: PayooCore.Button.SizeType {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(title: Swift.String, buttonType: PayooCore.Button.ButtonType = .primary, sizeType: PayooCore.Button.SizeType = .normal)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @objc deinit
+}
+public protocol RadioButtonGroupViewDelegate : AnyObject {
+  func radioButtonGroupView(_ view: PayooCore.RadioButtonGroupView, didSelectedAt index: Swift.Int)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RadioButtonGroupView : PayooCore.SelectionGroupView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: PayooCore.RadioButtonGroupViewDelegate?
+  @_Concurrency.MainActor(unsafe) public var selectedIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(items: [Swift.String], defaultSelectedIndex: Swift.Int = 0)
+  @_Concurrency.MainActor(unsafe) public func add(_ item: Swift.String, isEnabled: Swift.Bool = true)
+  @objc deinit
+}
+public struct Client : Swift.Encodable {
+  public let type: Swift.String
+  public let language: Swift.String
+  public let version: Swift.String
+  public let partnerId: Swift.String
+  public init(type: Swift.String, language: PayooCore.Language, version: Swift.String, partnerId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol HTTPLoading {
+  var nextLoader: PayooCore.HTTPLoader? { get set }
+  @discardableResult
+  func load(request: PayooCore.HTTPRequest, completion: @escaping (PayooCore.HTTPResult) -> Swift.Void) -> PayooCore.HTTPTask
+}
+@available(*, deprecated, renamed: "FontConvertible.Font", message: "This typealias will be removed in SwiftGen 7.0")
+public typealias Font = PayooCore.FontConvertible.Font
+public enum FontFamily {
+  public enum Roboto {
+    public static let black: PayooCore.FontConvertible
+    public static let blackItalic: PayooCore.FontConvertible
+    public static let bold: PayooCore.FontConvertible
+    public static let boldItalic: PayooCore.FontConvertible
+    public static let italic: PayooCore.FontConvertible
+    public static let light: PayooCore.FontConvertible
+    public static let lightItalic: PayooCore.FontConvertible
+    public static let medium: PayooCore.FontConvertible
+    public static let mediumItalic: PayooCore.FontConvertible
+    public static let regular: PayooCore.FontConvertible
+    public static let thin: PayooCore.FontConvertible
+    public static let thinItalic: PayooCore.FontConvertible
+    public static let all: [PayooCore.FontConvertible]
+  }
+  public enum SFProDisplay {
+    public static let regular: PayooCore.FontConvertible
+    public static let all: [PayooCore.FontConvertible]
+  }
+  public enum SanFranciscoText {
+    public static let bold: PayooCore.FontConvertible
+    public static let semibold: PayooCore.FontConvertible
+    public static let all: [PayooCore.FontConvertible]
+  }
+  public static let allCustomFonts: [PayooCore.FontConvertible]
+  public static func registerAllCustomFonts()
+}
+public struct FontConvertible {
+  public let name: Swift.String
+  public let family: Swift.String
+  public let path: Swift.String
+  public typealias Font = UIKit.UIFont
+  public func font(size: CoreGraphics.CGFloat) -> PayooCore.FontConvertible.Font
+  public func register()
+}
+extension UIKit.UIFont {
+  convenience public init?(font: PayooCore.FontConvertible, size: CoreGraphics.CGFloat)
+}
+extension Swift.Optional where Wrapped : Swift.Collection {
+  public var isNilOrEmpty: Swift.Bool {
+    get
+  }
+}
+extension Swift.Optional {
+  public func unwrap(default defaultValue: Wrapped) -> Wrapped
+}
+@objc public enum CardType : Swift.Int, Swift.Codable, Swift.CaseIterable {
+  case domestic = 0
+  case international = 1
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayooCore.CardType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayooCore.CardType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+final public class SizeValueProvider : PayooCore.AnyValueProvider {
+  public typealias SizeValueBlock = (CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+  final public var size: CoreGraphics.CGSize {
+    get
+    set
+  }
+  public init(block: @escaping PayooCore.SizeValueProvider.SizeValueBlock)
+  public init(_ size: CoreGraphics.CGSize)
+  final public var valueType: Any.Type {
+    get
+  }
+  final public func hasUpdate(frame: CoreGraphics.CGFloat) -> Swift.Bool
+  final public func value(frame: CoreGraphics.CGFloat) -> Any
+  @objc deinit
+}
+public class AttributedStringBuilder {
+  public typealias Attributes = [Foundation.NSAttributedString.Key : Any]
+  public init(text: Swift.String)
+  @discardableResult
+  public func append(_ text: Swift.String, attributes: PayooCore.AttributedStringBuilder.Attributes) -> PayooCore.AttributedStringBuilder
+  @discardableResult
+  public func update(_ range: Foundation.NSRange, attributes: PayooCore.AttributedStringBuilder.Attributes) -> PayooCore.AttributedStringBuilder
+  public func build() -> Foundation.NSAttributedString
+  @objc deinit
+}
+public struct MethodSupportOption : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public typealias ArrayLiteralElement = PayooCore.MethodSupportOption
+  public typealias Element = PayooCore.MethodSupportOption
+  public typealias RawValue = Swift.Int
+}
+public enum MethodSupportType : Swift.Int, Swift.Encodable, Swift.CaseIterable {
+  case domesticCard
+  case internationalCard
+  case linkAccount
+  case account
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayooCore.MethodSupportType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayooCore.MethodSupportType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol SelectionItemViewDelegate : AnyObject {
+  func selectionItemView(_ view: PayooCore.SelectionItemView, didChangeSelectedState isSelected: Swift.Bool)
+}
+public protocol SelectionItemStyle {
+  var disabledIcon: UIKit.UIImage { get }
+  var selectedIcon: UIKit.UIImage { get }
+  var deselectedIcon: UIKit.UIImage { get }
+}
+@objc @_Concurrency.MainActor(unsafe) public class SelectionItemView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) final public let selectionItemStyle: PayooCore.SelectionItemStyle
+  @_Concurrency.MainActor(unsafe) weak public var delegate: PayooCore.SelectionItemViewDelegate?
+  @_Concurrency.MainActor(unsafe) public var isSelected: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public init(title: Swift.String, selectionItemStyle: PayooCore.SelectionItemStyle, isEnabled: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor(unsafe) public func didSelectItem()
+  @objc deinit
+}
+@objc final public class CompatibleAnimation : ObjectiveC.NSObject {
+  @objc public init(name: Swift.String, bundle: Foundation.Bundle = Bundle.main)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) final public class CompatibleAnimationView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc @_Concurrency.MainActor(unsafe) final public var compatibleAnimation: PayooCore.CompatibleAnimation? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var loopAnimationCount: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) override final public var contentMode: UIKit.UIView.ContentMode {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var shouldRasterizeWhenIdle: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var currentProgress: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var currentTime: Foundation.TimeInterval {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var currentFrame: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var realtimeAnimationFrame: CoreGraphics.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var realtimeAnimationProgress: CoreGraphics.CGFloat {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var animationSpeed: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public var respectAnimationFrameRate: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public func play()
+  @objc @_Concurrency.MainActor(unsafe) final public func play(completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) final public func play(fromProgress: CoreGraphics.CGFloat, toProgress: CoreGraphics.CGFloat, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func play(fromFrame: CoreGraphics.CGFloat, toFrame: CoreGraphics.CGFloat, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func play(fromMarker: Swift.String, toMarker: Swift.String, completion: ((Swift.Bool) -> Swift.Void)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) final public func stop()
+  @objc @_Concurrency.MainActor(unsafe) final public func pause()
+  @objc @_Concurrency.MainActor(unsafe) final public func reloadImages()
+  @objc @_Concurrency.MainActor(unsafe) final public func forceDisplayUpdate()
+  @objc @_Concurrency.MainActor(unsafe) final public func getValue(for keypath: PayooCore.CompatibleAnimationKeypath, atFrame: CoreGraphics.CGFloat) -> Any?
+  @objc @_Concurrency.MainActor(unsafe) final public func logHierarchyKeypaths()
+  @objc @_Concurrency.MainActor(unsafe) final public func setColorValue(_ color: UIKit.UIColor, forKeypath keypath: PayooCore.CompatibleAnimationKeypath)
+  @objc @_Concurrency.MainActor(unsafe) final public func getColorValue(for keypath: PayooCore.CompatibleAnimationKeypath, atFrame: CoreGraphics.CGFloat) -> UIKit.UIColor?
+  @objc @_Concurrency.MainActor(unsafe) final public func addSubview(_ subview: PayooCore.AnimationSubview, forLayerAt keypath: PayooCore.CompatibleAnimationKeypath)
+  @objc @_Concurrency.MainActor(unsafe) final public func convert(rect: CoreGraphics.CGRect, toLayerAt keypath: PayooCore.CompatibleAnimationKeypath?) -> CoreGraphics.CGRect
+  @objc @_Concurrency.MainActor(unsafe) final public func convert(point: CoreGraphics.CGPoint, toLayerAt keypath: PayooCore.CompatibleAnimationKeypath?) -> CoreGraphics.CGPoint
+  @objc @_Concurrency.MainActor(unsafe) final public func progressTime(forMarker named: Swift.String) -> CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) final public func frameTime(forMarker named: Swift.String) -> CoreGraphics.CGFloat
+  @objc deinit
+}
+public typealias Index = Swift.Int
+public typealias Closure = () -> Swift.Void
+public typealias SelectionClosure = (PayooCore.Index, Swift.String) -> Swift.Void
+public typealias MultiSelectionClosure = ([PayooCore.Index], [Swift.String]) -> Swift.Void
+public typealias ConfigurationClosure = (PayooCore.Index, Swift.String) -> Swift.String
+public typealias CellConfigurationClosure = (PayooCore.Index, Swift.String, PayooCore.DropDownCell) -> Swift.Void
+@objc public protocol AnchorView {
+  @objc var plainView: UIKit.UIView { get }
+}
+extension UIKit.UIView : PayooCore.AnchorView {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var plainView: UIKit.UIView {
+    @objc get
+  }
+}
+extension UIKit.UIBarButtonItem : PayooCore.AnchorView {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var plainView: UIKit.UIView {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class DropDown : UIKit.UIView {
+  public enum DismissMode {
+    case onTap
+    case automatic
+    case manual
+    public static func == (a: PayooCore.DropDown.DismissMode, b: PayooCore.DropDown.DismissMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Direction {
+    case any
+    case top
+    case bottom
+    public static func == (a: PayooCore.DropDown.Direction, b: PayooCore.DropDown.Direction) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) weak public static var VisibleDropDown: PayooCore.DropDown?
+  @_Concurrency.MainActor(unsafe) weak final public var anchorView: PayooCore.AnchorView? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var direction: PayooCore.DropDown.Direction
+  @_Concurrency.MainActor(unsafe) final public var topOffset: CoreGraphics.CGPoint {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var bottomOffset: CoreGraphics.CGPoint {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var offsetFromWindowBottom: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var width: CoreGraphics.CGFloat? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var arrowIndicationX: CoreGraphics.CGFloat? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var cellHeight: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override final public var backgroundColor: UIKit.UIColor? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) final public var dimmedBackgroundColor: UIKit.UIColor {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var selectionBackgroundColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var separatorColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var cornerRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public func setupCornerRadius(_ radius: CoreGraphics.CGFloat)
+  @available(iOS 11.0, *)
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public func setupMaskedCorners(_ cornerMask: QuartzCore.CACornerMask)
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var shadowColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var shadowOffset: CoreGraphics.CGSize {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var shadowOpacity: Swift.Float {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var shadowRadius: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var borderWidth: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var borderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var animationduration: Swift.Double
+  @_Concurrency.MainActor(unsafe) public static var animationEntranceOptions: UIKit.UIView.AnimationOptions
+  @_Concurrency.MainActor(unsafe) public static var animationExitOptions: UIKit.UIView.AnimationOptions
+  @_Concurrency.MainActor(unsafe) final public var animationEntranceOptions: UIKit.UIView.AnimationOptions
+  @_Concurrency.MainActor(unsafe) final public var animationExitOptions: UIKit.UIView.AnimationOptions
+  @_Concurrency.MainActor(unsafe) final public var downScaleTransform: CoreGraphics.CGAffineTransform {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var textColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var selectedTextColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic final public var textFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) final public var cellNib: UIKit.UINib {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var dataSource: [Swift.String] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var localizationKeysDataSource: [Swift.String] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var cellConfiguration: PayooCore.ConfigurationClosure? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var customCellConfiguration: PayooCore.CellConfigurationClosure? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var selectionAction: PayooCore.SelectionClosure?
+  @_Concurrency.MainActor(unsafe) final public var multiSelectionAction: PayooCore.MultiSelectionClosure?
+  @_Concurrency.MainActor(unsafe) final public var willShowAction: PayooCore.Closure?
+  @_Concurrency.MainActor(unsafe) final public var cancelAction: PayooCore.Closure?
+  @_Concurrency.MainActor(unsafe) final public var dismissMode: PayooCore.DropDown.DismissMode {
+    get
+    set
+  }
+  @objc deinit
+  @objc convenience dynamic public init()
+  @_Concurrency.MainActor(unsafe) convenience public init(anchorView: PayooCore.AnchorView, selectionAction: PayooCore.SelectionClosure? = nil, dataSource: [Swift.String] = [], topOffset: CoreGraphics.CGPoint? = nil, bottomOffset: CoreGraphics.CGPoint? = nil, cellConfiguration: PayooCore.ConfigurationClosure? = nil, cancelAction: PayooCore.Closure? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+}
+extension PayooCore.DropDown {
+  @_Concurrency.MainActor(unsafe) @objc override final public func updateConstraints()
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
+}
+extension PayooCore.DropDown {
+  @objc(show) @_Concurrency.MainActor(unsafe) final public func objc_show() -> Foundation.NSDictionary
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) final public func show(onTopOf window: UIKit.UIWindow? = nil, beforeTransform transform: CoreGraphics.CGAffineTransform? = nil, anchorPoint: CoreGraphics.CGPoint? = nil) -> (canBeDisplayed: Swift.Bool, offscreenHeight: CoreGraphics.CGFloat?)
+  @objc override final public func accessibilityPerformEscape() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) final public func hide()
+}
+extension PayooCore.DropDown {
+  @_Concurrency.MainActor(unsafe) final public func reloadAllComponents()
+  @_Concurrency.MainActor(unsafe) final public func selectRow(at index: PayooCore.Index?, scrollPosition: UIKit.UITableView.ScrollPosition = .none)
+  @_Concurrency.MainActor(unsafe) final public func selectRows(at indices: Swift.Set<PayooCore.Index>?)
+  @_Concurrency.MainActor(unsafe) final public func deselectRow(at index: PayooCore.Index?)
+  @_Concurrency.MainActor(unsafe) final public func deselectRows(at indices: Swift.Set<PayooCore.Index>?)
+  @_Concurrency.MainActor(unsafe) final public var indexForSelectedRow: PayooCore.Index? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) final public var selectedItem: Swift.String? {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) final public func selectRow(_ index: Swift.Int, scrollPosition: UIKit.UITableView.ScrollPosition = .none)
+  @objc @_Concurrency.MainActor(unsafe) final public func clearSelection()
+  @objc @_Concurrency.MainActor(unsafe) final public func deselectRow(_ index: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) final public var indexPathForSelectedRow: Foundation.NSIndexPath? {
+    @objc get
+  }
+}
+extension PayooCore.DropDown : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc final public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+extension PayooCore.DropDown {
+  @_Concurrency.MainActor(unsafe) @objc override final public func hitTest(_ point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
+}
+extension PayooCore.DropDown {
+  @objc @_Concurrency.MainActor(unsafe) public static func startListeningToKeyboard()
+}
+public enum ApiURL {
+  public static var host: Swift.String {
+    get
+  }
+}
+public class ClientSDK {
+  public init(env: PayooCore.ServerEnvironment, merchantId: Swift.String, secretKey: Swift.String, version: Swift.String, language: PayooCore.RequestLanguageV3, loader: PayooCore.HTTPLoader? = nil)
+  @discardableResult
+  public func load(request: PayooCore.HTTPRequest, completion: @escaping (PayooCore.HTTPResult) -> Swift.Void) -> PayooCore.HTTPTask
+  @objc deinit
+}
+extension PayooCore.ClientSDK {
+  public func execute(request: PayooCore.HTTPRequest, completion: @escaping (Swift.Result<PayooCore.ResponseV3, PayooCore.BaseError>) -> Swift.Void)
+  public func fetch<T>(request: PayooCore.HTTPRequest, completion: @escaping (Swift.Result<PayooCore.ResponseDataV3<T>, PayooCore.BaseError>) -> Swift.Void) where T : Swift.Decodable, T : Swift.Equatable
+}
+public enum ColorFormatDenominator {
+  case One
+  case OneHundred
+  case TwoFiftyFive
+  public static func == (a: PayooCore.ColorFormatDenominator, b: PayooCore.ColorFormatDenominator) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct Color {
+  public var r: Swift.Double
+  public var g: Swift.Double
+  public var b: Swift.Double
+  public var a: Swift.Double
+  public init(r: Swift.Double, g: Swift.Double, b: Swift.Double, a: Swift.Double, denominator: PayooCore.ColorFormatDenominator = .One)
+}
+public protocol PayooClientDelegate : AnyObject {
+  func client(_ client: PayooCore.PayooClient, wantsPersistedCredentials: @escaping (PayooCore.OAuthCredentials?) -> Swift.Void)
+  func client(_ client: PayooCore.PayooClient, persistCredentials: PayooCore.OAuthCredentials?)
+  func clientNeedsLogIn(_ client: PayooCore.PayooClient)
+}
+public class PayooClient {
+  weak public var delegate: PayooCore.PayooClientDelegate?
+  public init(environment: PayooCore.ServerEnvironment, client: PayooCore.Client, secretKey: Swift.String, loader: PayooCore.HTTPLoader? = nil)
+  @discardableResult
+  public func load(request: PayooCore.HTTPRequest, completion: @escaping (PayooCore.HTTPResult) -> Swift.Void) -> PayooCore.HTTPTask
+  @objc deinit
+}
+extension PayooCore.PayooClient : PayooCore.OAuthDelegate {
+  public func oAuth(_ oAuth: PayooCore.OAuth, wantsPersistedCredentials: @escaping (PayooCore.OAuthCredentials?) -> Swift.Void)
+  public func oAuth(_ oAuth: PayooCore.OAuth, persistCredentials: PayooCore.OAuthCredentials?)
+  public func oAuthNeedsLogIn(_ oAuth: PayooCore.OAuth)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RadioButtonView : PayooCore.SelectionItemView {
+  @_Concurrency.MainActor(unsafe) public init(title: Swift.String, isEnabled: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) @objc override public func didSelectItem()
+  @objc deinit
+}
+public struct Validator<Value> {
+}
+public enum ValidationUtil {
+  public static func validate<T>(_ value: T, using validator: PayooCore.Validator<T>) throws
+}
+extension PayooCore.Validator where Value == Swift.String {
+  public static var email: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static func phone(regexPattern: Swift.String) -> PayooCore.Validator<Value>
+  public static func cardNumber(format: Swift.String, prefixRule: Swift.String?) -> PayooCore.Validator<Value>
+  public static var cardHolderName: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static var cvv: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static func expiryDate(dateGenerator: @escaping () -> Foundation.Date = Date.init) -> PayooCore.Validator<Value>
+  public static func issuanceDate(dateGenerator: @escaping () -> Foundation.Date = Date.init) -> PayooCore.Validator<Value>
+  public static var identityCardNumber: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static var address: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static var fullname: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static var accountNo: PayooCore.Validator<Swift.String> {
+    get
+  }
+  public static var branch: PayooCore.Validator<Swift.String> {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SearchBarView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var placeholder: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var customSearchIcon: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak public var delegate: UIKit.UITextFieldDelegate? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public let searchTextField: PayooCore.TextField
+  @objc dynamic public init()
+  @objc deinit
+}
+public class HTTPTask {
+  public var id: Foundation.UUID {
+    get
+  }
+  public init(request: PayooCore.HTTPRequest, completion: @escaping (PayooCore.HTTPResult) -> Swift.Void)
+  public func addCancellationHandler(_ handler: @escaping () -> Swift.Void)
+  public func cancel()
+  public func complete(with result: PayooCore.HTTPResult)
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public static func makeDynamic(lightColor: UIKit.UIColor, darkColor: UIKit.UIColor) -> UIKit.UIColor
+}
+extension UIKit.UIColor {
+  public static var primary1: UIKit.UIColor {
+    get
+  }
+  public static var primary2: UIKit.UIColor {
+    get
+  }
+  public static var gray1: UIKit.UIColor {
+    get
+  }
+  public static var gray2: UIKit.UIColor {
+    get
+  }
+  public static var gray3: UIKit.UIColor {
+    get
+  }
+  public static var gray4: UIKit.UIColor {
+    get
+  }
+  public static var gray5: UIKit.UIColor {
+    get
+  }
+  public static var gray6: UIKit.UIColor {
+    get
+  }
+  public static var blue1: UIKit.UIColor {
+    get
+  }
+  public static var blue2: UIKit.UIColor {
+    get
+  }
+  public static var blue3: UIKit.UIColor {
+    get
+  }
+  public static var blue4: UIKit.UIColor {
+    get
+  }
+  public static var blue5: UIKit.UIColor {
+    get
+  }
+  public static var blue6: UIKit.UIColor {
+    get
+  }
+  public static var green1: UIKit.UIColor {
+    get
+  }
+  public static var green2: UIKit.UIColor {
+    get
+  }
+  public static var green3: UIKit.UIColor {
+    get
+  }
+  public static var green4: UIKit.UIColor {
+    get
+  }
+  public static var green5: UIKit.UIColor {
+    get
+  }
+  public static var green6: UIKit.UIColor {
+    get
+  }
+  public static var orange1: UIKit.UIColor {
+    get
+  }
+  public static var orange2: UIKit.UIColor {
+    get
+  }
+  public static var orange3: UIKit.UIColor {
+    get
+  }
+  public static var orange4: UIKit.UIColor {
+    get
+  }
+  public static var orange5: UIKit.UIColor {
+    get
+  }
+  public static var orange6: UIKit.UIColor {
+    get
+  }
+  public static var red1: UIKit.UIColor {
+    get
+  }
+  public static var red2: UIKit.UIColor {
+    get
+  }
+  public static var red3: UIKit.UIColor {
+    get
+  }
+  public static var red4: UIKit.UIColor {
+    get
+  }
+  public static var red5: UIKit.UIColor {
+    get
+  }
+  public static var red6: UIKit.UIColor {
+    get
+  }
+}
+extension UIKit.UIColor {
+  public static let ink1: UIKit.UIColor
+  public static let ink2: UIKit.UIColor
+  public static let ink3: UIKit.UIColor
+  public static let ink4: UIKit.UIColor
+  public static let ink5: UIKit.UIColor
+  public static let ink6: UIKit.UIColor
+  public static let ink7: UIKit.UIColor
+  public static let ink8: UIKit.UIColor
+  public static let ink9: UIKit.UIColor
+  public static let notificationGeneralBackground: UIKit.UIColor
+  public static let notificationSuccessBackground: UIKit.UIColor
+  public static let notificationWarningBackground: UIKit.UIColor
+  public static let notificationErrorBackground: UIKit.UIColor
+  public static let notificationGeneralForeground: UIKit.UIColor
+  public static let notificationSuccessForeground: UIKit.UIColor
+  public static let notificationWarningForeground: UIKit.UIColor
+  public static let notificationErrorForeground: UIKit.UIColor
+  public static let textFieldPlaceholder: UIKit.UIColor
+  public static let textFieldHelpText: UIKit.UIColor
+  public static let textFieldErrorText: UIKit.UIColor
+  public static let textFieldNormalBorder: UIKit.UIColor
+  public static let textFieldDisabledBorder: UIKit.UIColor
+  public static let textFieldFocusedBorder: UIKit.UIColor
+  public static let textFieldErrorBorder: UIKit.UIColor
+  public static let textFieldErrorBackground: UIKit.UIColor
+  public static let textFieldDisabledBackground: UIKit.UIColor
+  public static let searchFieldBackground: UIKit.UIColor
+  public static let backdropViewColor: UIKit.UIColor
+  public enum Main {
+    public static let blue: UIKit.UIColor
+    public static let grey: UIKit.UIColor
+    public static let back: UIKit.UIColor
+  }
+  public enum TextField {
+  }
+}
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.UInt, alpha: CoreGraphics.CGFloat = 1)
+  public var hexString: Swift.String {
+    get
+  }
+  public func lighterColor(percent: Swift.Double) -> UIKit.UIColor
+  public func darkerColor(percent: Swift.Double) -> UIKit.UIColor
+  public func colorWithBrightnessFactor(_ factor: CoreGraphics.CGFloat) -> UIKit.UIColor
+}
+public enum LayerType : Swift.Int, Swift.Codable {
+  case precomp
+  case solid
+  case image
+  case null
+  case shape
+  case text
+  public init(from decoder: Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum MatteType : Swift.Int, Swift.Codable {
+  case none
+  case add
+  case invert
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum BlendMode : Swift.Int, Swift.Codable {
+  case normal
+  case multiply
+  case screen
+  case overlay
+  case darken
+  case lighten
+  case colorDodge
+  case colorBurn
+  case hardLight
+  case softLight
+  case difference
+  case exclusion
+  case hue
+  case saturation
+  case color
+  case luminosity
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct EwalletSettings : Swift.Decodable, Swift.Equatable {
+  public let banks: [PayooCore.Bank]
+  public let baseResourceUrl: Swift.String
+  public let validationRegex: PayooCore.ValidationRegex
+  public let bankAccountSetting: PayooCore.BankAccountSetting
+  public let deposit: PayooCore.DepositSetting?
+  public let transfer: PayooCore.TransferSetting?
+  public let withdrawal: PayooCore.WithdrawalSetting?
+  public init(from decoder: Swift.Decoder) throws
+  public init(banks: [PayooCore.Bank], baseResourceUrl: Swift.String, validationRegex: PayooCore.ValidationRegex, bankAccountSetting: PayooCore.BankAccountSetting, depositSetting: PayooCore.DepositSetting? = nil, transferSetting: PayooCore.TransferSetting? = nil, withdrawalSetting: PayooCore.WithdrawalSetting? = nil)
+  public static func == (a: PayooCore.EwalletSettings, b: PayooCore.EwalletSettings) -> Swift.Bool
+}
+public typealias LottieCompletionBlock = (Swift.Bool) -> Swift.Void
+public protocol Resolver {
+  func resolve<ServiceType>(_ type: ServiceType.Type) -> ServiceType
+}
+public struct PayooUIExtension<Base> {
+  public let base: Base
+  public init(_ base: Base)
+}
+public protocol PayooUIExtensionCompatible {
+  associatedtype Base
+  static var pyUI: PayooCore.PayooUIExtension<Self.Base>.Type { get }
+  var pyUI: PayooCore.PayooUIExtension<Self.Base> { get }
+}
+extension PayooCore.PayooUIExtensionCompatible {
+  public static var pyUI: PayooCore.PayooUIExtension<Self>.Type {
+    get
+  }
+  public var pyUI: PayooCore.PayooUIExtension<Self> {
+    get
+  }
+}
+public protocol HUDPresentable {
+  func showLoading()
+  func hideLoading()
+}
+public enum HUD {
+  public static func show()
+  public static func hide()
+}
+extension PayooCore.HUDPresentable where Self : UIKit.UIViewController {
+  public func showLoading()
+  public func hideLoading()
+}
+@_hasMissingDesignatedInitializers public class ResponseV3 : Swift.Decodable {
+  final public let code: Swift.Int
+  final public let message: Swift.String
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+extension PayooCore.ResponseV3 : Swift.Equatable {
+  public static func == (lhs: PayooCore.ResponseV3, rhs: PayooCore.ResponseV3) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class ResponseDataV3<T> : PayooCore.ResponseV3 where T : Swift.Decodable, T : Swift.Equatable {
+  final public let data: T?
+  @objc deinit
+}
+extension PayooCore.ResponseDataV3 {
+  public static func == (lhs: PayooCore.ResponseDataV3<T>, rhs: PayooCore.ResponseDataV3<T>) -> Swift.Bool
+}
+public struct AnimationKeypath {
+  public init(keypath: Swift.String)
+  public init(keys: [Swift.String])
+}
+public class LottieAsset : Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension Swift.String {
+  public func encrypt(_ secret: Swift.String) -> Swift.String
+  public func decrypt(_ secret: Swift.String) -> Swift.String
+}
+@objc(PayooLanguage) public enum Language : Swift.Int, Swift.CustomStringConvertible, Swift.Encodable {
+  case vietnamese = 0
+  case english = 1
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension PayooCore.Language {
+  public var locale: Foundation.Locale {
+    get
+  }
+  public var localizedCode: Swift.String {
+    get
+  }
+  public var urlQueryItem: [Swift.String : Swift.String] {
+    get
+  }
+}
+extension PayooCore.AccountType : Swift.Hashable {}
+extension PayooCore.AccountType : Swift.RawRepresentable {}
+extension PayooCore.LottieBackgroundBehavior : Swift.Equatable {}
+extension PayooCore.LottieBackgroundBehavior : Swift.Hashable {}
+extension PayooCore.InformingView.InformingType : Swift.Equatable {}
+extension PayooCore.InformingView.InformingType : Swift.Hashable {}
+extension PayooCore.AnimatedSwitch.CancelBehavior : Swift.Equatable {}
+extension PayooCore.AnimatedSwitch.CancelBehavior : Swift.Hashable {}
+extension PayooCore.ActionStyle : Swift.Equatable {}
+extension PayooCore.ActionStyle : Swift.Hashable {}
+extension PayooCore.UserProfile.Gender : Swift.Equatable {}
+extension PayooCore.UserProfile.Gender : Swift.Hashable {}
+extension PayooCore.UserProfile.Gender : Swift.RawRepresentable {}
+extension PayooCore.IDCardVerificationStatus : Swift.Equatable {}
+extension PayooCore.IDCardVerificationStatus : Swift.Hashable {}
+extension PayooCore.IDCardVerificationStatus : Swift.RawRepresentable {}
+extension PayooCore.DomesticField : Swift.Equatable {}
+extension PayooCore.DomesticField : Swift.Hashable {}
+extension PayooCore.DomesticField : Swift.RawRepresentable {}
+extension PayooCore.CheckboxView.CheckboxStyle : Swift.Equatable {}
+extension PayooCore.CheckboxView.CheckboxStyle : Swift.Hashable {}
+extension PayooCore.CoordinateSpace : Swift.Equatable {}
+extension PayooCore.CoordinateSpace : Swift.Hashable {}
+extension PayooCore.CoordinateSpace : Swift.RawRepresentable {}
+extension PayooCore.NavigationBarStyle : Swift.Equatable {}
+extension PayooCore.NavigationBarStyle : Swift.Hashable {}
+extension PayooCore.NavigationBarStyle : Swift.RawRepresentable {}
+extension PayooCore.HTTPError.Code : Swift.Equatable {}
+extension PayooCore.HTTPError.Code : Swift.Hashable {}
+extension PayooCore.RequestLanguageV3 : Swift.Equatable {}
+extension PayooCore.RequestLanguageV3 : Swift.Hashable {}
+extension PayooCore.RequestLanguageV3 : Swift.RawRepresentable {}
+extension PayooCore.DashBorderView.BorderEdge : Swift.Equatable {}
+extension PayooCore.DashBorderView.BorderEdge : Swift.Hashable {}
+extension PayooCore.DashBorderView.BorderEdge : Swift.RawRepresentable {}
+extension PayooCore.Environment : Swift.Equatable {}
+extension PayooCore.Environment : Swift.Hashable {}
+extension PayooCore.Environment : Swift.RawRepresentable {}
+extension PayooCore.GroupType : Swift.Equatable {}
+extension PayooCore.GroupType : Swift.Hashable {}
+extension PayooCore.GroupType : Swift.RawRepresentable {}
+extension PayooCore.IDCardType : Swift.Equatable {}
+extension PayooCore.IDCardType : Swift.Hashable {}
+extension PayooCore.IDCardType : Swift.RawRepresentable {}
+extension PayooCore.AuthMethod : Swift.Equatable {}
+extension PayooCore.AuthMethod : Swift.Hashable {}
+extension PayooCore.LinkSetting.Setting.LinkType : Swift.Hashable {}
+extension PayooCore.LinkSetting.Setting.LinkType : Swift.RawRepresentable {}
+extension PayooCore.Button.ButtonType : Swift.Equatable {}
+extension PayooCore.Button.ButtonType : Swift.Hashable {}
+extension PayooCore.Button.SizeType : Swift.Equatable {}
+extension PayooCore.Button.SizeType : Swift.Hashable {}
+extension PayooCore.CardType : Swift.Equatable {}
+extension PayooCore.CardType : Swift.Hashable {}
+extension PayooCore.CardType : Swift.RawRepresentable {}
+extension PayooCore.MethodSupportType : Swift.Equatable {}
+extension PayooCore.MethodSupportType : Swift.Hashable {}
+extension PayooCore.MethodSupportType : Swift.RawRepresentable {}
+extension PayooCore.DropDown.DismissMode : Swift.Equatable {}
+extension PayooCore.DropDown.DismissMode : Swift.Hashable {}
+extension PayooCore.DropDown.Direction : Swift.Equatable {}
+extension PayooCore.DropDown.Direction : Swift.Hashable {}
+extension PayooCore.ColorFormatDenominator : Swift.Equatable {}
+extension PayooCore.ColorFormatDenominator : Swift.Hashable {}
+extension PayooCore.LayerType : Swift.Equatable {}
+extension PayooCore.LayerType : Swift.Hashable {}
+extension PayooCore.LayerType : Swift.RawRepresentable {}
+extension PayooCore.MatteType : Swift.Equatable {}
+extension PayooCore.MatteType : Swift.Hashable {}
+extension PayooCore.MatteType : Swift.RawRepresentable {}
+extension PayooCore.BlendMode : Swift.Equatable {}
+extension PayooCore.BlendMode : Swift.Hashable {}
+extension PayooCore.BlendMode : Swift.RawRepresentable {}
+extension PayooCore.Language : Swift.Equatable {}
+extension PayooCore.Language : Swift.Hashable {}
+extension PayooCore.Language : Swift.RawRepresentable {}

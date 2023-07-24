@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InsurancePaymentViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="agreeButton" destination="VQ6-ff-sXf" id="3cE-v1-vts"/>
+                <outlet property="backButton" destination="ZUP-t7-PTs" id="cfe-6d-EP4"/>
+                <outlet property="bannerImageView" destination="Epq-II-rha" id="PyD-sd-e2z"/>
+                <outlet property="benefitTableView" destination="7Ua-hQ-Q36" id="TW2-5p-HUE"/>
+                <outlet property="benefitTableViewBottomConstraint" destination="Yww-Qi-hKF" id="O9z-Ik-zVr"/>
+                <outlet property="companyAddressTextField" destination="UO6-d5-lT0" id="7GS-AX-it5"/>
+                <outlet property="companyNameTextField" destination="y2m-YV-IvP" id="2dX-4F-qiP"/>
+                <outlet property="contentView" destination="r1W-aN-aiw" id="6a0-Yp-pOg"/>
+                <outlet property="contractVoucherLabel" destination="Na9-Y3-IKF" id="Iwt-zO-2fh"/>
+                <outlet property="contractVoucherView" destination="ZmD-JV-hRL" id="A0D-7s-B4l"/>
+                <outlet property="customerNameLabel" destination="4dg-Wa-Lnc" id="uZt-6p-TVf"/>
+                <outlet property="dateTextField" destination="500-aW-HO1" id="z0M-Em-ox7"/>
+                <outlet property="dobLabel" destination="J7Y-1l-jiq" id="SqE-cl-nfw"/>
+                <outlet property="feeLabel" destination="ftd-fb-hAd" id="lIO-Z6-jTS"/>
+                <outlet property="insuranceNameLabel" destination="vF6-tt-Ja0" id="CqZ-Vd-jOn"/>
+                <outlet property="logoImageView" destination="49B-rH-DW3" id="Szl-u2-VbK"/>
+                <outlet property="mstTextField" destination="qfl-Kk-eXT" id="bRE-fr-raf"/>
+                <outlet property="originFeeLabel" destination="P74-n6-5lK" id="tYV-fa-Hd4"/>
+                <outlet property="originFeeView" destination="FKO-eL-bj0" id="2Yt-Ho-6xZ"/>
+                <outlet property="payLabel" destination="UzW-zf-Azl" id="g5q-F5-Hpd"/>
+                <outlet property="paymentMethodTableView" destination="j1Q-RW-Rik" id="WGe-81-nB3"/>
+                <outlet property="paymentView" destination="WSP-xe-ZCd" id="jpS-Jw-eIZ"/>
+                <outlet property="periodLabel" destination="4so-EM-mtS" id="dNW-eP-UsZ"/>
+                <outlet property="priceLabel" destination="lWP-xf-YNa" id="N1N-sF-qqO"/>
+                <outlet property="redBillBottomConstraint" destination="tkx-Lo-iiG" id="6MI-Ik-mfA"/>
+                <outlet property="redBillSwitch" destination="7Lb-CT-I91" id="3B7-lp-now"/>
+                <outlet property="redBillView" destination="L77-Tn-qqk" id="2SR-Il-SXu"/>
+                <outlet property="scrollView" destination="5No-lp-uFv" id="vDN-eQ-mEu"/>
+                <outlet property="scrollViewBottomConstraint" destination="PiO-MI-cmP" id="QZo-SP-v8P"/>
+                <outlet property="termPrivacyLabel" destination="R63-uc-WVz" id="Xd0-9j-MbC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="voucherIcon" destination="yEY-Jb-dQM" id="Hcf-t8-4nM"/>
+                <outlet property="voucherLabel" destination="nk3-4Q-voz" id="yBd-4O-6lG"/>
+                <outlet property="voucherView" destination="rZT-Nh-1V4" id="M5I-pt-fPM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="5No-lp-uFv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r1W-aN-aiw" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1670.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUP-t7-PTs" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="36" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="NQo-ew-fI9"/>
+                                        <constraint firstAttribute="width" constant="40" id="a2U-Cg-a5m"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_back"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJt-UB-Hng" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="116" width="366" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="36"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PAYMENT"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTi-uH-M4b" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="148" width="366" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PRODUCT_INFORMATION"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" verticalHuggingPriority="259" verticalCompressionResistancePriority="759" translatesAutoresizingMaskIntoConstraints="NO" id="iIO-dX-ZEa" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="160" width="366" height="534.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smr-ys-rdO" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="173"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_4" translatesAutoresizingMaskIntoConstraints="NO" id="Epq-II-rha">
+                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="173"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="173" id="qVM-9i-u88"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF6-tt-Ja0" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="28" width="229" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="O0p-jN-y6Z"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="whiteMain"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWP-xf-YNa" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="52" width="229" height="109"/>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="whiteMain"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoText" translatesAutoresizingMaskIntoConstraints="NO" id="49B-rH-DW3">
+                                                    <rect key="frame" x="281" y="28" width="65" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="4xY-Jd-MjN"/>
+                                                        <constraint firstAttribute="width" constant="65" id="diV-MB-rYj"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="vF6-tt-Ja0" firstAttribute="leading" secondItem="Smr-ys-rdO" secondAttribute="leading" constant="20" id="0RG-Na-0qP"/>
+                                                <constraint firstItem="49B-rH-DW3" firstAttribute="leading" secondItem="vF6-tt-Ja0" secondAttribute="trailing" constant="32" id="C5x-wp-2E2"/>
+                                                <constraint firstAttribute="bottom" secondItem="lWP-xf-YNa" secondAttribute="bottom" constant="12" id="E1Y-Nd-mah"/>
+                                                <constraint firstItem="vF6-tt-Ja0" firstAttribute="top" secondItem="Smr-ys-rdO" secondAttribute="top" constant="28" id="GDM-ch-CAR"/>
+                                                <constraint firstItem="lWP-xf-YNa" firstAttribute="width" secondItem="vF6-tt-Ja0" secondAttribute="width" id="IBQ-tg-4hX"/>
+                                                <constraint firstItem="Epq-II-rha" firstAttribute="top" secondItem="Smr-ys-rdO" secondAttribute="top" id="MLj-yu-RYq"/>
+                                                <constraint firstAttribute="trailing" secondItem="49B-rH-DW3" secondAttribute="trailing" constant="20" id="Yuo-1c-JBD"/>
+                                                <constraint firstItem="Epq-II-rha" firstAttribute="leading" secondItem="Smr-ys-rdO" secondAttribute="leading" id="aSg-X9-wpl"/>
+                                                <constraint firstItem="49B-rH-DW3" firstAttribute="top" secondItem="Smr-ys-rdO" secondAttribute="top" constant="28" id="eT3-eB-m04"/>
+                                                <constraint firstAttribute="bottom" secondItem="Epq-II-rha" secondAttribute="bottom" id="jzD-j7-wj7"/>
+                                                <constraint firstItem="lWP-xf-YNa" firstAttribute="leading" secondItem="Smr-ys-rdO" secondAttribute="leading" constant="20" id="uMs-Tn-57g"/>
+                                                <constraint firstItem="lWP-xf-YNa" firstAttribute="top" secondItem="vF6-tt-Ja0" secondAttribute="bottom" constant="4" id="uRf-9r-Eud"/>
+                                                <constraint firstAttribute="trailing" secondItem="Epq-II-rha" secondAttribute="trailing" id="zcC-2a-xFM"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="757" translatesAutoresizingMaskIntoConstraints="NO" id="UtQ-1c-OC8" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="173" width="366" height="309.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clO-LS-ISk" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="20" width="0.0" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="sg0-w6-x0X"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blackMain"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="INSURED"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dg-Wa-Lnc" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="44" width="302" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="RNL-4x-VdJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blackMain"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYq-6c-22V" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="346" y="20" width="0.0" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="Y7H-L2-KUv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blackMain"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="DATE_OF_BIRTH"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7Y-1l-jiq" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="346" y="44" width="0.0" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="kRd-ni-8Nc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blackMain"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Br-Mj-Tcn" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="97" width="326" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="QKc-4j-yXp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blackMain"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="INSURED_BENEFITS"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B8A-kE-vvI" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="80" width="326" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="6zR-zg-gVR"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="grayBorder"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" verticalHuggingPriority="255" verticalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="lLZ-PC-8bT" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="133" width="326" height="124"/>
+                                                    <subviews>
+                                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="262" verticalCompressionResistancePriority="793" placeholderIntrinsicWidth="302" placeholderIntrinsicHeight="100" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-hQ-Q36" customClass="ContentSizedTableView" customModule="affina" customModuleProvider="target">
+                                                            <rect key="frame" x="12" y="12" width="302" height="100"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="Yww-Qi-hKF"/>
+                                                            </constraints>
+                                                        </tableView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="7Ua-hQ-Q36" secondAttribute="trailing" constant="12" id="KUg-BU-UeV"/>
+                                                        <constraint firstItem="7Ua-hQ-Q36" firstAttribute="leading" secondItem="lLZ-PC-8bT" secondAttribute="leading" constant="12" id="ZZc-cw-HUe"/>
+                                                        <constraint firstItem="7Ua-hQ-Q36" firstAttribute="top" secondItem="lLZ-PC-8bT" secondAttribute="top" constant="12" id="ji2-H0-AJO"/>
+                                                        <constraint firstAttribute="bottom" secondItem="7Ua-hQ-Q36" secondAttribute="bottom" constant="12" id="mMA-au-Wyp"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="backgroundGray"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6p-H6-F3J" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="273" width="0.0" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="INSURANCE_DURATION"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 năm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4so-EM-mtS" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="306" y="273" width="40" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="O6p-H6-F3J" firstAttribute="leading" secondItem="UtQ-1c-OC8" secondAttribute="leading" constant="20" id="0yC-C6-fpw"/>
+                                                <constraint firstItem="clO-LS-ISk" firstAttribute="top" secondItem="UtQ-1c-OC8" secondAttribute="top" constant="20" id="1Zi-2X-5dx"/>
+                                                <constraint firstItem="7Br-Mj-Tcn" firstAttribute="leading" secondItem="UtQ-1c-OC8" secondAttribute="leading" constant="20" id="1nf-RB-WBu"/>
+                                                <constraint firstAttribute="trailing" secondItem="B8A-kE-vvI" secondAttribute="trailing" constant="20" id="4qZ-xd-B9s"/>
+                                                <constraint firstAttribute="trailing" secondItem="lLZ-PC-8bT" secondAttribute="trailing" constant="20" id="9Qr-qu-2tI"/>
+                                                <constraint firstItem="4so-EM-mtS" firstAttribute="top" secondItem="lLZ-PC-8bT" secondAttribute="bottom" constant="16" id="9pu-ss-N1d"/>
+                                                <constraint firstAttribute="trailing" secondItem="XYq-6c-22V" secondAttribute="trailing" constant="20" id="CUO-NA-wVv"/>
+                                                <constraint firstItem="J7Y-1l-jiq" firstAttribute="top" secondItem="XYq-6c-22V" secondAttribute="bottom" constant="4" id="Ck6-Jh-T4K"/>
+                                                <constraint firstItem="XYq-6c-22V" firstAttribute="top" secondItem="UtQ-1c-OC8" secondAttribute="top" constant="20" id="FgB-H5-9cg"/>
+                                                <constraint firstItem="B8A-kE-vvI" firstAttribute="top" secondItem="4dg-Wa-Lnc" secondAttribute="bottom" constant="12" id="ICz-SO-SML"/>
+                                                <constraint firstItem="4dg-Wa-Lnc" firstAttribute="leading" secondItem="UtQ-1c-OC8" secondAttribute="leading" constant="20" id="PxU-U1-QC4"/>
+                                                <constraint firstAttribute="trailing" secondItem="J7Y-1l-jiq" secondAttribute="trailing" constant="20" id="QTw-K2-AxG"/>
+                                                <constraint firstItem="7Br-Mj-Tcn" firstAttribute="top" secondItem="B8A-kE-vvI" secondAttribute="bottom" constant="16" id="SKt-ii-ell"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Br-Mj-Tcn" secondAttribute="trailing" constant="20" id="U6V-B5-43B"/>
+                                                <constraint firstItem="4dg-Wa-Lnc" firstAttribute="top" secondItem="clO-LS-ISk" secondAttribute="bottom" constant="4" id="Vdq-1o-H3U"/>
+                                                <constraint firstItem="J7Y-1l-jiq" firstAttribute="width" secondItem="XYq-6c-22V" secondAttribute="width" id="Vv8-dS-KwS"/>
+                                                <constraint firstAttribute="trailing" secondItem="4so-EM-mtS" secondAttribute="trailing" constant="20" id="aTw-YW-i2X"/>
+                                                <constraint firstItem="lLZ-PC-8bT" firstAttribute="leading" secondItem="UtQ-1c-OC8" secondAttribute="leading" constant="20" id="alG-jM-Yrv"/>
+                                                <constraint firstItem="O6p-H6-F3J" firstAttribute="top" secondItem="lLZ-PC-8bT" secondAttribute="bottom" constant="16" id="cA1-cm-W7b"/>
+                                                <constraint firstItem="lLZ-PC-8bT" firstAttribute="top" secondItem="7Br-Mj-Tcn" secondAttribute="bottom" constant="12" id="cML-ra-NCp"/>
+                                                <constraint firstItem="J7Y-1l-jiq" firstAttribute="leading" secondItem="4dg-Wa-Lnc" secondAttribute="trailing" constant="24" id="lqQ-5d-RLg"/>
+                                                <constraint firstItem="B8A-kE-vvI" firstAttribute="leading" secondItem="UtQ-1c-OC8" secondAttribute="leading" constant="20" id="nfk-vy-7Yc"/>
+                                                <constraint firstItem="clO-LS-ISk" firstAttribute="leading" secondItem="UtQ-1c-OC8" secondAttribute="leading" constant="20" id="on3-ST-9aJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="4so-EM-mtS" secondAttribute="bottom" constant="20" id="zDb-Np-Roy"/>
+                                                <constraint firstAttribute="bottom" secondItem="O6p-H6-F3J" secondAttribute="bottom" constant="20" id="zQu-3P-3xK"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" verticalHuggingPriority="255" translatesAutoresizingMaskIntoConstraints="NO" id="Jbn-d4-M7X" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="482.5" width="366" height="52"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uua-6m-pkB">
+                                                    <rect key="frame" x="20" y="0.0" width="326" height="52"/>
+                                                    <subviews>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKO-eL-bj0" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="32"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjG-4z-1LP" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="15" width="274.5" height="12"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="INSURANCE_FEE"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCapitalized" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blueMain"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" text="0 vnd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P74-n6-5lK" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                                    <rect key="frame" x="289.5" y="12" width="36.5" height="16"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blueMain"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="cjG-4z-1LP" firstAttribute="top" secondItem="FKO-eL-bj0" secondAttribute="top" constant="15" id="Ak7-fH-mbd"/>
+                                                                <constraint firstItem="cjG-4z-1LP" firstAttribute="leading" secondItem="FKO-eL-bj0" secondAttribute="leading" id="DSc-u9-8F4"/>
+                                                                <constraint firstAttribute="bottom" secondItem="P74-n6-5lK" secondAttribute="bottom" constant="4" id="Gmi-o9-9MC"/>
+                                                                <constraint firstAttribute="trailing" secondItem="P74-n6-5lK" secondAttribute="trailing" id="Krf-Rg-vPN"/>
+                                                                <constraint firstAttribute="height" constant="32" id="M0c-QX-Pt2"/>
+                                                                <constraint firstAttribute="bottom" secondItem="cjG-4z-1LP" secondAttribute="bottom" constant="5" id="VhY-rc-36q"/>
+                                                                <constraint firstItem="P74-n6-5lK" firstAttribute="leading" secondItem="cjG-4z-1LP" secondAttribute="trailing" constant="15" id="ayW-tc-105"/>
+                                                                <constraint firstItem="P74-n6-5lK" firstAttribute="top" secondItem="FKO-eL-bj0" secondAttribute="top" constant="12" id="jck-AZ-bqC"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmD-JV-hRL" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="32"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Khuyến mãi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozd-jE-NDz" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="7" width="274.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCapitalized" value="YES"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blueMain"/>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="DISCOUNT"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" text="0 vnd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na9-Y3-IKF" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                                    <rect key="frame" x="289.5" y="4" width="36.5" height="24"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blueMain"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="Na9-Y3-IKF" secondAttribute="bottom" constant="4" id="4dS-S2-awH"/>
+                                                                <constraint firstAttribute="height" constant="32" id="MVz-LR-Duy"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ozd-jE-NDz" secondAttribute="bottom" constant="6" id="Nsd-Hp-yZf"/>
+                                                                <constraint firstItem="ozd-jE-NDz" firstAttribute="top" secondItem="ZmD-JV-hRL" secondAttribute="top" constant="7" id="OBv-sg-LwW"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Na9-Y3-IKF" secondAttribute="trailing" id="c5g-rw-o5j"/>
+                                                                <constraint firstItem="Na9-Y3-IKF" firstAttribute="leading" secondItem="ozd-jE-NDz" secondAttribute="trailing" constant="15" id="fsN-EG-GtJ"/>
+                                                                <constraint firstItem="ozd-jE-NDz" firstAttribute="leading" secondItem="ZmD-JV-hRL" secondAttribute="leading" id="j3o-Hx-v4I"/>
+                                                                <constraint firstItem="Na9-Y3-IKF" firstAttribute="top" secondItem="ZmD-JV-hRL" secondAttribute="top" constant="4" id="whf-LU-1Yr"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhX-eP-her" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="326" height="52"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elh-Ya-ZGt" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="15" width="274.5" height="20"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="INSURANCE_FEE"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCapitalized" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" text="0 vnd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftd-fb-hAd" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                                    <rect key="frame" x="289.5" y="12" width="36.5" height="24"/>
+                                                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="elh-Ya-ZGt" firstAttribute="top" secondItem="qhX-eP-her" secondAttribute="top" constant="15" id="3IW-26-4dg"/>
+                                                                <constraint firstAttribute="bottom" secondItem="elh-Ya-ZGt" secondAttribute="bottom" constant="17" id="4vb-6b-Q0k"/>
+                                                                <constraint firstItem="elh-Ya-ZGt" firstAttribute="leading" secondItem="qhX-eP-her" secondAttribute="leading" id="CeY-DE-yJ9"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ftd-fb-hAd" secondAttribute="trailing" id="ENe-f5-ldr"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ftd-fb-hAd" secondAttribute="bottom" constant="16" id="HCm-s2-uiR"/>
+                                                                <constraint firstItem="ftd-fb-hAd" firstAttribute="top" secondItem="qhX-eP-her" secondAttribute="top" constant="12" id="NyD-7V-5yD"/>
+                                                                <constraint firstItem="ftd-fb-hAd" firstAttribute="leading" secondItem="elh-Ya-ZGt" secondAttribute="trailing" constant="15" id="UhR-GT-1sq"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="uua-6m-pkB" firstAttribute="top" secondItem="Jbn-d4-M7X" secondAttribute="top" id="2tq-Nu-xQU"/>
+                                                <constraint firstAttribute="trailing" secondItem="uua-6m-pkB" secondAttribute="trailing" constant="20" symbolic="YES" id="GiX-As-8Lw"/>
+                                                <constraint firstItem="uua-6m-pkB" firstAttribute="leading" secondItem="Jbn-d4-M7X" secondAttribute="leading" constant="20" symbolic="YES" id="uTC-V1-CU2"/>
+                                                <constraint firstAttribute="bottom" secondItem="uua-6m-pkB" secondAttribute="bottom" id="zgK-P4-EhT"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueExtremeLight"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="Smr-ys-rdO" firstAttribute="leading" secondItem="iIO-dX-ZEa" secondAttribute="leading" id="3Ap-XL-q0u"/>
+                                        <constraint firstItem="Smr-ys-rdO" firstAttribute="top" secondItem="iIO-dX-ZEa" secondAttribute="top" id="SfQ-uo-XNQ"/>
+                                        <constraint firstItem="UtQ-1c-OC8" firstAttribute="top" secondItem="Smr-ys-rdO" secondAttribute="bottom" id="XTa-Rq-yZs"/>
+                                        <constraint firstItem="Jbn-d4-M7X" firstAttribute="top" secondItem="UtQ-1c-OC8" secondAttribute="bottom" id="cCm-Hj-jbL"/>
+                                        <constraint firstItem="Jbn-d4-M7X" firstAttribute="leading" secondItem="iIO-dX-ZEa" secondAttribute="leading" id="ohL-Sf-EQ9"/>
+                                        <constraint firstAttribute="trailing" secondItem="Jbn-d4-M7X" secondAttribute="trailing" id="sAk-ud-8Ci"/>
+                                        <constraint firstItem="UtQ-1c-OC8" firstAttribute="leading" secondItem="iIO-dX-ZEa" secondAttribute="leading" id="uxY-5v-552"/>
+                                        <constraint firstAttribute="trailing" secondItem="UtQ-1c-OC8" secondAttribute="trailing" id="wzc-yl-ggF"/>
+                                        <constraint firstAttribute="bottom" secondItem="Jbn-d4-M7X" secondAttribute="bottom" id="yGI-sd-vtU"/>
+                                        <constraint firstAttribute="trailing" secondItem="Smr-ys-rdO" secondAttribute="trailing" id="z8p-g4-LpP"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="500-aW-HO1" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="714.5" width="366" height="102"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="G4d-pT-A9B"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="INSURANCE_START_DATE"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="DD/MM/YYYY"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="rightIcon" value="ic_calendar"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="rZT-Nh-1V4" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="836.5" width="366" height="48"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYq-uC-pYV">
+                                            <rect key="frame" x="119" y="0.0" width="128.5" height="48"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_voucher" translatesAutoresizingMaskIntoConstraints="NO" id="yEY-Jb-dQM">
+                                                    <rect key="frame" x="0.0" y="12" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="H2G-YZ-gS6"/>
+                                                        <constraint firstAttribute="height" constant="24" id="oWO-zA-pz6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mã Giảm Giá" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nk3-4Q-voz" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                                    <rect key="frame" x="32" y="0.0" width="96.5" height="48"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="COUPON_CODE"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="customFont" value="Raleway-Semibold-16"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="subText"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isCapitalizedFirstLetter" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="yEY-Jb-dQM" firstAttribute="centerY" secondItem="BYq-uC-pYV" secondAttribute="centerY" id="9Ti-uC-aFo"/>
+                                                <constraint firstAttribute="bottom" secondItem="nk3-4Q-voz" secondAttribute="bottom" id="AOl-nl-nJ8"/>
+                                                <constraint firstItem="nk3-4Q-voz" firstAttribute="leading" secondItem="yEY-Jb-dQM" secondAttribute="trailing" constant="8" id="KzU-c3-oZI"/>
+                                                <constraint firstItem="nk3-4Q-voz" firstAttribute="top" secondItem="BYq-uC-pYV" secondAttribute="top" id="Ldg-pX-Uhc"/>
+                                                <constraint firstAttribute="trailing" secondItem="nk3-4Q-voz" secondAttribute="trailing" id="OVY-c5-8Fb"/>
+                                                <constraint firstItem="yEY-Jb-dQM" firstAttribute="leading" secondItem="BYq-uC-pYV" secondAttribute="leading" id="tZK-Fl-1SE"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="BYq-uC-pYV" secondAttribute="bottom" id="2aU-0T-Vv5"/>
+                                        <constraint firstItem="BYq-uC-pYV" firstAttribute="centerX" secondItem="rZT-Nh-1V4" secondAttribute="centerX" id="Iut-oQ-5UR"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BYq-uC-pYV" secondAttribute="trailing" id="Lbg-t4-Hx1"/>
+                                        <constraint firstItem="BYq-uC-pYV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rZT-Nh-1V4" secondAttribute="leading" id="Wjh-dt-lcr"/>
+                                        <constraint firstItem="BYq-uC-pYV" firstAttribute="top" secondItem="rZT-Nh-1V4" secondAttribute="top" id="Xr8-sS-S2L"/>
+                                        <constraint firstAttribute="height" constant="48" id="YjK-Ga-lDe"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="YOUR_VOUCHER"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="rightIcon" value="ic_voucher"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thg-bI-Ftu" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="904.5" width="366" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="ZJl-ue-bVe"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Lb-CT-I91">
+                                    <rect key="frame" x="341" y="925.5" width="51" height="31"/>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXU-bU-iPC" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="941" width="0.0" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="VAT_INVOICE"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV0-ta-Y0U" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="980.5" width="366" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="VdT-3T-pHs"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view hidden="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="301" translatesAutoresizingMaskIntoConstraints="NO" id="L77-Tn-qqk" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="1001.5" width="366" height="367"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="y2m-YV-IvP" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="102"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="faW-W1-qmc"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="COMPANY"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="UO6-d5-lT0" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="122" width="366" height="102"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="djl-FS-B0S"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="ADDRESS_COMPANY"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="qfl-Kk-eXT" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="244" width="366" height="102"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="vbg-Of-4Lo"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="text" value="TAX_CODE"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sT9-se-jco" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="366" width="366" height="1"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="auN-SN-bwN"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="sT9-se-jco" firstAttribute="top" secondItem="qfl-Kk-eXT" secondAttribute="bottom" constant="20" id="1uZ-Jg-FdQ"/>
+                                        <constraint firstItem="UO6-d5-lT0" firstAttribute="top" secondItem="y2m-YV-IvP" secondAttribute="bottom" constant="20" id="5tW-cx-fm3"/>
+                                        <constraint firstItem="UO6-d5-lT0" firstAttribute="leading" secondItem="L77-Tn-qqk" secondAttribute="leading" id="Fj8-xf-ncV"/>
+                                        <constraint firstAttribute="trailing" secondItem="sT9-se-jco" secondAttribute="trailing" id="Kg2-HO-aIw"/>
+                                        <constraint firstAttribute="bottom" secondItem="sT9-se-jco" secondAttribute="bottom" id="YMU-KX-D2W"/>
+                                        <constraint firstAttribute="trailing" secondItem="qfl-Kk-eXT" secondAttribute="trailing" id="cHM-gD-ahu"/>
+                                        <constraint firstItem="y2m-YV-IvP" firstAttribute="top" secondItem="L77-Tn-qqk" secondAttribute="top" id="dyr-HU-Wsg"/>
+                                        <constraint firstItem="sT9-se-jco" firstAttribute="leading" secondItem="L77-Tn-qqk" secondAttribute="leading" id="eFm-4V-ZHC"/>
+                                        <constraint firstItem="qfl-Kk-eXT" firstAttribute="top" secondItem="UO6-d5-lT0" secondAttribute="bottom" constant="20" id="f6f-ur-HAB"/>
+                                        <constraint firstItem="qfl-Kk-eXT" firstAttribute="leading" secondItem="L77-Tn-qqk" secondAttribute="leading" id="jco-PB-RnS"/>
+                                        <constraint firstItem="y2m-YV-IvP" firstAttribute="leading" secondItem="L77-Tn-qqk" secondAttribute="leading" id="qak-QZ-C2P"/>
+                                        <constraint firstAttribute="trailing" secondItem="UO6-d5-lT0" secondAttribute="trailing" id="sMC-h1-hhd"/>
+                                        <constraint firstAttribute="trailing" secondItem="y2m-YV-IvP" secondAttribute="trailing" id="zZX-NN-Kr0"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehb-H5-Lce" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="1321.5" width="0.0" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="YOU_NEED_TO_PAY"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 vnd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzW-zf-Azl" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="348" y="1312" width="42" height="19"/>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klr-yz-hg2" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="1341.5" width="366" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="P5Z-6O-dbz"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueSlider"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R63-uc-WVz" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="56" y="1362.5" width="334" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="BY_PROCESSING_THE_PAYMENT"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ6-ff-sXf" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="1362.5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="SlL-u4-9g3"/>
+                                        <constraint firstAttribute="width" constant="20" id="jqf-T3-Mqz"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_check"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="tintAsset" value="whiteMain"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-iv-SvL" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="1418.5" width="366" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PAYMENT_TYPE"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSP-xe-ZCd" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="1442.5" width="414" height="228"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="200" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-RW-Rik" customClass="ContentSizedTableView" customModule="affina" customModuleProvider="target">
+                                            <rect key="frame" x="24" y="8" width="366" height="200"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="j1Q-RW-Rik" secondAttribute="bottom" constant="20" id="0DS-dT-Xvs"/>
+                                        <constraint firstItem="j1Q-RW-Rik" firstAttribute="leading" secondItem="WSP-xe-ZCd" secondAttribute="leading" constant="24" id="Vi3-pc-bv5"/>
+                                        <constraint firstAttribute="trailing" secondItem="j1Q-RW-Rik" secondAttribute="trailing" constant="24" id="fXZ-AN-gsd"/>
+                                        <constraint firstItem="j1Q-RW-Rik" firstAttribute="top" secondItem="WSP-xe-ZCd" secondAttribute="top" constant="8" id="jE8-IU-MbO"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="UzW-zf-Azl" secondAttribute="trailing" constant="24" id="1Q5-A1-paQ"/>
+                                <constraint firstItem="dXU-bU-iPC" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="1nj-rx-dBm"/>
+                                <constraint firstItem="rZT-Nh-1V4" firstAttribute="top" secondItem="500-aW-HO1" secondAttribute="bottom" constant="20" id="2QJ-Un-Gqj"/>
+                                <constraint firstItem="R63-uc-WVz" firstAttribute="leading" secondItem="VQ6-ff-sXf" secondAttribute="trailing" constant="12" id="2xT-02-zCn"/>
+                                <constraint firstItem="ZUP-t7-PTs" firstAttribute="top" secondItem="r1W-aN-aiw" secondAttribute="top" constant="36" id="3Ea-aS-Z40"/>
+                                <constraint firstAttribute="trailing" secondItem="NLg-iv-SvL" secondAttribute="trailing" constant="24" id="3K9-e7-arZ"/>
+                                <constraint firstAttribute="trailing" secondItem="7Lb-CT-I91" secondAttribute="trailing" constant="24" id="45T-H3-dZj"/>
+                                <constraint firstItem="hV0-ta-Y0U" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="4VS-ul-Pfl"/>
+                                <constraint firstItem="rTi-uH-M4b" firstAttribute="top" secondItem="EJt-UB-Hng" secondAttribute="bottom" constant="32" id="9io-js-fxW"/>
+                                <constraint firstItem="VQ6-ff-sXf" firstAttribute="top" secondItem="klr-yz-hg2" secondAttribute="bottom" constant="20" id="9vk-Nm-k0R"/>
+                                <constraint firstItem="7Lb-CT-I91" firstAttribute="centerY" secondItem="dXU-bU-iPC" secondAttribute="centerY" id="AXV-cC-lEM"/>
+                                <constraint firstItem="thg-bI-Ftu" firstAttribute="top" secondItem="rZT-Nh-1V4" secondAttribute="bottom" constant="20" id="DUZ-po-sKo"/>
+                                <constraint firstAttribute="trailing" secondItem="R63-uc-WVz" secondAttribute="trailing" constant="24" id="DYw-GV-ukt"/>
+                                <constraint firstItem="rZT-Nh-1V4" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="GzC-Xa-zuc"/>
+                                <constraint firstItem="7Lb-CT-I91" firstAttribute="top" secondItem="thg-bI-Ftu" secondAttribute="bottom" constant="20" id="HDg-Nu-BCh"/>
+                                <constraint firstAttribute="trailing" secondItem="hV0-ta-Y0U" secondAttribute="trailing" constant="24" id="I3P-gW-3sy"/>
+                                <constraint firstItem="WSP-xe-ZCd" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" id="JKG-wg-b9g"/>
+                                <constraint firstItem="NLg-iv-SvL" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="Ljf-eq-0yl"/>
+                                <constraint firstAttribute="trailing" secondItem="500-aW-HO1" secondAttribute="trailing" constant="24" id="Mns-SV-xyE"/>
+                                <constraint firstAttribute="trailing" secondItem="rTi-uH-M4b" secondAttribute="trailing" constant="24" id="Nh4-eK-ald"/>
+                                <constraint firstItem="ZUP-t7-PTs" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="16" id="P5W-6j-JoI"/>
+                                <constraint firstItem="VQ6-ff-sXf" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="Tze-yB-BcA"/>
+                                <constraint firstAttribute="trailing" secondItem="iIO-dX-ZEa" secondAttribute="trailing" constant="24" id="UBj-m1-jeo"/>
+                                <constraint firstItem="L77-Tn-qqk" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="V9I-Db-HF7"/>
+                                <constraint firstItem="rTi-uH-M4b" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="W3Z-hk-P2R"/>
+                                <constraint firstAttribute="trailing" secondItem="EJt-UB-Hng" secondAttribute="trailing" constant="24" id="Wsr-JF-ztn"/>
+                                <constraint firstAttribute="trailing" secondItem="thg-bI-Ftu" secondAttribute="trailing" constant="24" id="Y1q-rO-ZtX"/>
+                                <constraint firstItem="hV0-ta-Y0U" firstAttribute="top" secondItem="7Lb-CT-I91" secondAttribute="bottom" constant="24" id="Yye-bD-t1N"/>
+                                <constraint firstAttribute="trailing" secondItem="klr-yz-hg2" secondAttribute="trailing" constant="24" id="aMp-2n-JPg"/>
+                                <constraint firstAttribute="bottom" secondItem="WSP-xe-ZCd" secondAttribute="bottom" id="c0S-vE-vFO"/>
+                                <constraint firstItem="Ehb-H5-Lce" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="f0x-mJ-OjS"/>
+                                <constraint firstItem="iIO-dX-ZEa" firstAttribute="top" secondItem="rTi-uH-M4b" secondAttribute="bottom" constant="12" id="ffC-kj-zXq"/>
+                                <constraint firstItem="L77-Tn-qqk" firstAttribute="top" secondItem="hV0-ta-Y0U" secondAttribute="bottom" constant="20" id="fzt-hx-jb7"/>
+                                <constraint firstItem="EJt-UB-Hng" firstAttribute="top" secondItem="ZUP-t7-PTs" secondAttribute="bottom" constant="40" id="gEk-Ls-Ald"/>
+                                <constraint firstItem="iIO-dX-ZEa" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="hjE-ns-8u3"/>
+                                <constraint firstAttribute="trailing" secondItem="rZT-Nh-1V4" secondAttribute="trailing" constant="24" id="ikL-7k-PtC"/>
+                                <constraint firstItem="klr-yz-hg2" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="jqj-Q4-JNn"/>
+                                <constraint firstItem="500-aW-HO1" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="k8S-1d-hkR"/>
+                                <constraint firstItem="R63-uc-WVz" firstAttribute="top" secondItem="klr-yz-hg2" secondAttribute="bottom" constant="20" id="l8W-Vm-Y9R"/>
+                                <constraint firstItem="thg-bI-Ftu" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="lEt-RH-89B"/>
+                                <constraint firstItem="UzW-zf-Azl" firstAttribute="centerY" secondItem="Ehb-H5-Lce" secondAttribute="centerY" id="lVf-Dh-XkS"/>
+                                <constraint firstAttribute="trailing" secondItem="WSP-xe-ZCd" secondAttribute="trailing" id="mPB-YN-BcE"/>
+                                <constraint firstItem="klr-yz-hg2" firstAttribute="top" secondItem="Ehb-H5-Lce" secondAttribute="bottom" constant="20" id="ptV-79-CTw"/>
+                                <constraint firstItem="WSP-xe-ZCd" firstAttribute="top" secondItem="NLg-iv-SvL" secondAttribute="bottom" constant="24" id="shB-8A-Ziy"/>
+                                <constraint firstAttribute="trailing" secondItem="L77-Tn-qqk" secondAttribute="trailing" constant="24" id="tfc-NU-IIB"/>
+                                <constraint firstItem="Ehb-H5-Lce" firstAttribute="top" secondItem="hV0-ta-Y0U" secondAttribute="bottom" constant="340" id="tkx-Lo-iiG"/>
+                                <constraint firstItem="NLg-iv-SvL" firstAttribute="top" secondItem="VQ6-ff-sXf" secondAttribute="bottom" constant="36" id="vTu-G4-ya7"/>
+                                <constraint firstItem="EJt-UB-Hng" firstAttribute="leading" secondItem="r1W-aN-aiw" secondAttribute="leading" constant="24" id="wgZ-8J-ygc"/>
+                                <constraint firstItem="500-aW-HO1" firstAttribute="top" secondItem="iIO-dX-ZEa" secondAttribute="bottom" constant="20" id="zce-O2-5wA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="r1W-aN-aiw" firstAttribute="top" secondItem="5No-lp-uFv" secondAttribute="top" id="CL7-fd-K7w"/>
+                        <constraint firstItem="r1W-aN-aiw" firstAttribute="width" secondItem="5No-lp-uFv" secondAttribute="width" id="DCy-NO-Lnf"/>
+                        <constraint firstAttribute="bottom" secondItem="r1W-aN-aiw" secondAttribute="bottom" id="Uda-2R-2cd"/>
+                        <constraint firstAttribute="trailing" secondItem="r1W-aN-aiw" secondAttribute="trailing" id="Yc8-RU-kNW"/>
+                        <constraint firstItem="r1W-aN-aiw" firstAttribute="leading" secondItem="5No-lp-uFv" secondAttribute="leading" id="kIh-vp-8x4"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5No-lp-uFv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6ju-ug-p1Z"/>
+                <constraint firstAttribute="bottom" secondItem="5No-lp-uFv" secondAttribute="bottom" id="PiO-MI-cmP"/>
+                <constraint firstItem="5No-lp-uFv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UdK-Q3-4cK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5No-lp-uFv" secondAttribute="trailing" id="bsj-v3-jcW"/>
+            </constraints>
+            <point key="canvasLocation" x="1" y="83"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4dg-Wa-Lnc"/>
+        <designable name="4so-EM-mtS">
+            <size key="intrinsicContentSize" width="40" height="16.5"/>
+        </designable>
+        <designable name="500-aW-HO1">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="7Br-Mj-Tcn"/>
+        <designable name="EJt-UB-Hng"/>
+        <designable name="Ehb-H5-Lce"/>
+        <designable name="J7Y-1l-jiq"/>
+        <designable name="L77-Tn-qqk">
+            <size key="intrinsicContentSize" width="366" height="301"/>
+        </designable>
+        <designable name="NLg-iv-SvL"/>
+        <designable name="Na9-Y3-IKF">
+            <size key="intrinsicContentSize" width="36.5" height="16.5"/>
+        </designable>
+        <designable name="O6p-H6-F3J"/>
+        <designable name="P74-n6-5lK">
+            <size key="intrinsicContentSize" width="36.5" height="16.5"/>
+        </designable>
+        <designable name="R63-uc-WVz"/>
+        <designable name="UO6-d5-lT0">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="UzW-zf-Azl">
+            <size key="intrinsicContentSize" width="42" height="19"/>
+        </designable>
+        <designable name="VQ6-ff-sXf">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+        <designable name="XYq-6c-22V"/>
+        <designable name="ZUP-t7-PTs">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="cjG-4z-1LP"/>
+        <designable name="clO-LS-ISk"/>
+        <designable name="dXU-bU-iPC"/>
+        <designable name="elh-Ya-ZGt"/>
+        <designable name="ftd-fb-hAd">
+            <size key="intrinsicContentSize" width="36.5" height="16.5"/>
+        </designable>
+        <designable name="lWP-xf-YNa"/>
+        <designable name="nk3-4Q-voz">
+            <size key="intrinsicContentSize" width="96.5" height="20.5"/>
+        </designable>
+        <designable name="ozd-jE-NDz">
+            <size key="intrinsicContentSize" width="77.5" height="16.5"/>
+        </designable>
+        <designable name="qfl-Kk-eXT">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="rTi-uH-M4b"/>
+        <designable name="rZT-Nh-1V4">
+            <size key="intrinsicContentSize" width="366" height="80"/>
+        </designable>
+        <designable name="vF6-tt-Ja0"/>
+        <designable name="y2m-YV-IvP">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Card_4" width="704" height="469"/>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="ic_calendar" width="24" height="24"/>
+        <image name="ic_check" width="12" height="12.5"/>
+        <image name="ic_voucher" width="24" height="24"/>
+        <image name="logoText" width="80" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventPopupView" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="9Oh-7K-D4m" id="GIc-Od-IPW"/>
+                <outlet property="backgroundView" destination="HsT-CO-NXm" id="718-1l-UH6"/>
+                <outlet property="buttonView" destination="FMR-F6-UUW" id="cVe-N2-cZQ"/>
+                <outlet property="containerView" destination="8w8-L8-sV3" id="VlV-8s-vwi"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Wul-yl-d1R"/>
+                <outlet property="imageView" destination="axe-Vb-NIY" id="pn2-Sp-Lsf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsT-CO-NXm">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8w8-L8-sV3" userLabel="PopupView">
+                    <rect key="frame" x="23" y="154" width="344" height="536"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="axe-Vb-NIY">
+                            <rect key="frame" x="0.0" y="0.0" width="344" height="440"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="440" id="8PQ-eE-Kha"/>
+                                <constraint firstAttribute="width" constant="344" id="f8L-d0-Kkh"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMR-F6-UUW" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="20" y="460" width="304" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="MEM-LE-44k"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_close" translatesAutoresizingMaskIntoConstraints="NO" id="9Oh-7K-D4m">
+                            <rect key="frame" x="300" y="12" width="32" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="3KA-nc-CGu"/>
+                                <constraint firstAttribute="width" constant="32" id="ZPp-jV-PWu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="axe-Vb-NIY" firstAttribute="leading" secondItem="8w8-L8-sV3" secondAttribute="leading" id="2dx-5t-bPj"/>
+                        <constraint firstItem="FMR-F6-UUW" firstAttribute="top" secondItem="axe-Vb-NIY" secondAttribute="bottom" constant="20" id="ILW-5l-g3U"/>
+                        <constraint firstItem="axe-Vb-NIY" firstAttribute="top" secondItem="8w8-L8-sV3" secondAttribute="top" id="Ldm-S3-RGl"/>
+                        <constraint firstAttribute="trailing" secondItem="9Oh-7K-D4m" secondAttribute="trailing" constant="12" id="VhU-ya-1ss"/>
+                        <constraint firstItem="FMR-F6-UUW" firstAttribute="leading" secondItem="8w8-L8-sV3" secondAttribute="leading" constant="20" id="WYq-1k-bAC"/>
+                        <constraint firstAttribute="bottom" secondItem="FMR-F6-UUW" secondAttribute="bottom" constant="20" id="bTa-tW-VQN"/>
+                        <constraint firstAttribute="trailing" secondItem="FMR-F6-UUW" secondAttribute="trailing" constant="20" id="nfr-Rg-S8w"/>
+                        <constraint firstAttribute="trailing" secondItem="axe-Vb-NIY" secondAttribute="trailing" id="qL0-Lx-l33"/>
+                        <constraint firstItem="9Oh-7K-D4m" firstAttribute="top" secondItem="8w8-L8-sV3" secondAttribute="top" constant="12" id="rNl-gK-1oq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HsT-CO-NXm" secondAttribute="trailing" id="eYP-41-V6F"/>
+                <constraint firstItem="8w8-L8-sV3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="g6J-QV-8OO"/>
+                <constraint firstItem="HsT-CO-NXm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gZG-cX-fTf"/>
+                <constraint firstItem="8w8-L8-sV3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qc5-vA-VT5"/>
+                <constraint firstAttribute="bottom" secondItem="HsT-CO-NXm" secondAttribute="bottom" id="rGT-vV-G5J"/>
+                <constraint firstItem="HsT-CO-NXm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vhR-nT-ReR"/>
+            </constraints>
+            <point key="canvasLocation" x="300" y="29.857819905213269"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="FMR-F6-UUW">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_close" width="24" height="24"/>
+        <image name="placeholder" width="400" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

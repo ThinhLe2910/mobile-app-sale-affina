@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InsuranceDetailMainTypeCollectionViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upm-Wo-uNh" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JN1-Hu-xsc" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="16" y="8" width="48" height="20"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="whiteMain"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JN1-Hu-xsc" firstAttribute="leading" secondItem="upm-Wo-uNh" secondAttribute="leading" constant="16" id="FYT-hD-ePu"/>
+                            <constraint firstItem="JN1-Hu-xsc" firstAttribute="top" secondItem="upm-Wo-uNh" secondAttribute="top" constant="8" id="QP6-zm-0Wg"/>
+                            <constraint firstAttribute="bottom" secondItem="JN1-Hu-xsc" secondAttribute="bottom" constant="8" id="lMY-xP-kcB"/>
+                            <constraint firstAttribute="trailing" secondItem="JN1-Hu-xsc" secondAttribute="trailing" constant="16" id="wxG-ZB-7qH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="blueMain"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="upm-Wo-uNh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7ZK-83-h5w"/>
+                <constraint firstAttribute="trailing" secondItem="upm-Wo-uNh" secondAttribute="trailing" id="FWp-oh-Lmw"/>
+                <constraint firstAttribute="bottom" secondItem="upm-Wo-uNh" secondAttribute="bottom" id="OLt-X6-1HN"/>
+                <constraint firstItem="upm-Wo-uNh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oBe-5V-SRo"/>
+            </constraints>
+            <size key="customSize" width="230" height="70"/>
+            <connections>
+                <outlet property="containerView" destination="upm-Wo-uNh" id="5VA-6i-DOQ"/>
+                <outlet property="label" destination="JN1-Hu-xsc" id="AKp-7v-vDg"/>
+            </connections>
+            <point key="canvasLocation" x="246.37681159420291" y="54.241071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="JN1-Hu-xsc">
+            <size key="intrinsicContentSize" width="38" height="16.5"/>
+        </designable>
+    </designables>
+</document>

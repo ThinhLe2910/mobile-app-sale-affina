@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayooPayment
+import CommonCrypto
+import Foundation
+import PayooCore
+@_exported import PayooPayment
+import Photos
+import SafariServices
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+@_hasMissingDesignatedInitializers @objc(PaymentResponseObject) public class PaymentResponseObject : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let code: Swift.Int
+  @objc final public let message: Swift.String?
+  @objc final public let data: PayooPayment.PaymentResponseData?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc(OrderRequest) public class OrderRequest : ObjectiveC.NSObject {
+  @objc public init(orderInfo: Swift.String, checksum: Swift.String)
+  @objc public init(orderInfo: Swift.String, checksum: Swift.String, cashAmount: Swift.Double)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(PaymentResponseData) public class PaymentResponseData : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let orderId: Swift.String?
+  @objc final public let customerEmail: Swift.String?
+  @objc final public let orderXml: Swift.String?
+  @objc final public let paymentCode: Swift.String?
+  @objc final public let totalAmount: Swift.Double
+  @objc final public let paymentFee: Swift.Double
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarStyle: UIKit.UIViewController? {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var childForStatusBarHidden: UIKit.UIViewController? {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+}
+public typealias PaymentCompletionHandler = (PayooCore.GroupType, PayooPayment.PaymentResponseObject?) -> Swift.Void
+extension Swift.String {
+  public func decrypt(_ password: Swift.String) -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc(PayooPaymentApplicationDelegate) final public class PaymentApplicationDelegate : ObjectiveC.NSObject {
+  @objc public static let shared: PayooPayment.PaymentApplicationDelegate
+  @objc override dynamic public init()
+  @objc final public func application(_ app: UIKit.UIApplication, open url: Foundation.URL, options: [UIKit.UIApplication.OpenURLOptionsKey : Any]) -> Swift.Bool
+  @objc deinit
+}
+public typealias PaymentContextResponse = (groupType: PayooCore.GroupType, responseObject: PayooPayment.PaymentResponseObject?)
+@objc(PaymentTokenClient) final public class PaymentTokenClient : ObjectiveC.NSObject {
+  @objc public init(paymentConfig: PayooPayment.PaymentConfiguration)
+  @objc final public func clearToken(completion: ((_ success: Swift.Bool, _ error: Swift.Error?) -> Swift.Void)?)
+  @objc final public func fetchTokens(completion: ((_ success: [PayooPayment.PublicPaymentToken]?, _ error: Swift.Error?) -> Swift.Void)?)
+  @objc deinit
+}
+@objc(PayooPaymentConfiguration) final public class PaymentConfiguration : ObjectiveC.NSObject {
+  final public var paymentToken: PayooPayment.PublicPaymentToken?
+  final public var supportedPaymentMethods: PayooPayment.PaymentMethodOption?
+  final public var itemCode: Swift.String?
+  final public var shopId: Swift.Int?
+  @objc public init(authToken: Swift.String? = nil, defaultCustomerEmail: Swift.String? = nil, defaultCustomerPhone: Swift.String? = nil, userId: Swift.String? = nil, transactionTypeCode: Swift.String? = nil, supportedPaymentMethods: Foundation.NSNumber? = nil, bankCode: Swift.String? = nil, appCode: Swift.String? = nil, itemCode: Swift.String? = nil, shopId: Foundation.NSNumber? = nil, paymentToken: PayooPayment.PublicPaymentToken? = nil, supportedPeriod: Foundation.NSNumber? = nil)
+  @objc final public func set(paymentToken: PayooPayment.PublicPaymentToken?)
+  @objc final public func set(bankCode: Swift.String)
+  @objc deinit
+}
+public struct PaymentMethodOption : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public typealias ArrayLiteralElement = PayooPayment.PaymentMethodOption
+  public typealias Element = PayooPayment.PaymentMethodOption
+  public typealias RawValue = Swift.Int
+}
+public enum PaymentMethodType : Swift.Int, Swift.Encodable, Swift.CaseIterable {
+  case domesticCard
+  case internationalCard
+  case payAtStore
+  case eWallet
+  case token
+  case installment
+  case qrCode
+  case app2app
+  case transfer
+  case recurring
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayooPayment.PaymentMethodType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayooPayment.PaymentMethodType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(PaymentContext) final public class PaymentContext : ObjectiveC.NSObject {
+  @objc public init(configuration: PayooPayment.PaymentConfiguration? = nil, completionHandler: PayooPayment.PaymentCompletionHandler? = nil)
+  @objc final public func pay(orderRequest: PayooPayment.OrderRequest, from hostViewController: UIKit.UIViewController)
+  @objc final public func selectMethod(orderRequest: PayooPayment.OrderRequest, from hostViewController: UIKit.UIViewController)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(PublicPaymentToken) public class PublicPaymentToken : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let bankCode: Swift.String
+  @objc final public let paymentTokenId: Swift.String
+  @objc final public let bankNumber: Swift.String
+  @objc final public let logoUrl: Swift.String
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension PayooPayment.PaymentMethodType : Swift.Equatable {}
+extension PayooPayment.PaymentMethodType : Swift.Hashable {}
+extension PayooPayment.PaymentMethodType : Swift.RawRepresentable {}

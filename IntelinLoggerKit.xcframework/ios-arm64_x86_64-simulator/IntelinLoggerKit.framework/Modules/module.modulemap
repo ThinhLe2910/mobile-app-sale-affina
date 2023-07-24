@@ -1,0 +1,11 @@
+framework module IntelinLoggerKit {
+  umbrella header "IntelinLoggerKit.h"
+
+  export *
+  module * { export * }
+}
+
+module IntelinLoggerKit.Swift {
+    header "IntelinLoggerKit-Swift.h"
+    requires objc
+}

@@ -1,0 +1,11 @@
+framework module PayooPayment {
+  umbrella header "PayooPayment.h"
+
+  export *
+  module * { export * }
+}
+
+module PayooPayment.Swift {
+    header "PayooPayment-Swift.h"
+    requires objc
+}

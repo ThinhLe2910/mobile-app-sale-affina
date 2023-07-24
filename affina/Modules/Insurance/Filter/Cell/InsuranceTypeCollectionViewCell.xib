@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InsuranceTypeCollectionViewCell" customModule="affina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZc-NW-LZ0" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEALTH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b35-VX-V1C" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="12" width="147" height="24"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="HEALTH"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="blueMain"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="b35-VX-V1C" firstAttribute="top" secondItem="AZc-NW-LZ0" secondAttribute="top" constant="12" id="5ET-pb-nP3"/>
+                            <constraint firstItem="b35-VX-V1C" firstAttribute="leading" secondItem="AZc-NW-LZ0" secondAttribute="leading" constant="20" id="CAn-bO-eEx"/>
+                            <constraint firstAttribute="bottom" secondItem="b35-VX-V1C" secondAttribute="bottom" constant="12" id="DHR-IH-35m"/>
+                            <constraint firstAttribute="trailing" secondItem="b35-VX-V1C" secondAttribute="trailing" constant="20" id="SZ8-DD-yOx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AZc-NW-LZ0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AVA-uN-rlM"/>
+                <constraint firstAttribute="bottom" secondItem="AZc-NW-LZ0" secondAttribute="bottom" id="BUm-hw-yUj"/>
+                <constraint firstAttribute="trailing" secondItem="AZc-NW-LZ0" secondAttribute="trailing" id="UzJ-0V-Kad"/>
+                <constraint firstItem="AZc-NW-LZ0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yuk-ji-AGr"/>
+            </constraints>
+            <size key="customSize" width="187" height="75"/>
+            <connections>
+                <outlet property="containerView" destination="AZc-NW-LZ0" id="CRi-vP-ir7"/>
+                <outlet property="nameLabel" destination="b35-VX-V1C" id="98I-Ow-qsJ"/>
+            </connections>
+            <point key="canvasLocation" x="231.15942028985509" y="96.09375"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="b35-VX-V1C">
+            <size key="intrinsicContentSize" width="62" height="19"/>
+        </designable>
+    </designables>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InsuranceListViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyLabel" destination="Qyv-0j-MpP" id="2NV-K9-ITw"/>
+                <outlet property="tableView" destination="EZa-0y-L1f" id="mYu-ty-doM"/>
+                <outlet property="tableViewTopConstraint" destination="Jk9-MS-Ee3" id="iNY-4G-kQN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="homeBg" translatesAutoresizingMaskIntoConstraints="NO" id="WgQ-KH-3us">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="480"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không có sản phẩm phù hợp!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyv-0j-MpP" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="24" y="144" width="366" height="28.5"/>
+                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-0y-L1f" customClass="ContentSizedTableView" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="24" y="44" width="366" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Gik-IX-PFt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qyv-0j-MpP" firstAttribute="top" secondItem="Gik-IX-PFt" secondAttribute="top" constant="100" id="9PK-p3-32o"/>
+                <constraint firstItem="WgQ-KH-3us" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9fr-Au-KH6"/>
+                <constraint firstItem="EZa-0y-L1f" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="Jk9-MS-Ee3"/>
+                <constraint firstItem="Qyv-0j-MpP" firstAttribute="leading" secondItem="Gik-IX-PFt" secondAttribute="leading" constant="24" id="OFT-6B-BPb"/>
+                <constraint firstAttribute="trailing" secondItem="EZa-0y-L1f" secondAttribute="trailing" constant="24" id="Vlg-JF-v4C"/>
+                <constraint firstItem="EZa-0y-L1f" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="gtU-J2-JtC"/>
+                <constraint firstItem="WgQ-KH-3us" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kIa-kH-WgX"/>
+                <constraint firstAttribute="bottom" secondItem="EZa-0y-L1f" secondAttribute="bottom" id="nqR-2q-EPo"/>
+                <constraint firstAttribute="trailing" secondItem="WgQ-KH-3us" secondAttribute="trailing" id="xpq-dw-VF4"/>
+                <constraint firstItem="Gik-IX-PFt" firstAttribute="trailing" secondItem="Qyv-0j-MpP" secondAttribute="trailing" constant="24" id="zWo-4c-swW"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="88"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Qyv-0j-MpP">
+            <size key="intrinsicContentSize" width="328.5" height="28.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="homeBg" width="390" height="480"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Italic.ttf">
+            <string>Raleway-Italic</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputPinCodeViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonBottomKeyboardConstraint" destination="zO5-7B-tvl" id="xFW-I0-wf4"/>
+                <outlet property="errorLabel" destination="KcM-dJ-d6l" id="vJ7-RH-VHu"/>
+                <outlet property="forgotPinCode" destination="cp1-xl-TdR" id="I4V-SW-Yxx"/>
+                <outlet property="pinTextField" destination="xW5-RI-V4R" id="zwo-lE-pFv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS6-8m-Wjh" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="24" y="120" width="366" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="ENTER_PIN_CODE"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xW5-RI-V4R" customClass="OneTimeCodeTextField" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="24" y="160" width="366" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="NWU-Sv-k55"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cp1-xl-TdR" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="24" y="814" width="366" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="FORGOT_PIN_CODE"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercase" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcM-dJ-d6l" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="24" y="226" width="366" height="20"/>
+                    <fontDescription key="fontDescription" name="Raleway-Italic" family="Raleway" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="redError"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KcM-dJ-d6l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="1hw-aj-akk"/>
+                <constraint firstItem="xW5-RI-V4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="7Ys-rF-o44"/>
+                <constraint firstItem="fS6-8m-Wjh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="FVB-BL-7Rc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KcM-dJ-d6l" secondAttribute="trailing" constant="24" id="N7P-7g-3jj"/>
+                <constraint firstItem="xW5-RI-V4R" firstAttribute="top" secondItem="fS6-8m-Wjh" secondAttribute="bottom" constant="40" id="Ojo-8U-87s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cp1-xl-TdR" secondAttribute="trailing" constant="24" id="V7G-X3-xzS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fS6-8m-Wjh" secondAttribute="trailing" constant="24" id="Y54-Fv-DTb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xW5-RI-V4R" secondAttribute="trailing" constant="24" id="dsj-Z0-3BB"/>
+                <constraint firstItem="cp1-xl-TdR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="idA-Ei-8WG"/>
+                <constraint firstItem="fS6-8m-Wjh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="72" id="mCA-f2-gvH"/>
+                <constraint firstItem="KcM-dJ-d6l" firstAttribute="top" secondItem="xW5-RI-V4R" secondAttribute="bottom" constant="16" id="prq-vr-B8x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cp1-xl-TdR" secondAttribute="bottom" constant="48" id="zO5-7B-tvl"/>
+            </constraints>
+            <point key="canvasLocation" x="133" y="70"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="KcM-dJ-d6l">
+            <size key="intrinsicContentSize" width="43" height="20"/>
+        </designable>
+        <designable name="cp1-xl-TdR"/>
+        <designable name="fS6-8m-Wjh"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

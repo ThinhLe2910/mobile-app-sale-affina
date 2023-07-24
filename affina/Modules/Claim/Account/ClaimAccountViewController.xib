@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClaimAccountViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="accountTextField" destination="Sjt-9l-Vj7" id="eCr-SL-O9o"/>
+                <outlet property="agreeLabel" destination="XSt-Iu-LbZ" id="0k8-6t-A8l"/>
+                <outlet property="backButton" destination="l2X-bQ-iPM" id="HCZ-gK-7KW"/>
+                <outlet property="bankBranchTextField" destination="XgN-gl-cGI" id="3Ir-23-RHZ"/>
+                <outlet property="bankNameTextField" destination="ezE-d0-YMU" id="f3c-p6-27Q"/>
+                <outlet property="benefitLabel" destination="xGo-pu-fsi" id="syC-qz-TRF"/>
+                <outlet property="checkBoxButton" destination="dsy-gM-gQY" id="v4A-HM-XrN"/>
+                <outlet property="contentView" destination="cMF-ZC-FgD" id="puq-eZ-1Aa"/>
+                <outlet property="holderTextField" destination="gll-Ik-ocg" id="xKP-MV-qnu"/>
+                <outlet property="paymentInforLabel" destination="qL5-Vk-F8B" id="usq-9h-hiG"/>
+                <outlet property="relationshipTextField" destination="Hqn-Hm-6LV" id="p0B-ff-aPs"/>
+                <outlet property="scrollView" destination="cfH-wD-7tw" id="AJg-aT-pjo"/>
+                <outlet property="scrollViewBottomConstraint" destination="HoY-PL-qer" id="mKK-nz-G5a"/>
+                <outlet property="submitButton" destination="nlb-VJ-XDN" id="Mib-Pv-VNN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="cfH-wD-7tw">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMF-ZC-FgD" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1022.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2X-bQ-iPM" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="29" y="46" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="FJB-YN-3Kw"/>
+                                        <constraint firstAttribute="height" constant="40" id="JIR-ge-FZ9"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="ic_back"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qL5-Vk-F8B" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="128" width="366" height="0.0"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="36"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="PAYMENT_INFOR"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quyền lợi @benefit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGo-pu-fsi" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="144" width="366" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-d0-YMU" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="201" width="366" height="102"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="AVU-lB-fxb"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="BANK_NAME"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="XgN-gl-cGI" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="323" width="366" height="102"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="WLV-uZ-S6B"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="BRANCH_OF_BANK"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="gll-Ik-ocg" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="445" width="366" height="102"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="LwU-SZ-Kli"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="ACCOUNT_HOLDER"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Sjt-9l-Vj7" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="567" width="366" height="102"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="5vz-pc-w2e"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="ACCOUNT_NUMBER"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="366" placeholderIntrinsicHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="Hqn-Hm-6LV" customClass="TitleTextFieldBase" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="689" width="366" height="102"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="102" id="Am2-zT-L8T"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideLeftView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="RELATIONSHIP_WITH_THE_INSURED"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUppercaseTitle" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hideRightView" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderColor" value="grayLight"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlb-VJ-XDN" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="922.5" width="366" height="56"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="56" id="YJS-2s-LRD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="pinkUltraLighter"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="CONTINUE"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="whiteMain"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsy-gM-gQY" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="24" y="843" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="3B5-aM-3se"/>
+                                        <constraint firstAttribute="width" constant="20" id="Nke-Y4-TpR"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="ic_check"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="whiteMain"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="tintAsset" value="whiteMain"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bằng việc nhấn tiếp tục, tôi đã đọc và đồng ý với mọi điều khoản sử dụng và chính sách bảo mật của Affina." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSt-Iu-LbZ" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                                    <rect key="frame" x="48" y="843" width="342" height="49.5"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="l2X-bQ-iPM" firstAttribute="top" secondItem="cMF-ZC-FgD" secondAttribute="top" constant="46" id="0oQ-1y-tTT"/>
+                                <constraint firstItem="qL5-Vk-F8B" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="0tt-Cj-ncb"/>
+                                <constraint firstItem="dsy-gM-gQY" firstAttribute="top" secondItem="Hqn-Hm-6LV" secondAttribute="bottom" constant="52" id="1AN-DA-pCD"/>
+                                <constraint firstAttribute="trailing" secondItem="xGo-pu-fsi" secondAttribute="trailing" constant="24" id="20V-EF-RMh"/>
+                                <constraint firstAttribute="bottom" secondItem="nlb-VJ-XDN" secondAttribute="bottom" constant="44" id="2Af-67-Vza"/>
+                                <constraint firstItem="xGo-pu-fsi" firstAttribute="top" secondItem="qL5-Vk-F8B" secondAttribute="bottom" constant="16" id="3Tj-Nc-ZrG"/>
+                                <constraint firstItem="dsy-gM-gQY" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="FaE-0F-HoD"/>
+                                <constraint firstItem="l2X-bQ-iPM" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="29" id="GI4-zm-fMx"/>
+                                <constraint firstItem="nlb-VJ-XDN" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="IRL-On-otX"/>
+                                <constraint firstAttribute="trailing" secondItem="ezE-d0-YMU" secondAttribute="trailing" constant="24" id="Lqm-XP-9nr"/>
+                                <constraint firstItem="qL5-Vk-F8B" firstAttribute="top" secondItem="l2X-bQ-iPM" secondAttribute="bottom" constant="42" id="Msq-F2-j4o"/>
+                                <constraint firstAttribute="trailing" secondItem="XgN-gl-cGI" secondAttribute="trailing" constant="24" id="Nsb-Rc-WX0"/>
+                                <constraint firstItem="nlb-VJ-XDN" firstAttribute="top" secondItem="XSt-Iu-LbZ" secondAttribute="bottom" constant="30" id="Udc-s0-wZM"/>
+                                <constraint firstAttribute="trailing" secondItem="XSt-Iu-LbZ" secondAttribute="trailing" constant="24" id="W4A-pK-oVw"/>
+                                <constraint firstItem="Hqn-Hm-6LV" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="XhF-gA-0or"/>
+                                <constraint firstItem="ezE-d0-YMU" firstAttribute="top" secondItem="xGo-pu-fsi" secondAttribute="bottom" constant="36" id="aqy-GW-9JP"/>
+                                <constraint firstItem="XSt-Iu-LbZ" firstAttribute="leading" secondItem="dsy-gM-gQY" secondAttribute="trailing" constant="4" id="auy-GV-mfK"/>
+                                <constraint firstItem="Sjt-9l-Vj7" firstAttribute="top" secondItem="gll-Ik-ocg" secondAttribute="bottom" constant="20" id="eqo-OB-d8f"/>
+                                <constraint firstAttribute="trailing" secondItem="Sjt-9l-Vj7" secondAttribute="trailing" constant="24" id="gYi-a5-iGG"/>
+                                <constraint firstItem="Hqn-Hm-6LV" firstAttribute="top" secondItem="Sjt-9l-Vj7" secondAttribute="bottom" constant="20" id="grz-51-SS6"/>
+                                <constraint firstItem="Sjt-9l-Vj7" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="jib-3T-uwI"/>
+                                <constraint firstItem="XgN-gl-cGI" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="lr7-1r-5Ek"/>
+                                <constraint firstItem="ezE-d0-YMU" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="lrp-Pr-3iQ"/>
+                                <constraint firstAttribute="trailing" secondItem="nlb-VJ-XDN" secondAttribute="trailing" constant="24" id="o3Y-53-sjv"/>
+                                <constraint firstAttribute="trailing" secondItem="gll-Ik-ocg" secondAttribute="trailing" constant="24" id="ocd-jg-hQc"/>
+                                <constraint firstItem="XSt-Iu-LbZ" firstAttribute="top" secondItem="dsy-gM-gQY" secondAttribute="top" id="qYa-5s-bTv"/>
+                                <constraint firstItem="XgN-gl-cGI" firstAttribute="top" secondItem="ezE-d0-YMU" secondAttribute="bottom" constant="20" id="rvC-xz-pnU"/>
+                                <constraint firstItem="xGo-pu-fsi" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="tMR-oM-fWr"/>
+                                <constraint firstItem="gll-Ik-ocg" firstAttribute="leading" secondItem="cMF-ZC-FgD" secondAttribute="leading" constant="24" id="ur1-Zj-VN7"/>
+                                <constraint firstItem="gll-Ik-ocg" firstAttribute="top" secondItem="XgN-gl-cGI" secondAttribute="bottom" constant="20" id="vbN-Q3-dxA"/>
+                                <constraint firstAttribute="trailing" secondItem="qL5-Vk-F8B" secondAttribute="trailing" constant="24" id="xU4-tp-0nO"/>
+                                <constraint firstAttribute="trailing" secondItem="Hqn-Hm-6LV" secondAttribute="trailing" constant="24" id="zwf-AW-ric"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cMF-ZC-FgD" secondAttribute="bottom" id="Wgl-ih-O6L"/>
+                        <constraint firstItem="cMF-ZC-FgD" firstAttribute="width" secondItem="cfH-wD-7tw" secondAttribute="width" id="lMq-zM-pK6"/>
+                        <constraint firstItem="cMF-ZC-FgD" firstAttribute="leading" secondItem="cfH-wD-7tw" secondAttribute="leading" id="oSU-XY-ScJ"/>
+                        <constraint firstItem="cMF-ZC-FgD" firstAttribute="top" secondItem="cfH-wD-7tw" secondAttribute="top" id="pPO-TV-p9i"/>
+                        <constraint firstAttribute="trailing" secondItem="cMF-ZC-FgD" secondAttribute="trailing" id="rdf-qX-yRR"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cfH-wD-7tw" secondAttribute="bottom" id="HoY-PL-qer"/>
+                <constraint firstItem="cfH-wD-7tw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NMi-li-zUc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cfH-wD-7tw" secondAttribute="trailing" id="eR8-oX-P7o"/>
+                <constraint firstItem="cfH-wD-7tw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rgJ-fn-PVC"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="76"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Hqn-Hm-6LV">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="Sjt-9l-Vj7">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="XSt-Iu-LbZ">
+            <size key="intrinsicContentSize" width="693.5" height="16.5"/>
+        </designable>
+        <designable name="XgN-gl-cGI">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="dsy-gM-gQY">
+            <size key="intrinsicContentSize" width="12" height="22"/>
+        </designable>
+        <designable name="ezE-d0-YMU">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="gll-Ik-ocg">
+            <size key="intrinsicContentSize" width="366" height="102"/>
+        </designable>
+        <designable name="l2X-bQ-iPM">
+            <size key="intrinsicContentSize" width="24" height="24"/>
+        </designable>
+        <designable name="nlb-VJ-XDN">
+            <size key="intrinsicContentSize" width="52" height="31"/>
+        </designable>
+        <designable name="qL5-Vk-F8B"/>
+        <designable name="xGo-pu-fsi">
+            <size key="intrinsicContentSize" width="144" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_back" width="24" height="24"/>
+        <image name="ic_check" width="12" height="12.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

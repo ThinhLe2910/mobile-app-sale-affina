@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="affina" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryCollectionView" destination="fp1-FK-aAk" id="x73-Ce-5iG"/>
+                <outlet property="loginButton" destination="Uvn-ny-m02" id="4ZR-es-vsM"/>
+                <outlet property="loginDesc" destination="Pf0-X6-afA" id="XJj-eM-90p"/>
+                <outlet property="loginLabel" destination="MnX-m2-4R1" id="OOJ-Xr-EXe"/>
+                <outlet property="loginView" destination="wlu-s5-4zQ" id="U3R-vj-fTh"/>
+                <outlet property="newsLabel" destination="9ew-71-05e" id="TEg-kt-fkN"/>
+                <outlet property="noDataLabel" destination="e4Z-7q-BDt" id="bNe-JQ-MZC"/>
+                <outlet property="notiBadgeIcon" destination="WXA-di-mA1" id="5Bi-MZ-4v1"/>
+                <outlet property="notiButton" destination="gjH-lr-EQd" id="XhV-S3-kT9"/>
+                <outlet property="scrollView" destination="8hb-EK-Rv1" id="ZDa-QC-D9J"/>
+                <outlet property="scrollViewContainerView" destination="3gX-gE-d78" id="Hbz-yC-ybo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBg" translatesAutoresizingMaskIntoConstraints="NO" id="miA-qQ-5JD">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ew-71-05e" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="23" y="88" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="customFont" value="Raleway-Bold-36"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="NEWS"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_search_black" translatesAutoresizingMaskIntoConstraints="NO" id="IEu-Gs-mwJ">
+                    <rect key="frame" x="325" y="102" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="KRQ-7p-5Jt"/>
+                        <constraint firstAttribute="width" constant="20" id="dgT-uB-7yq"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bell_black" translatesAutoresizingMaskIntoConstraints="NO" id="gjH-lr-EQd">
+                    <rect key="frame" x="369" y="102" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="asm-cg-2Fm"/>
+                        <constraint firstAttribute="width" constant="20" id="m1U-hd-iGL"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fp1-FK-aAk">
+                    <rect key="frame" x="0.0" y="118" width="414" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="miY-xP-o3L"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="7" minimumInteritemSpacing="10" id="0jR-HN-Qno">
+                        <size key="itemSize" width="128" height="30"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="23" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hb-EK-Rv1">
+                    <rect key="frame" x="0.0" y="182" width="414" height="714"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gX-gE-d78">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1000" placeholder="YES" id="JpF-Kg-Ltt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3gX-gE-d78" firstAttribute="width" secondItem="8hb-EK-Rv1" secondAttribute="width" id="FYH-lN-Joa"/>
+                        <constraint firstItem="3gX-gE-d78" firstAttribute="bottom" secondItem="8hb-EK-Rv1" secondAttribute="bottom" constant="40" id="I1Z-P1-cON"/>
+                        <constraint firstItem="3gX-gE-d78" firstAttribute="leading" secondItem="8hb-EK-Rv1" secondAttribute="leading" id="bOh-kS-c3v"/>
+                        <constraint firstItem="3gX-gE-d78" firstAttribute="trailing" secondItem="8hb-EK-Rv1" secondAttribute="trailing" id="cXh-oN-6uB"/>
+                        <constraint firstItem="3gX-gE-d78" firstAttribute="top" secondItem="8hb-EK-Rv1" secondAttribute="top" id="rFr-PM-Xo9"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlu-s5-4zQ" customClass="BaseView" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="55" y="356" width="304" height="184"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lock" translatesAutoresizingMaskIntoConstraints="NO" id="2dq-gg-Ejx">
+                            <rect key="frame" x="120" y="0.0" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="GWH-TP-9E4"/>
+                                <constraint firstAttribute="height" constant="64" id="jmt-ER-DG3"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnX-m2-4R1" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="152" y="88" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="YOU_NEED_TO_LOGIN"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf0-X6-afA" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="100" width="304" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="SEE_INTERNAL_COMMUNICATIONS_FROM"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvn-ny-m02" customClass="BaseButton" customModule="affina" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="128" width="304" height="56"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="I6h-sj-FCE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="16"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="backgroundAsset" value="pinkMain"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="colorAsset" value="whiteMain"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeTitle" value="LOG_IN_NOW"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Uvn-ny-m02" firstAttribute="leading" secondItem="wlu-s5-4zQ" secondAttribute="leading" id="26b-yQ-5ft"/>
+                        <constraint firstItem="MnX-m2-4R1" firstAttribute="top" secondItem="2dq-gg-Ejx" secondAttribute="bottom" constant="24" id="HTe-Dj-tcL"/>
+                        <constraint firstItem="Uvn-ny-m02" firstAttribute="top" secondItem="Pf0-X6-afA" secondAttribute="bottom" constant="28" id="OWK-GA-SWG"/>
+                        <constraint firstItem="Pf0-X6-afA" firstAttribute="leading" secondItem="wlu-s5-4zQ" secondAttribute="leading" id="Qqi-nY-7YM"/>
+                        <constraint firstAttribute="trailing" secondItem="Pf0-X6-afA" secondAttribute="trailing" id="Uvi-UR-8TL"/>
+                        <constraint firstItem="Pf0-X6-afA" firstAttribute="top" secondItem="MnX-m2-4R1" secondAttribute="bottom" constant="12" id="aXh-zb-DIe"/>
+                        <constraint firstAttribute="bottom" secondItem="Uvn-ny-m02" secondAttribute="bottom" id="agY-7i-MN5"/>
+                        <constraint firstItem="2dq-gg-Ejx" firstAttribute="centerX" secondItem="wlu-s5-4zQ" secondAttribute="centerX" id="ge3-Li-xKm"/>
+                        <constraint firstItem="2dq-gg-Ejx" firstAttribute="top" secondItem="wlu-s5-4zQ" secondAttribute="top" id="oqw-Lc-PVi"/>
+                        <constraint firstAttribute="trailing" secondItem="Uvn-ny-m02" secondAttribute="trailing" id="ri4-Ny-whS"/>
+                        <constraint firstItem="MnX-m2-4R1" firstAttribute="centerX" secondItem="wlu-s5-4zQ" secondAttribute="centerX" id="swM-Ku-Gqx"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4Z-7q-BDt" customClass="BaseLabel" customModule="affina" customModuleProvider="target">
+                    <rect key="frame" x="10" y="448" width="394" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizeText" value="CONTENT_NOT_AVAILABLE"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_badge" translatesAutoresizingMaskIntoConstraints="NO" id="WXA-di-mA1">
+                    <rect key="frame" x="381" y="100" width="8" height="8"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="BWv-sc-grD"/>
+                        <constraint firstAttribute="width" constant="8" id="ecs-LO-E5R"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fp1-FK-aAk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0Zd-GU-0zL"/>
+                <constraint firstItem="8hb-EK-Rv1" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4A7-kZ-Lzj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IEu-Gs-mwJ" secondAttribute="trailing" constant="69" id="5xd-yN-45H"/>
+                <constraint firstItem="e4Z-7q-BDt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="7qG-uQ-fE3"/>
+                <constraint firstItem="IEu-Gs-mwJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="54" id="Fh2-E5-9L1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e4Z-7q-BDt" secondAttribute="trailing" constant="10" id="Ggr-LY-ShR"/>
+                <constraint firstItem="8hb-EK-Rv1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="M0U-tO-66j"/>
+                <constraint firstItem="gjH-lr-EQd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="54" id="RVF-W7-djA"/>
+                <constraint firstItem="9ew-71-05e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="SLY-Je-LZ9"/>
+                <constraint firstItem="gjH-lr-EQd" firstAttribute="trailing" secondItem="WXA-di-mA1" secondAttribute="trailing" id="SOP-K2-SrM"/>
+                <constraint firstItem="fp1-FK-aAk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VZ4-c8-u0w"/>
+                <constraint firstAttribute="bottom" secondItem="miA-qQ-5JD" secondAttribute="bottom" id="W7y-jj-YyK"/>
+                <constraint firstItem="gjH-lr-EQd" firstAttribute="leading" secondItem="IEu-Gs-mwJ" secondAttribute="trailing" constant="24" id="elv-1W-QVQ"/>
+                <constraint firstAttribute="bottom" secondItem="8hb-EK-Rv1" secondAttribute="bottom" id="fsi-rY-f6g"/>
+                <constraint firstItem="9ew-71-05e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="hOq-ez-bEh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wlu-s5-4zQ" secondAttribute="trailing" constant="55" id="i6V-O3-MAy"/>
+                <constraint firstItem="e4Z-7q-BDt" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="iFK-8u-D27"/>
+                <constraint firstItem="wlu-s5-4zQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jGj-9q-CP2"/>
+                <constraint firstItem="miA-qQ-5JD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="l9B-8a-qu5"/>
+                <constraint firstItem="8hb-EK-Rv1" firstAttribute="top" secondItem="fp1-FK-aAk" secondAttribute="bottom" constant="24" id="n2v-KK-Ujh"/>
+                <constraint firstItem="wlu-s5-4zQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="peY-Zs-3Db"/>
+                <constraint firstItem="miA-qQ-5JD" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qgY-q7-LaX"/>
+                <constraint firstItem="gjH-lr-EQd" firstAttribute="top" secondItem="WXA-di-mA1" secondAttribute="top" constant="2" id="wCm-xd-4UN"/>
+                <constraint firstItem="miA-qQ-5JD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="weG-fo-8pd"/>
+                <constraint firstItem="fp1-FK-aAk" firstAttribute="top" secondItem="9ew-71-05e" secondAttribute="bottom" constant="30" id="y3w-R7-gkA"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="9ew-71-05e"/>
+        <designable name="MnX-m2-4R1"/>
+        <designable name="Pf0-X6-afA"/>
+        <designable name="Uvn-ny-m02">
+            <size key="intrinsicContentSize" width="30" height="31"/>
+        </designable>
+        <designable name="e4Z-7q-BDt"/>
+    </designables>
+    <resources>
+        <image name="homeBg" width="390" height="480"/>
+        <image name="ic_badge" width="12" height="12"/>
+        <image name="ic_bell_black" width="20" height="20"/>
+        <image name="ic_lock" width="64" height="64"/>
+        <image name="ic_search_black" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
